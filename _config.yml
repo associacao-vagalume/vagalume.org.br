@@ -1,4 +1,3 @@
-exclude:
-  deploy_rsa.enc
+exclude: [deploy_rsa.enc]
 sass:
   style: compressed
