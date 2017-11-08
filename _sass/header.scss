@@ -4,9 +4,25 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 10;
 }
+
 header .logo {
   height: 121px;
   margin-top: 13px;
   width: 95px;
+}
+@media (max-width: 767px) {
+  header {
+    height: 86px;
+  }
+  header .logo-container {
+    display: flex;
+    justify-content: center;
+  }
+  header .logo {
+    height: 126px;
+    margin-top: 11px;
+    width: 99px;
+  }
 }
