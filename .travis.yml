@@ -18,3 +18,4 @@ deploy:
   script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ staging17@staging.provisorio.ws:public_html
   on:
     branch: master
+    repo: associacao-vagalume/vagalume.org.br
