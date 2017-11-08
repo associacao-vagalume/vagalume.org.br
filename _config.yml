@@ -1,0 +1,4 @@
+exclude: 
+  deploy_rsa.enc
+sass:
+  style: compressed
