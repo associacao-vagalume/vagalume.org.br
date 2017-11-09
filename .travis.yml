@@ -5,9 +5,9 @@ env:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 sudo: false
 addons:
-  ssh_known_hosts: staging.provisorio.ws
+  ssh_known_hosts: staging.vagalume.org.br
 before_deploy:
-- openssl aes-256-cbc -K $encrypted_645537515f46_key -iv $encrypted_645537515f46_iv
+- openssl aes-256-cbc -K $encrypted_74737e894ad9_key -iv $encrypted_74737e894ad9_iv
   -in deploy_rsa.enc -out deploy_rsa -d
 - eval "$(ssh-agent -s)"
 - chmod 600 deploy_rsa
@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ staging17@staging.provisorio.ws:public_html
+  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ staging18@staging.vagalume.org.br:public_html
   on:
     branch: master
     repo: associacao-vagalume/vagalume.org.br
