@@ -21,8 +21,25 @@
         color: $white;
       }
       & img {
-        width: 118px;
-        height: 118px;
+        width: px_to_em(118px);
+        height: px_to_em(118px);
+      }
+    }
+    & .doe-button {
+      width: px_to_em(283px);
+      height: px_to_em(89px);
+      background-color: $orangey-yellow;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: px_to_em(-47px) auto 0 auto;
+      & p {
+        font-family: 'Amatic SC', cursive;
+        font-size: px_to_em(52px);
+        font-weight: bold;
+        color: #000000;
+        margin: 0;
       }
     }
   }
