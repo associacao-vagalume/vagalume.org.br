@@ -1,14 +1,29 @@
 .home {
-  margin-top: px_to_em(88px);  
+  margin-top: px_to_em(88px);
   & .block1 {
     background-image: url("/assets/img/home-block1.jpg");
     background-size: cover;
     background-position: center center;
     padding: px_to_em(133px) 0;
-
     & .frame {
-      border: px_to_em(4px) solid #fdb913;
+      border: px_to_em(4px) solid $orangey-yellow;
       height: px_to_em(440px);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      & p {
+        font-family: 'Amatic SC', cursive;
+        font-size: 110px;
+        font-weight: bold;
+        line-height: 0.87;
+        text-align: center;
+        color: $white;
+      }
+      & img {
+        width: 118px;
+        height: 118px;
+      }
     }
   }
 }

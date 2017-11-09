@@ -2,6 +2,10 @@
   @if $target == 0 { @return 0 }
   @return $target / $context + 0em;
 }
+
 $base-size: 16px;
 
-
+$orangey-yellow: #fdb913;
+$white: #ffffff;
+$greyish-brown: #6f6251;
+$umber: #aa6a01;
