@@ -4,6 +4,7 @@
 }
 
 $base-size: 16px;
+/* Color palette */
 
 $orangey-yellow: #fdb913;
 $white: #fff;
@@ -13,4 +14,9 @@ $black: #000;
 
 .container {
   max-width: px_to_em(940px);
+}
+
+.content {
+  background-color: #ddd;
+  padding-top: px_to_em(60px);
 }

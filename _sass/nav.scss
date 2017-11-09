@@ -1,0 +1,64 @@
+.navbar {
+  background-color: #fff;
+
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  text-align: left;
+  padding: 0;
+
+  & .container {
+    padding: 0 px_to_em(6px) 0;
+    height: px_to_em(77px);
+  }
+
+  & .navbar-brand {
+    height: 100%;
+  }
+
+  & .navbar-nav {
+    margin-top: 0.4em;
+    background-color: $white;
+  }
+
+  & li {
+    line-height: 1.25em;
+    margin-left: 1.75em;
+    white-space: nowrap;
+  }
+
+  & .primario {
+    font-size: 1.5em;
+
+    & a {
+      color: #000000;
+    }
+  }
+
+  & .secundario {
+    font-size: 1.25em;
+    & a {
+      color: #858585;
+    }
+  }
+
+  & .navbar-toggler {
+    position: fixed;
+    right: 1.2em;
+  }
+
+  & .doe-agora {
+    width: 5em;
+    min-width: 5em;
+    height: 2.7em;
+    background-color: $orangey-yellow;
+    margin-left: 2em;
+
+    &.nav-link {
+      padding-top: 1em;
+    }
+
+    font-size: 2.125em;
+    font-weight: bold;
+    color: #000000;
+  }
+}
