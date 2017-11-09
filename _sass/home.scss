@@ -3,8 +3,8 @@
   & .block1 {
     background-image: url("/assets/img/home-block1.jpg");
     background-size: cover;
-    background-position: center center;
-    padding: px_to_em(133px) 0;
+    background-position: top center;
+    padding: px_to_em(120px) 0 px_to_em(150px);
     & .frame {
       border: px_to_em(4px) solid $orangey-yellow;
       height: px_to_em(440px);
@@ -14,18 +14,20 @@
       flex-direction: column;
       & p {
         font-family: 'Amatic SC', cursive;
-        font-size: 110px;
+        font-size: px_to_em(110px);
         font-weight: bold;
+        text-transform: uppercase;
         line-height: 0.87;
         text-align: center;
         color: $white;
+        white-space: nowrap;
       }
       & img {
         width: px_to_em(118px);
         height: px_to_em(118px);
       }
     }
-    & .doe-button {
+    & .doar {
       width: px_to_em(283px);
       height: px_to_em(89px);
       background-color: $orangey-yellow;
@@ -38,9 +40,31 @@
         font-family: 'Amatic SC', cursive;
         font-size: px_to_em(52px);
         font-weight: bold;
+        text-transform: uppercase;
         color: #000000;
         margin: 0;
       }
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .home .block1 .frame p {
+    font-size: px_to_em(66px);
+    & span:before {
+      content: "\a";
+      white-space: pre;
+    }
+  }
+  .home .block1 .frame img {
+    width: px_to_em(68px);
+    height: px_to_em(68px);
+  }
+  .home .block1 .doar {
+    width: px_to_em(255px);
+    height: px_to_em(57px);
+  }
+  .home .block1 .doar p {
+    font-size: px_to_em(28px);
   }
 }

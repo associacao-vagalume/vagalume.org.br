@@ -9,3 +9,7 @@ $orangey-yellow: #fdb913;
 $white: #ffffff;
 $greyish-brown: #6f6251;
 $umber: #aa6a01;
+
+.container {
+  max-width: px_to_em(940px);
+}
