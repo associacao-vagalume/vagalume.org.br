@@ -1,0 +1,14 @@
+.home {
+  margin-top: px_to_em(88px);  
+  & .block1 {
+    background-image: url("/assets/img/home-block1.jpg");
+    background-size: cover;
+    background-position: center center;
+    padding: px_to_em(133px) 0;
+
+    & .frame {
+      border: px_to_em(4px) solid #fdb913;
+      height: px_to_em(440px);
+    }
+  }
+}
