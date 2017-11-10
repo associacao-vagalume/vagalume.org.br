@@ -28,11 +28,12 @@
   & .navbar-nav {
     margin: 0.4em 0 0 auto;
     background-color: $white;
+    justify-content: flex-end;
   }
 
   & li {
     line-height: 1.25em;
-    margin-left: 1.75em;
+    margin-right: 2rem;
   }
 
   & .primario {
@@ -54,10 +55,9 @@
 
   & .doe-agora {
     width: 5em;
-    min-width: 5em;
+    min-width: 4em;
     height: 2.7em;
     background-color: $orangey-yellow;
-    margin-left: 2em;
     padding-top: 1em;
     align-self: flex-start;
 
