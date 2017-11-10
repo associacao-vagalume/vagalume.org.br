@@ -1,19 +1,39 @@
 <div class="home">
   <div class="block1">
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="frame">
-              <p>um livro <span>MUDA A VIDA</span></p>
-              <br>
-              <img src="/assets/img/home-play.svg" alt="Clique para assistir">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+
+        <!-- Modal -->
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Expedição Vaga Lume - 15 anos</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <iframe width="694px" height="390px" src="https://www.youtube.com/embed/xt2qJwwnH2U" frameborder="0" allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <div class="frame">
+            <p>um livro <span>muda a vida</span></p>
+            <br>
+            <button type="image" class="play" data-toggle="modal" data-target="#modal" alt="Clique para assistir"></button>
             </div>
             <a href="#" alt="Clique para doar" class="doar">
-            <div >
+            <div>
                 <p>doe agora</p>
             </div>
           </a>
           </div>
+
+         
         </div>
       </div>
   </div>

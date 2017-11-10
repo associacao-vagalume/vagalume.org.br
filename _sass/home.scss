@@ -22,28 +22,33 @@
         color: $white;
         white-space: nowrap;
       }
-      & img {
+      & .play {
+        background: url(/assets/img/home-play.svg) no-repeat;
         width: px_to_em(118px);
         height: px_to_em(118px);
+        border: none;
       }
     }
-    & .doar {
-      width: px_to_em(283px);
-      height: px_to_em(89px);
-      background-color: $orangey-yellow;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      margin: px_to_em(-47px) auto 0 auto;
-      & p {
-        font-family: 'Amatic SC', cursive;
-        font-size: px_to_em(52px);
-        font-weight: bold;
-        text-transform: uppercase;
-        color: #000000;
-        margin: 0;
-      }
+    .modal-dialog {
+      max-width: 724px;
+    }
+  }
+  & .doar {
+    width: px_to_em(283px);
+    height: px_to_em(89px);
+    background-color: $orangey-yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: px_to_em(-47px) auto 0 auto;
+    & p {
+      font-family: 'Amatic SC', cursive;
+      font-size: px_to_em(52px);
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #000000;
+      margin: 0;
     }
   }
 }
@@ -66,5 +71,13 @@
   }
   .home .block1 .doar p {
     font-size: px_to_em(28px);
+  }
+
+  .modal .modal-dialog {
+    max-width: auto ;
+  }
+
+  .modal-body iframe {
+    width:  100%    !important;
   }
 }
