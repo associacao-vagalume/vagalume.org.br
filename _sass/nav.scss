@@ -4,38 +4,44 @@
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
   text-align: left;
+  white-space: nowrap;
   padding: 0;
+  height: 4.8em;
+
+  & a {
+    color: #000000;
+  }
 
   & .container {
-    padding: 0 px_to_em(6px) 0;
-    height: px_to_em(77px);
+    height: 100%;
   }
 
   & .navbar-brand {
     height: 100%;
+    margin: 0 auto;
+  }
+
+  & .navbar-collapse {
+    flex-direction: column;
   }
 
   & .navbar-nav {
-    margin-top: 0.4em;
+    margin: 0.4em 0 0 auto;
     background-color: $white;
   }
 
   & li {
     line-height: 1.25em;
     margin-left: 1.75em;
-    white-space: nowrap;
   }
 
   & .primario {
     font-size: 1.5em;
-
-    & a {
-      color: #000000;
-    }
   }
 
   & .secundario {
     font-size: 1.25em;
+
     & a {
       color: #858585;
     }
@@ -52,13 +58,10 @@
     height: 2.7em;
     background-color: $orangey-yellow;
     margin-left: 2em;
-
-    &.nav-link {
-      padding-top: 1em;
-    }
+    padding-top: 1em;
+    align-self: flex-start;
 
     font-size: 2.125em;
-    font-weight: bold;
-    color: #000000;
+    text-align: center;
   }
 }
