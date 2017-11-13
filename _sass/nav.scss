@@ -1,3 +1,7 @@
+.content {
+  padding-top: 9rem;
+}
+
 .navbar {
   background-color: #fff;
   font-family: 'Amatic SC', cursive;
@@ -74,10 +78,21 @@
   & .logo {
     height: $logo-size;
   }
+
+  & .alt-logo {
+    display: block !important;
+    left: -9999px !important;
+    position: absolute !important;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .content {
+    padding-top: 4rem;
+  }
+
   .navbar {
+    position: initial;
 
     &-toggler {
       padding: 0;
