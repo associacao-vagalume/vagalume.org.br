@@ -15,7 +15,7 @@
       align-items: center;
       flex-direction: column;
 
-      & h1 {
+      & h2 {
         font-family: 'Amatic SC', cursive;
         font-size: px_to_em(110px);
         font-weight: bold;
@@ -40,23 +40,26 @@
   }
   & .doar {
     background-color: $orangey-yellow;
-    color: $black;
     display: block;
-    font-family: 'Amatic SC', cursive;
-    font-size: px_to_em(52px);
-    font-weight: bold;
     margin: -41px auto 0;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
     width: 30%;
+    text-decoration: none;
+    
+    & h3 {
+      color: $black;
+      font-family: 'Amatic SC', cursive;
+      font-size: px_to_em(52px);
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+    }
   }
 
   @media (max-width: 767px) {
     .block1 {
 
       & .frame {
-        & h1 {
+        & h2 {
           font-size: px_to_em(66px);
           & span:before {
             content: "\a";
@@ -71,10 +74,13 @@
       }
 
       & .doar {
-        font-size: px_to_em(36px);
-        line-height: 1.8;
         margin: -34px auto 0;
         width: 90%;
+
+        & h3 {
+          font-size: px_to_em(36px);
+          line-height: 1.8;
+        }
       }
     }
   }
