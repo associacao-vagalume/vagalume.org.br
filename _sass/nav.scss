@@ -2,40 +2,29 @@
   background-color: #fff;
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
+  font-size: 1.5rem;
   text-align: left;
   white-space: nowrap;
   padding: 0;
-  height: 4.8em;
-
-  & .logo {
-    position: relative;
-  }
 
   & a {
     color: #000000;
   }
 
-  & .container {
-    height: 100%;
-  }
-
   &-brand {
-    height: 100%;
-    margin: 0 auto;
+    margin: 0 auto (-1 * $logo-size / 2);
+    z-index: 1;
+    padding: 0;
   }
 
-  & .navbar-collapse {
+  &-collapse {
     flex-direction: column;
     background-color: $white;
   }
 
-  & .navbar-toggler {
+  &-toggler {
     text-transform: uppercase;
     font-size: 2.125em;
-
-    &-close {
-      display: none;
-    }
   }
 
   &-nav {
@@ -45,17 +34,18 @@
   }
 
   & li {
-    line-height: 1.25em;
+    line-height: 1.25em; /* é em pois deve ser proporcional ao tamanho das fontes do primary e secondary */
     margin-right: 2rem;
   }
 
   &-primary {
-    font-size: 1.5em;
+    order: 2;
     text-transform: capitalize;
   }
 
   &-secondary{
-    font-size: 1.25em;
+    order: 1;
+    font-size: 1.25rem;
     text-transform: lowercase;
 
     & a {
@@ -63,26 +53,66 @@
     }
   }
 
-  & .doe-agora {
-    width: 5em;
-    min-width: 4em;
-    height: 2.7em;
+  & .donate-now-expanded {
+    display: none;
+  }
+
+  & .donate-now {
     background-color: $orangey-yellow;
-    padding-top: 1em;
+    width: 10rem;
+    min-width: 8rem;
+    line-height: 4.5rem;
+    padding-top: 2rem;
+    margin-bottom: -1rem;
     align-self: flex-start;
 
-    font-size: 2.125em;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
   }
+
+  & .logo {
+    height: $logo-size;
+  }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar {
-    height: 5.5em;
+
+    &-toggler {
+      padding: 0;
+      display: block;
+      width: 100%;
+      margin-left: -100%;
+      text-align: right;
+    }
+
+    &-toggler-close {
+      color: $orangey-yellow;
+    }
+
+    &-toggler-open.collapsed, &-toggler-close {
+      display: block;
+    }
+
+    &-toggler-close.collapsed, &-toggler-open {
+      display: none;
+    }
 
     &-nav {
       margin: auto;
+    }
+
+    & li {
+      margin-right: 0;
+    }
+
+    &-collapse > ul:first-child {
+      margin-top: $logo-size/2;
+    }
+
+    &-collapse * + * {
+      margin-top: 1.125rem;
     }
 
     &-primary {
@@ -91,21 +121,28 @@
 
     &-secondary {
       order: 2;
+      font-size: inherit;
     }
 
-    &-toggler {
-      position: fixed;
-      right: 1.2em;
+    & .donate-now {
+      display: none;
     }
 
-    & li {
-      margin: 0;
+    & .donate-now-expanded {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 3rem;
+      width: 16rem;
+      text-align: center;
+      background-color: $orangey-yellow;
+      order: 3;
     }
 
     & .container {
       max-width: 100%;
       justify-content: space-between;
-      padding: 0;
+      padding: 1rem;
     }
   }
 }
