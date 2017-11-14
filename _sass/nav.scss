@@ -1,0 +1,154 @@
+.navbar {
+  background-color: $white;
+  font-family: 'Amatic SC', cursive;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
+  text-align: left;
+  white-space: nowrap;
+
+  & a {
+    color: $black;
+  }
+
+  &-brand {
+    margin: 0 auto (-1 * $logo-size / 2);
+    padding: 0;
+    z-index: 1;
+  }
+
+  &-collapse {
+    background-color: $white;
+    flex-direction: column;
+  }
+
+  &-toggler {
+    font-size: 3.25rem;
+    text-transform: uppercase;
+  }
+
+  &-nav {
+    justify-content: flex-end;
+    margin: 0.4em 0 0 auto; /* margin top em `em` pois existem dois tamanhos diferentes de fonte */
+    text-align: center;
+  }
+
+  & li {
+    line-height: 1.25;
+    margin-right: 2rem;
+  }
+
+  &-primary {
+    order: 2;
+    text-transform: capitalize;
+  }
+
+  &-secondary{
+    font-size: 1.25rem;
+    order: 1;
+    text-transform: lowercase;
+
+    & a {
+      color: $grey;
+    }
+  }
+
+  & .donate-now-expanded {
+    display: none;
+  }
+
+  & .donate-now {
+    align-self: flex-start;
+    background-color: $orangey-yellow;
+    font-size: 2rem;
+    line-height: 2.25;
+    margin-bottom: -1rem;
+    min-width: 8rem;
+    padding-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 10rem;
+  }
+
+  & .logo {
+    height: $logo-size;
+  }
+
+  & .alt-logo {
+    display: block !important;
+    left: -9999px !important;
+    position: absolute !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    position: initial;
+
+    &-toggler {
+      display: block;
+      margin-left: -100%;
+      padding: 0;
+      text-align: right;
+      width: 100%;
+    }
+
+    &-toggler-close {
+      color: $orangey-yellow;
+    }
+
+    &-toggler-open.collapsed, &-toggler-close {
+      display: block;
+    }
+
+    &-toggler-close.collapsed, &-toggler-open {
+      display: none;
+    }
+
+    &-nav {
+      margin: auto;
+    }
+
+    & li {
+      margin-right: 0;
+    }
+
+    &-collapse > ul:first-child {
+      margin-top: $logo-size/2;
+    }
+
+    &-collapse * + * {
+      margin-top: 1.125rem;
+    }
+
+    &-primary {
+      order: 1;
+    }
+
+    &-secondary {
+      font-size: inherit;
+      order: 2;
+    }
+
+    & .donate-now {
+      display: none;
+    }
+
+    & .donate-now-expanded {
+      background-color: $orangey-yellow;
+      display: block;
+      line-height: 2;
+      margin-left: auto;
+      margin-right: auto;
+      order: 3;
+      text-align: center;
+      width: 16rem;
+    }
+
+    & .container {
+      justify-content: space-between;
+      max-width: 100%;
+      padding: 1rem;
+    }
+  }
+}

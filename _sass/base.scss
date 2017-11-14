@@ -1,16 +1,18 @@
-@function px_to_em($target, $context: $base-size) {
-  @if $target == 0 { @return 0 }
-  @return $target / $context + 0em;
-}
-
 $base-size: 16px;
+$logo-size: 7.625rem;
 
-$orangey-yellow: #fdb913;
-$white: #fff;
-$greyish-brown: #6f6251;
-$umber: #aa6a01;
+/* Color palette */
 $black: #000;
+$grey: #858585;
+$greyish-brown: #6f6251;
+$orangey-yellow: #fdb913;
+$umber: #aa6a01;
+$white: #fff;
 
 .container {
-  max-width: px_to_em(940px);
+  max-width: 58.75rem;
+}
+
+.content {
+  background-color: #ddd;
 }
