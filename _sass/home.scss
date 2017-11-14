@@ -1,4 +1,6 @@
 .home {
+  margin-top: 5.5rem;
+
   & .block1 {
     background-image: url("/assets/img/home-block1.jpg");
     background-size: cover;
@@ -54,6 +56,8 @@
   }
 
   @media (max-width: 767px) {
+    margin-top: 0;
+
     .block1 {
 
       & .frame {
