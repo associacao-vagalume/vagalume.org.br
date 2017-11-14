@@ -1,44 +1,40 @@
-.content {
-  padding-top: 9rem;
-}
-
 .navbar {
-  background-color: #fff;
+  background-color: $white;
   font-family: 'Amatic SC', cursive;
-  font-weight: bold;
   font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0;
   text-align: left;
   white-space: nowrap;
-  padding: 0;
 
   & a {
-    color: #000000;
+    color: $black;
   }
 
   &-brand {
     margin: 0 auto (-1 * $logo-size / 2);
-    z-index: 1;
     padding: 0;
+    z-index: 1;
   }
 
   &-collapse {
-    flex-direction: column;
     background-color: $white;
+    flex-direction: column;
   }
 
   &-toggler {
+    font-size: 3.25rem;
     text-transform: uppercase;
-    font-size: 2.125em;
   }
 
   &-nav {
-    margin: 0.4em 0 0 auto;
     justify-content: flex-end;
+    margin: 0.4em 0 0 auto; /* margin top em `em` pois existem dois tamanhos diferentes de fonte */
     text-align: center;
   }
 
   & li {
-    line-height: 1.25em; /* é em pois deve ser proporcional ao tamanho das fontes do primary e secondary */
+    line-height: 1.25;
     margin-right: 2rem;
   }
 
@@ -48,12 +44,12 @@
   }
 
   &-secondary{
-    order: 1;
     font-size: 1.25rem;
+    order: 1;
     text-transform: lowercase;
 
     & a {
-      color: #858585;
+      color: $grey;
     }
   }
 
@@ -62,17 +58,16 @@
   }
 
   & .donate-now {
-    background-color: $orangey-yellow;
-    width: 10rem;
-    min-width: 8rem;
-    line-height: 4.5rem;
-    padding-top: 2rem;
-    margin-bottom: -1rem;
     align-self: flex-start;
-
+    background-color: $orangey-yellow;
     font-size: 2rem;
+    line-height: 2.25;
+    margin-bottom: -1rem;
+    min-width: 8rem;
+    padding-top: 2rem;
     text-align: center;
     text-transform: uppercase;
+    width: 10rem;
   }
 
   & .logo {
@@ -86,20 +81,16 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .content {
-    padding-top: 4rem;
-  }
-
+@media (max-width: 767px) {
   .navbar {
     position: initial;
 
     &-toggler {
-      padding: 0;
       display: block;
-      width: 100%;
       margin-left: -100%;
+      padding: 0;
       text-align: right;
+      width: 100%;
     }
 
     &-toggler-close {
@@ -135,8 +126,8 @@
     }
 
     &-secondary {
-      order: 2;
       font-size: inherit;
+      order: 2;
     }
 
     & .donate-now {
@@ -144,19 +135,19 @@
     }
 
     & .donate-now-expanded {
+      background-color: $orangey-yellow;
       display: block;
+      line-height: 2;
       margin-left: auto;
       margin-right: auto;
-      line-height: 3rem;
-      width: 16rem;
-      text-align: center;
-      background-color: $orangey-yellow;
       order: 3;
+      text-align: center;
+      width: 16rem;
     }
 
     & .container {
-      max-width: 100%;
       justify-content: space-between;
+      max-width: 100%;
       padding: 1rem;
     }
   }
