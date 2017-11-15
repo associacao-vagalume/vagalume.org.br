@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 set -e
 
-bundle exec jekyll build
-bundle exec htmlproofer --assume-extension --check_html ./_site
+bundle exec rake test
