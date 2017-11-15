@@ -1,0 +1,75 @@
+.footer {
+  background-color: $orangey-yellow;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.25rem;
+
+  & .top-button, & h3 {
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  & .container {
+    padding: 4.5rem 1.25rem 1.25rem;
+    text-align: center;
+
+    & > * + * {
+      margin-top: 1.5rem;
+    }
+  }
+
+  & h3 {
+    font-size: 2.5rem;
+  }
+
+  & address {
+    display: flex;
+    flex-direction: column;
+
+    & p {
+      margin-bottom: 0.5rem;
+    }
+  }
+  
+  & a {
+    color: $black;
+    display: inline-block;
+  }
+
+  & a + a {
+    margin-left: 1.125rem;
+  }
+
+  & .social-icons {
+    & a:hover {
+      text-decoration: none;
+    }
+    & img {
+      width: 3.75rem;
+    }
+  }
+  
+  & .top-button {
+    border: solid 0.1875rem $white;
+    color: $white;
+    display: block;
+    font-size: 1.75rem;
+    height: 4rem;
+    line-height: 4rem;
+  }
+
+  @media (min-width: 768px) {
+    & .container {
+      text-align: left;
+    }
+
+    & .top-button {
+      display: none;
+    }
+
+    & .phone {
+      font-weight: bold;
+      order: 3;
+    }
+  }
+}
