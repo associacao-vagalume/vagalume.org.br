@@ -14,6 +14,10 @@ keywords:
   - transformação social
   - bibliotecas
 
+url: http://vagalume.org.br
+twitter_username: VagaLume_ONG
+share_image: assets/img/fb_op1.png
+
 exclude: [deploy_rsa.enc, vendor, test, Gemfile, Gemfile.lock, Rakefile, README.md]
 sass:
   style: compressed

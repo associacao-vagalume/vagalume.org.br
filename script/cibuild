@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
-set -e
+set -ev
 
-bundle exec rake test
+if [ $TRAVIS_BRANCH = 'produc' ]; then
+  export JEKYLL_ENV=production
+fi
+
+bundle exec rake acceptance
