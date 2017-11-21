@@ -1,3 +1,19 @@
+title: Vaga Lume - Empoderando crianças na Amazônia
+description: A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
+             e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
+keywords:
+  - Vaga Lume
+  - vagalume
+  - leitura
+  - crianças
+  - Amazônia
+  - mediação
+  - cultura local
+  - escuta
+  - empoderamento
+  - transformação social
+  - bibliotecas
+
 exclude: [deploy_rsa.enc, vendor, test, Gemfile, Gemfile.lock, Rakefile, README.md]
 sass:
   style: compressed
