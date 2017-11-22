@@ -5,9 +5,8 @@
 <meta property="og:title" content="{{ site.title }}">
 <meta property="og:description" content="{{ site.description }}">
 <meta property="og:image" content="{{ site.url }}/{{ site.share_image}}">
-<meta name="twitter:site" content="{{ site.twitter_username | remove_first: '@' | prepend: '@' }}">
-<meta name="twitter:title" content="{{ site.title }}">
-<meta name="twitter:description" content="{{ site.description }}">
-<meta name="twitter:image" content="{{ site.url }}/{{ site.share_image}}">
+<meta property="og:image:alt" content="{{ site.share_image_alt }}">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="{{ site.twitter_username | remove_first: '@' | prepend: '@' }}">
+<meta name="twitter:creator" content="{{ site.twitter_username | remove_first: '@' | prepend: '@' }}">
 <!-- End Social sharing meta tags -->
