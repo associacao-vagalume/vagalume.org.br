@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ev
 
-if [ $TRAVIS_BRANCH = 'produc' ]; then
+if [[ $TRAVIS_BRANCH == 'produc' ]]; then
   export JEKYLL_ENV=production
 fi
 
