@@ -19,35 +19,18 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav navbar-primary">
+        {% for item in site.data.menu.principal %}
         <li>
-          <a href="http://www.vagalume.org.br/interna/13/sobre-a-vaga-lume">Desafio</a>
+          <a href="{{ item.link | replace_first: '$antigo$', site.url_antigo }}">{{ item.nome }}</a>
         </li>
-        <li>
-          <a href="http://www.vagalume.org.br/interna/16/o-que-fazemos">O que fazemos</a>
-        </li>
-        <li>
-          <a href="http://vagalume.org.br/onde_atuamos">Localidades</a>
-        </li>
-        <li>
-          <a href="http://vagalume.org.br/interna/42/doe-empresas">Como Colaborar</a>
-        </li>
+        {% endfor %}
       </ul>
       <ul class="navbar-nav navbar-secondary">
+        {% for item in site.data.menu.secundario %}
         <li>
-          <a href="http://vagalume.org.br/interna/23/transparencia">Transparência</a>
+          <a href="{{ item.link | replace_first: '$antigo$', site.url_antigo }}">{{ item.nome }}</a>
         </li>
-        <li>
-          <a href="http://vagalume.org.br/interna/117/avaliacao-e-depoimentos">Histórias</a>
-        </li>
-        <li>
-          <a href="http://vagalume.org.br/dinamiconoticias">Notícias</a>
-        </li>
-        <li>
-          <a href="http://vagalume.org.br/interna/378/parceiros">Parcerias</a>
-        </li>
-        <li>
-          <a href="http://vagalume.org.br/contato">Contato</a>
-        </li>
+        {% endfor %}
       </ul>
       <a class="donate-now-expanded" href="http://doe.vagalume.org.br/includes/doar.php">Doe Agora</a>
     </div>

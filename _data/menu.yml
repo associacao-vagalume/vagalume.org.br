@@ -1,0 +1,20 @@
+# Os itens de menu da home estão definidos neste arquivo.
+#
+# O texto $antigo$ é substituido pela url do site antigo, que está
+# configurado no arquivo _config.yml.
+
+principal:
+  - nome: Quem Somos
+    link: $antigo$/interna/21/quem-somos
+  - nome: Propósito
+    link: $antigo$/interna/13/sobre-a-vaga-lume
+  - nome: Localidades
+    link: $antigo$/onde_atuamos
+
+secundario:
+  - nome: Transparência
+    link: $antigo$/interna/23/transparencia
+  - nome: Parcerias
+    link: $antigo$/interna/378/parceiros
+  - nome: Contato
+    link: $antigo$/contato

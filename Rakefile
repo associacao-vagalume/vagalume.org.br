@@ -6,17 +6,17 @@ require 'jekyll'
 require 'rspec/core/rake_task'
 
 config_files = '_config.yml,_config.staging.yml' unless ENV['JEKYLL_ENV'] == 'production'
+config = "--config #{config_files}" if config_files
 
 RSpec::Core::RakeTask.new(:spec)
 
 task :default => :build
 
-task :preview => [:clean, :build] do
-  jekyll('serve --watch')
+task :preview => [:clean] do
+  jekyll("serve --watch -H 0.0.0.0 #{config}")
 end
 
 task :build do
-  config = "--config #{config_files}" if config_files
   jekyll("build #{config}")
 end
 
