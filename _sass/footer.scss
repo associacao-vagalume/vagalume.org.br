@@ -2,24 +2,24 @@
   background-color: $orangey-yellow;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 1.25rem;
+  padding: 3rem 0;
 
-  & .top-button, & h3 {
+  h3 {
+    font-size: 2.5rem;
+  }
+
+  & .top-button {
     font-family: 'Amatic SC', cursive;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   & .container {
-    padding: 4.5rem 1.25rem 1.25rem;
     text-align: center;
 
     & > * + * {
       margin-top: 1.5rem;
     }
-  }
-
-  & h3 {
-    font-size: 2.5rem;
   }
 
   & address {
@@ -57,8 +57,12 @@
     height: 4rem;
     line-height: 4rem;
   }
+}
 
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
+  .footer {
+    padding: 6rem 0;
+
     & .container {
       text-align: left;
     }

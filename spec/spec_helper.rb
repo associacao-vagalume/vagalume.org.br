@@ -100,6 +100,7 @@ RSpec.configure do |config|
 =end
 end
 
+require 'nokogiri'
 require 'yaml'
 
 def load_config
@@ -108,4 +109,12 @@ def load_config
   YAML.load_file('_config.staging.yml').each {|k, v| config[k] = v } unless ENV['JEKYLL_ENV'] == 'production'
 
   config
+end
+
+def load_data(name)
+  YAML.load_file("_data/#{name}.yml")
+end
+
+def load_home
+  Nokogiri::HTML(File.open('_site/index.html'))
 end

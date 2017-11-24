@@ -1,0 +1,25 @@
+# Os parceiros devem ser agrupados por número de lâmpadas
+# Eles são apresentados na ordem adicionada aqui
+
+- lampadas: 3
+  lista:
+  - nome: Fundación MAPFRE
+    url_img: /assets/img/parceiros/mapfre.svg
+  - nome: Machado Meyer Advogados
+    url_img: /assets/img/parceiros/machado-meyer.svg
+  - nome: Dresser Rand
+    url_img: /assets/img/parceiros/dresser-rand.svg
+  - nome: Manserv
+    url_img: /assets/img/parceiros/manserv.svg
+- lampadas: 2
+  lista:
+  - nome: Azul
+    url_img: /assets/img/parceiros/azul.svg
+  - nome: Alupar - Taesa
+    url_img: /assets/img/parceiros/alupar-taesa.svg
+  - nome: Arredondar
+    url_img: /assets/img/parceiros/arredondar.svg
+  - nome: SO Energy International
+    url_img: /assets/img/parceiros/soenergy.svg
+  - nome: Mercur
+    url_img: /assets/img/parceiros/mercur.svg

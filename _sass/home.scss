@@ -1,11 +1,20 @@
 .home {
   margin-top: 5.5rem;
 
-  & .block1 {
-    background-image: url("/assets/img/home-block1.jpg");
+  & h3 {
+    color: $orangey-yellow;
+    font-size: 5rem;
+    margin-bottom: 3rem;
+  }
+
+  & > * {
+    padding: 6rem 0;
+  }
+
+  & .apresentacao {
+    background-image: url("/assets/img/home-apresentacao.jpg");
     background-size: cover;
     background-position: top center;
-    padding: 7.5rem 0 9.375rem;
 
     & .frame {
       border: 0.25rem solid $orangey-yellow;
@@ -16,12 +25,10 @@
       flex-direction: column;
 
       & h2 {
-        font-family: 'Amatic SC', cursive;
-        font-size: 6.875rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
         color: $white;
+        font-size: 6.875rem;
+        margin-bottom: 2rem;
+        text-align: center;
         white-space: nowrap;
       }
 
@@ -34,35 +41,109 @@
         }
       }
     }
+
     .modal-dialog {
       max-width: 70%;
     }
-  }
-  & .doar {
-    background-color: $orangey-yellow;
-    display: block;
-    margin: -2.625rem auto 0;
-    width: 30%;
-    text-decoration: none;
-    
-    & h3 {
-      color: $black;
-      font-family: 'Amatic SC', cursive;
-      font-size: 3.25rem;
-      font-weight: bold;
-      text-align: center;
-      text-transform: uppercase;
+
+    & .doar {
+      background-color: $orangey-yellow;
+      display: block;
+      margin: -2.2rem auto 0;
+      text-decoration: none;
+      width: 30%;
+      
+      & h3 {
+        color: $black;
+        font-size: 3.25rem;
+        line-height: 1.2;
+        margin: 0;
+        text-align: center;
+      }
     }
   }
 
+  & .parceiros {
+    background-color: $greyish-brown;
+
+    /* A regra * + * define o espaçamento vertical para todos os itens */
+    & * + * {
+      margin: 3em 0 0;
+    }
+    
+    & .grupo {
+      font-size: 1.5rem;
+
+      & > * {
+        font-size: 0.5rem;
+      }
+    }
+    /* fim do espaçamento vertical */
+
+    & .grupo, & ul {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      margin: initial 0;
+      padding: 0;
+    }
+
+    & .grupo-nivel, & .logo {
+      height: 3rem;
+      max-width: 10rem;
+    }
+
+    & li {
+      list-style: none;
+    }
+  }
+
+  /* Mobile first, onde as exceções estão definidas para telas maiores */
+  @media (min-width: 768px) {
+    .parceiros {
+      & .grupo, & ul {
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      & .grupo * {
+        margin-top: 0;
+      }
+
+      & .logo {
+        height: 4rem;
+      }
+
+      & .grupo-nivel {
+        min-width: 6rem;
+      }
+
+      & ul {
+        flex-grow: 1;
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  /* Desktop first, onde as exceções estão definidas para telas menores */
   @media (max-width: 767px) {
     margin-top: 0;
 
-    .block1 {
+    & > * {
+      padding: 3rem 0;
+    }
+
+    & h3 {
+      font-size: 2.5rem;
+      text-align: center;
+    }
+
+    .apresentacao {
 
       & .frame {
         & h2 {
           font-size: 4.125rem;
+
           & span:before {
             content: "\a";
             white-space: pre;
