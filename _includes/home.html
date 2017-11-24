@@ -38,7 +38,7 @@
       <h3>Parceiros</h3>
       {% for grupo in site.data.parceiros %}
         <div class="grupo">
-          <img class="grupo-nivel" src="/assets/img/parceiros/{{ grupo.lampadas }}luz.svg" alt="Parceiro {{ grupo.lampadas | pluralize: 'luz', 'luzes' }}">
+          <img class="grupo-nivel" src="/assets/img/parceiros/{{ grupo.lampadas }}-lampada.svg" alt="Parceiro {{ grupo.lampadas | pluralize: 'lâmpada', 'lâmpadas' }}">
           <ul>
             {% for parceiro in grupo['lista'] %}
               <li>
