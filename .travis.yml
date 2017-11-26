@@ -15,7 +15,7 @@ before_deploy:
 deploy:
   provider: script
   skip_cleanup: true
-  script: rsync -r --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ staging18@staging.vagalume.org.br:public_html
+  script: rsync -a --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ staging18@staging.vagalume.org.br:public_html/
   on:
     branch: master
     repo: associacao-vagalume/vagalume.org.br
