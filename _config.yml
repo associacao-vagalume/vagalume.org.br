@@ -1,35 +1,41 @@
+---
 title: Vaga Lume - Empoderando crianças na Amazônia
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 description: A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
-             e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
+  e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
 keywords:
-  - Vaga Lume
-  - vagalume
-  - leitura
-  - crianças
-  - Amazônia
-  - mediação
-  - cultura local
-  - escuta
-  - empoderamento
-  - transformação social
-  - bibliotecas
-
+- Vaga Lume
+- vagalume
+- leitura
+- crianças
+- Amazônia
+- mediação
+- cultura local
+- escuta
+- empoderamento
+- transformação social
+- bibliotecas
 url: http://vagalume.org.br
 url_antigo: http://arquivo.vagalume.org.br
 twitter_username: VagaLume_ONG
 share_image: assets/img/fb_op1.png
 share_image_alt: Grupo de leitura com crianças da Amazônia
-
 plugins:
-  - liquid_pluralize
-
+- liquid_pluralize
 exclude:
-  - deploy_rsa.enc
-  - Gemfile
-  - Gemfile.lock
-  - Rakefile
-  - README.md
-  - spec
-  - vendor
+- deploy_rsa.enc
+- Gemfile
+- Gemfile.lock
+- Rakefile
+- README.md
+- spec
+- vendor
 sass:
   style: compressed
