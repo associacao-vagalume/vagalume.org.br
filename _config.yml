@@ -30,11 +30,11 @@ share_image_alt: Grupo de leitura com crianças da Amazônia
 plugins:
 - liquid_pluralize
 exclude:
-- deploy_rsa.enc
-- Gemfile
-- Gemfile.lock
+- deploy_rsa*
+- Gemfile*
 - Rakefile
 - README.md
+- script
 - spec
 - vendor
 sass:

@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# Executa a compilação e os testes do site
+# Quando estiver no branch de release, compila o site para o ambiente
+# de produção
+
+set -e
+
+if [[ $TRAVIS_BRANCH == 'release' ]]; then
+  export JEKYLL_ENV=production
+fi
+
+bundle exec rake acceptance

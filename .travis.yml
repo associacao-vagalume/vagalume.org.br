@@ -1,21 +1,17 @@
+# Configurações do ambiente
 language: ruby
-script: "./script/cibuild"
+sudo: false
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-sudo: false
-addons:
-  ssh_known_hosts: staging.vagalume.org.br
-before_deploy:
-- openssl aes-256-cbc -K $encrypted_74737e894ad9_key -iv $encrypted_74737e894ad9_iv
-  -in deploy_rsa.enc -out deploy_rsa -d
+
+branches:
+  only:
+  - master
+
+# Build e testes
+before_script:
 - eval "$(ssh-agent -s)"
-- chmod 600 deploy_rsa
-- ssh-add deploy_rsa
-deploy:
-  provider: script
-  skip_cleanup: true
-  script: rsync -a --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ staging18@staging.vagalume.org.br:public_html/
-  on:
-    branch: master
-    repo: associacao-vagalume/vagalume.org.br
+- ./script/0.key-install
+- ./script/0.set-git-ssh
+script: ./script/1.build-and-test && ./script/2.store-binaries

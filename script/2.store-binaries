@@ -1,0 +1,69 @@
+#!/usr/bin/env bash
+# Armazena o site gerado no branch 'staging'
+
+set -e
+
+if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]
+then
+  echo "Não armazena o artefato em pull requests"
+  exit 0
+fi
+
+# Move site gerado para outro diretório para não conflitar com staging
+# quando fizermos o checkout
+COMMIT_HASH=$(git log -1 --format="%h")
+COMMIT_INFO=$(git log -1)
+mv _site _site_novo
+
+# Captura número da versão das tags, que está no formato v[num versao].[ddmmYYYY]
+
+# Passo necessário para poder baixar staging, pois repo foi clonado usando --branch
+# Veja resposta no [Stack Overflow](https://stackoverflow.com/a/25941875/83284)
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"
+git fetch origin staging --tags
+git checkout staging
+
+if [[ "$(git describe --abbrev=0 2>/dev/null || false)" =~ ^v([0-9]+)\. ]]
+then
+  NUMERO_VERSAO=$(expr "${BASH_REMATCH[1]}" + 1)
+else
+  NUMERO_VERSAO=1
+fi
+
+VERSAO="v${NUMERO_VERSAO}.$(date +%d%m%Y)"
+
+# Queremos substituir completamente o conteúdo de `_site` por `_site_novo`,
+# por isso fazemos esse mecanismo de apagar `_site` e renomear `_site_novo`.
+#
+# Como `_site_novo` não tem um arquivo VERSAO.txt, copiamos do atual. Assim
+# temos certeza se houve alguma alteração nos arquivos ou não.
+mv _site/VERSAO.txt _site_novo/
+rm -rf _site
+mv _site_novo _site
+git add -A _site
+
+# Termina o script caso não haja diferença entre as versões
+if git diff --cached --exit-code
+then
+  echo "Não há alterações no site"
+  exit 0
+fi
+
+# Atualiza versão do site gerado
+echo "$VERSAO" > _site/VERSAO.txt
+git add _site/VERSAO.txt
+
+git commit \
+  -m "Armazena versão ${VERSAO} do site" \
+  -m "Esta versão foi gerada a partir do commit ${COMMIT_HASH}" \
+  -m "${COMMIT_INFO}"
+
+# Adiciona o número da versão aos arquivos
+git tag -a "$VERSAO" \
+  -m "Release automático feito pelo Travis" \
+  -m "Este release foi gerado a partir do commit ${COMMIT_HASH}" \
+  -m "${COMMIT_INFO}"
+
+# Atualiza o repositório
+git push origin "$VERSAO"
+git push origin staging

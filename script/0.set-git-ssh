@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Troca a url do remoto para utilizar o ssh
+# Dessa maneira é possível utilizar a chave configurada neste repositório
+
+set -e
+
+if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]
+then
+  echo "Não utiliza chaves ssh em pull requests"
+  exit 0
+fi
+
+GIT_URL=$(git remote get-url origin)
+git remote set-url origin ${GIT_URL/https:\/\/github.com\//git@github.com:}
