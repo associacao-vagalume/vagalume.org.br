@@ -106,8 +106,6 @@ require 'yaml'
 def load_config
   config = YAML.load_file('_config.yml')
 
-  YAML.load_file('_config.staging.yml').each {|k, v| config[k] = v } unless ENV['JEKYLL_ENV'] == 'production'
-
   config
 end
 

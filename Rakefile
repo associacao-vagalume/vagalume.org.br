@@ -5,21 +5,21 @@ require 'html-proofer'
 require 'jekyll'
 require 'rspec/core/rake_task'
 
-config_files = '_config.yml,_config.staging.yml' unless ENV['JEKYLL_ENV'] == 'production'
-config = "--config #{config_files}" if config_files
-
-RSpec::Core::RakeTask.new(:spec)
-
 task :default => :build
 
+task :clean do
+  sh 'rm -rf _site'
+end
+
+task :build => [:clean] do
+  jekyll 'build'
+end
+
 task :preview => [:clean] do
-  jekyll("serve --watch -H 0.0.0.0 #{config}")
+  jekyll 'serve --watch -H 0.0.0.0'
 end
 
-task :build do
-  jekyll("build #{config}")
-end
-
+# Testa com o html-proofer se o html está bem formado
 task :test_html do
   options = {
     :assume_extension => true,
@@ -27,31 +27,25 @@ task :test_html do
     :disable_external => true
   }
 
-  HTMLProofer.check_directory("./_site", options).run
+  HTMLProofer.check_directory('./_site', options).run
 end
 
-task :test => [:clean, :build, :test_html, :spec] do
-  Dir.glob('./test/*_test.rb').each { |file| require file}
-end
+# Executa os testes unitários com RSpec
+RSpec::Core::RakeTask.new(:spec)
 
+# Executa o teste de html e os testes unitários
+task :test => [:build, :test_html, :spec]
+
+# Testa com o html-proofer se os links estão válidos
 task :acceptance => [:test] do
   options = {
     :assume_extension => true,
     :checks_to_ignore => ['ScriptCheck', 'ImageCheck']
   }
 
-  HTMLProofer.check_directory("./_site", options).run
-end
-
-task :clean do
-  cleanup
+  HTMLProofer.check_directory('./_site', options).run
 end
 
 def jekyll(directives = '')
-  sh 'jekyll ' + directives
-end
-
-# remove generated site
-def cleanup
-  sh 'rm -rf _site'
+  sh "jekyll #{directives}"
 end

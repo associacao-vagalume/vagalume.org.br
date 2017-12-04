@@ -4,16 +4,16 @@ require 'yaml'
 
 describe 'Meta tags' do
 
-  context 'with the config file' do
+  context 'quando o arquivo _config.yml está configurado' do
     doc = Nokogiri::HTML(File.open('_site/index.html'))
     config = load_config
 
     {
       robots: 'index, follow',
-      description: config['description'],
-      keywords: config['keywords'].join(', ')
+      description: config.fetch('description'),
+      keywords: config.fetch('keywords').join(', ')
     }.each do |name, content|
-      it %Q{defines the tag <meta name="#{name}">} do
+      it %Q{define a tag <meta name="#{name}"> dentro de <head>} do
         tags = doc.xpath(%Q{/html/head/meta[@name="#{name}"]})
   
         expect(tags.size).to eq(1)
@@ -21,11 +21,11 @@ describe 'Meta tags' do
       end
     end
 
-    it 'sets the <title> in the <head> tag' do
+    it 'define a tag <title> dentro de <head>' do
       elements = doc.xpath('/html/head/title')
     
       expect(elements.size).to eq(1)
-      expect(elements[0].content).to eq(config['title'])
+      expect(elements[0].content).to eq(config.fetch('title'))
     end
 
   end

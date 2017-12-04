@@ -6,8 +6,8 @@ describe 'Menu' do
 
   context 'quando os itens do menu estão definidos em data/menu.yml' do
     let(:doc) { Nokogiri::HTML(File.open('_site/index.html')) }
-    let(:menu_data) { YAML.load_file('_data/menu.yml') }
-    let(:url_antigo) { load_config['url_antigo'] }
+    let(:menu_data) { load_data('menu') }
+    let(:url_antigo) { load_config.fetch('url_antigo') }
 
     shared_examples 'menu' do |class_name, menu_name|
       subject do
