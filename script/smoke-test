@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+# Verifica se o deploy foi bem sucedido
+# Faz isso vendo se o site contém a descrição correta e se o arquivo
+# VERSAO.txt tem a versão do release
+
+case "$TRAVIS_BRANCH" in
+  "staging")
+    URL=staging.vagalume.org.br
+    ;;
+  "release")
+    URL=vagalume4.tempsite.ws
+    ;;
+  *)
+    echo "Não é branch de release. Pulando smoke tests."
+    exit 0
+    ;;
+esac
+
+if [[ -z "$VERSAO" ]]
+then
+  echo "Versão não especificada. Não é possível realizar o smoke test."
+  exit 1;
+fi
+
+. script/smoke.sh
+
+# URL para testar
+smoke_url_prefix $URL
+
+# Testes
+smoke_url_ok "/"
+smoke_assert_body "A Vaga Lume é uma associação sem fins lucrativos que \
+promove a leitura e a gestão de bibliotecas comunitárias como espaço para \
+compartilhar saberes."
+
+smoke_url_ok "/VERSAO.txt"
+smoke_assert_body "^$VERSAO$"
+
+smoke_report || exit 1

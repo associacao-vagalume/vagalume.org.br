@@ -1,0 +1,34 @@
+# Configurações do ambiente
+language: ruby
+sudo: false
+addons:
+  ssh_known_hosts:
+  - staging.vagalume.org.br
+  - vagalume4.tempsite.ws
+branches:
+  only:
+  - staging
+  - release
+install: true
+
+# Build e testes
+before_script:
+- eval "$(ssh-agent -s)"
+- ./script/key-install
+script: ./script/build
+
+# Deploy para staging ou produção via rsync
+before_deploy:
+- VERSAO=$(git describe --exact-match) && export VERSAO
+deploy:
+- provider: script
+  script: ./script/deploy
+  on:
+    all_branches: true
+after_deploy:
+# Realiza o smoke test para garantir que o staging está no ar após o deploy
+# Normalmente, uma falha nesse passo não falha o build, mas estamos usando o
+# travis_terminate para isso. Esse comando não é documentado, mas foi sugerido
+# pelos mantenedores do travis aqui
+# https://github.com/travis-ci/travis-ci/issues/1574#issuecomment-136880024
+- ./script/smoke-test || travis_terminate 1

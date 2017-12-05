@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+# Faz o deploy do site para o ambiente especificado
+# O deploy só acontece se o branch tiver uma tag associada
+
+set -e
+
+case "$TRAVIS_BRANCH" in
+  "staging")
+    SERVER=staging18@staging.vagalume.org.br
+    ;;
+  "release")
+    SERVER=vagalume4@vagalume4.tempsite.ws
+    ;;
+  *)
+    echo "Não é branch de release. Pulando deploy."
+    exit 0
+    ;;
+esac
+
+if [[ -z "$VERSAO" ]]
+then
+  echo "Versão não especificada. Não é possível fazer o deploy."
+  exit 1;
+fi
+
+echo "$VERSAO" > _site/VERSAO.txt
+
+rsync -a --delete-after --quiet $TRAVIS_BUILD_DIR/_site/ $SERVER:public_html/
