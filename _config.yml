@@ -31,6 +31,7 @@ plugins:
 - liquid_pluralize
 exclude:
 - deploy_rsa*
+- doc
 - Gemfile*
 - Rakefile
 - README.md
