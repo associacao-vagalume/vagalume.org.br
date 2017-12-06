@@ -46,9 +46,9 @@ Os outros arquivos do repositório estão aqui para automatizar a instalação
 para desenvolvimento e para validar e instalar o site no provedor web.
 
     .
-    ├── doc/             - documentação
-    ├── script/          - scripts de automação da pipeline
-    ├── spec/            - testes escritos para RSpec
+    ├── _doc/             - documentação
+    ├── _script/          - scripts de automação da pipeline
+    ├── _spec/            - testes escritos para RSpec
     ├── .adr-dir         - configuração da ferramenta adr-tool
     ├── .gitignore       - arquivos que são ignorados neste repositório
     ├── .rspec           - configuração da ferramenta de testes RSpec
@@ -67,7 +67,7 @@ Siga as instruções descritas em [INSTALL.md](INSTALL.md)
 
 ## Decisões de arquitetura
 
-Saiba mais sobre as decisões de arquitetura tomadas neste projeto em [doc/decisoes/README.md](doc/decisoes/README.md)
+Saiba mais sobre as decisões de arquitetura tomadas neste projeto em [_doc/decisoes/README.md](doc/decisoes/README.md)
 
 ## Executando os testes
 

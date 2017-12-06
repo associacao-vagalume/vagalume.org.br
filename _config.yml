@@ -32,14 +32,12 @@ plugins:
 - jekyll-sitemap
 - liquid_pluralize
 exclude:
+- _*
 - deploy_rsa*
-- doc
 - Gemfile*
 - INSTALL.md
 - Rakefile
 - README.md
-- script
-- spec
 - vendor
 include:
 - .htaccess

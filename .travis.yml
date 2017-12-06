@@ -12,6 +12,6 @@ branches:
 # Build e testes
 before_script:
 - eval "$(ssh-agent -s)"
-- ./script/0.key-install
-- ./script/0.set-git-ssh
-script: ./script/1.build-and-test && ./script/2.store-binaries
+- ./_script/0.key-install
+- ./_script/0.set-git-ssh
+script: ./_script/1.build-and-test && ./_script/2.store-binaries

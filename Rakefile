@@ -31,7 +31,9 @@ task :test_html do
 end
 
 # Executa os testes unitários com RSpec
-RSpec::Core::RakeTask.new(:spec)
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.pattern = '_' + t.pattern
+end
 
 # Executa o teste de html e os testes unitários
 task :test => [:build, :test_html, :spec]
