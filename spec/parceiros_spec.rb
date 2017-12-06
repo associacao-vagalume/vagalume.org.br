@@ -1,5 +1,4 @@
 require 'rspec'
-require 'yaml'
 
 describe 'Parceiros' do
 

@@ -28,6 +28,8 @@ twitter_username: VagaLume_ONG
 share_image: assets/img/fb_op1.png
 share_image_alt: Grupo de leitura com crianças da Amazônia
 plugins:
+- jekyll-last-modified-at
+- jekyll-sitemap
 - liquid_pluralize
 exclude:
 - deploy_rsa*

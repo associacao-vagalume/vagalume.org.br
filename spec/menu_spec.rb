@@ -1,11 +1,9 @@
 require 'rspec'
-require 'nokogiri'
-require 'yaml'
 
 describe 'Menu' do
 
   context 'quando os itens do menu estão definidos em data/menu.yml' do
-    let(:doc) { Nokogiri::HTML(File.open('_site/index.html')) }
+    let(:doc) { load_home }
     let(:menu_data) { load_data('menu') }
     let(:url_antigo) { load_config.fetch('url_antigo') }
 

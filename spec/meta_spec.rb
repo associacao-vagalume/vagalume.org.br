@@ -1,11 +1,9 @@
 require 'rspec'
-require 'nokogiri'
-require 'yaml'
 
 describe 'Meta tags' do
 
   context 'quando o arquivo _config.yml está configurado' do
-    doc = Nokogiri::HTML(File.open('_site/index.html'))
+    doc = load_home
     config = load_config
 
     {
