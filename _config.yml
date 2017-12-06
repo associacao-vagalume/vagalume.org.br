@@ -33,10 +33,13 @@ exclude:
 - deploy_rsa*
 - doc
 - Gemfile*
+- INSTALL.md
 - Rakefile
 - README.md
 - script
 - spec
 - vendor
+include:
+- .htaccess
 sass:
   style: compressed
