@@ -1,0 +1,12 @@
+.proposito {
+  background-image: url("/assets/img/home-proposito.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-color: $black;
+
+  @media (min-width: 768px) {
+    & p {
+      padding: 0 9rem;
+    }
+  }
+}

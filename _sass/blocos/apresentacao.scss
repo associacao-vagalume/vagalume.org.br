@@ -1,0 +1,63 @@
+.apresentacao {
+  background-image: url("/assets/img/home-apresentacao.jpg");
+  background-size: cover;
+  background-position: top center;
+
+  & .frame {
+    border: 0.25rem solid $orangey-yellow;
+    height: 27.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & h2 {
+      color: $white;
+      font-size: 6.875rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      white-space: nowrap;
+    }
+
+    & .play {
+      width: 7.375rem;
+      height: 7.375rem;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .modal-dialog {
+    max-width: 70%;
+  }
+
+  & .doar {
+    margin: -1.5em auto 0;
+  }
+
+  @media (min-width: 768px) {
+    & .doar {
+      margin: -1.25em auto 0;
+    }
+  }
+
+  @media (max-width: 767px) {
+    & .frame {
+      & h2 {
+        font-size: 4.125rem;
+
+        & span:before {
+          content: "\a";
+          white-space: pre;
+        }
+      }
+
+      img.play {
+        height: 4.25rem;
+        width: 4.25rem;
+      }
+    }
+  }
+}

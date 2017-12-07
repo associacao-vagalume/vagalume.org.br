@@ -9,15 +9,17 @@ $orangey-yellow: #fdb913;
 $umber: #aa6a01;
 $white: #fff;
 
+body {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
 .container {
   max-width: 58.75rem;
 }
 
-.content {
-  background-color: #ddd;
-}
-
-h2, h3 {
+h2, h3, h4 {
   font-family: 'Amatic SC', cursive;
   font-weight: bold;
   line-height: 0.8;
@@ -26,4 +28,13 @@ h2, h3 {
 
 h2 {
   font-size: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 2.375rem;
+  }
+  .conteudo {
+    margin-top: 5.5rem;
+  }
 }

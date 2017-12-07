@@ -1,126 +1,52 @@
+@import 'blocos/apresentacao';
+@import 'blocos/proposito';
+@import 'blocos/parceiros';
+
 .home {
-  margin-top: 5.5rem;
+
+  & p {
+    margin: 1em 0 3em;
+    color: $white;
+  }
+
+  & .botao {
+    display: block;
+    text-decoration: none;
+
+    & > * {
+      background-color: $orangey-yellow;
+      color: $black;
+      display: inline-block;
+      font-size: 1.75rem;
+      line-height: 2;
+      margin: 0;
+      padding: 0 1.5em;
+    }
+  }
 
   & h3 {
-    color: $orangey-yellow;
-    font-size: 5rem;
-    margin-bottom: 3rem;
+    color: $white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
 
   & > * {
     padding: 6rem 0;
   }
 
-  & .apresentacao {
-    background-image: url("/assets/img/home-apresentacao.jpg");
-    background-size: cover;
-    background-position: top center;
-
-    & .frame {
-      border: 0.25rem solid $orangey-yellow;
-      height: 27.5rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-
-      & h2 {
-        color: $white;
-        font-size: 6.875rem;
-        margin-bottom: 2rem;
-        text-align: center;
-        white-space: nowrap;
-      }
-
-      & .play {
-        width: 7.375rem;
-        height: 7.375rem;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-    }
-
-    .modal-dialog {
-      max-width: 70%;
-    }
-
-    & .doar {
-      background-color: $orangey-yellow;
-      display: block;
-      margin: -2.2rem auto 0;
-      text-decoration: none;
-      width: 30%;
-      
-      & h3 {
-        color: $black;
-        font-size: 3.25rem;
-        line-height: 1.2;
-        margin: 0;
-        text-align: center;
-      }
-    }
-  }
-
-  & .parceiros {
-    background-color: $greyish-brown;
-
-    /* A regra * + * define o espaçamento vertical para todos os itens */
-    & * + * {
-      margin: 3em 0 0;
-    }
-    
-    & .grupo {
-      font-size: 1.5rem;
-
-      & > * {
-        font-size: 0.5rem;
-      }
-    }
-    /* fim do espaçamento vertical */
-
-    & .grupo, & ul {
-      align-items: center;
-      display: flex;
-      flex-direction: column;
-      margin: initial 0;
-      padding: 0;
-    }
-
-    & .grupo-nivel, & .logo {
-      height: 3rem;
-      max-width: 10rem;
-    }
-
-    & li {
-      list-style: none;
-    }
-  }
-
   /* Mobile first, onde as exceções estão definidas para telas maiores */
   @media (min-width: 768px) {
-    .parceiros {
-      & .grupo, & ul {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+    & h3 {
+      color: $orangey-yellow;
+      font-size: 5rem;
+      margin-bottom: 3rem;
+    }
 
-      & .grupo * {
-        margin-top: 0;
-      }
+    & .botao {
 
-      & .logo {
-        height: 4rem;
-      }
-
-      & .grupo-nivel {
-        min-width: 6rem;
-      }
-
-      & ul {
-        flex-grow: 1;
-        margin-left: 3rem;
+      & > * {
+        line-height: 1.7;
+        font-size: 3.25rem;
       }
     }
   }
@@ -131,40 +57,6 @@
 
     & > * {
       padding: 3rem 0;
-    }
-
-    & h3 {
-      font-size: 2.5rem;
-      text-align: center;
-    }
-
-    .apresentacao {
-
-      & .frame {
-        & h2 {
-          font-size: 4.125rem;
-
-          & span:before {
-            content: "\a";
-            white-space: pre;
-          }
-        }
-      
-        img.play {
-          height: 4.25rem;
-          width: 4.25rem;
-        }
-      }
-
-      & .doar {
-        margin: -2.125rem auto 0;
-        width: 90%;
-
-        & h3 {
-          font-size: 2.25rem;
-          line-height: 1.8;
-        }
-      }
     }
   }
 }

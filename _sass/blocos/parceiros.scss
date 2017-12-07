@@ -1,0 +1,62 @@
+.parceiros {
+  background-color: $greyish-brown;
+
+  & h3 {
+    color: $orangey-yellow;
+  }
+
+  /* A regra * + * define o espaçamento vertical para todos os itens */
+  & * + * {
+    margin: 3em 0 0;
+  }
+
+  & .grupo {
+    font-size: 1.5rem;
+
+    & > * {
+      font-size: 0.5rem;
+    }
+  }
+  /* fim do espaçamento vertical */
+
+  & .grupo, & ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: initial 0;
+    padding: 0;
+  }
+
+  & .grupo-nivel, & .logo {
+    height: 3rem;
+    max-width: 10rem;
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  @media (min-width: 768px) {
+    & .grupo, & ul {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    & .grupo * {
+      margin-top: 0;
+    }
+
+    & .logo {
+      height: 4rem;
+    }
+
+    & .grupo-nivel {
+      min-width: 6rem;
+    }
+
+    & ul {
+      flex-grow: 1;
+      margin-left: 3rem;
+    }
+  }
+}
