@@ -4,9 +4,17 @@
   background-position: top center;
   background-color: $black;
 
+  & .botao h4 {
+    padding: 0 1rem;
+  }
+
   @media (min-width: 768px) {
     & p {
       padding: 0 9rem;
+    }
+
+    & .botao h4 {
+      padding: 0 4rem;
     }
   }
 }

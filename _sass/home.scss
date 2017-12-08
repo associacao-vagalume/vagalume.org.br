@@ -20,7 +20,6 @@
       font-size: 1.75rem;
       line-height: 2;
       margin: 0;
-      padding: 0 1.5em;
     }
   }
 
@@ -31,11 +30,15 @@
   }
 
   & > * {
-    padding: 6rem 0;
+    padding: 3rem 0;
   }
 
   /* Mobile first, onde as exceções estão definidas para telas maiores */
   @media (min-width: 768px) {
+    & > * {
+      padding: 6rem 0;
+    }
+    
     & h3 {
       color: $orangey-yellow;
       font-size: 5rem;
@@ -48,15 +51,6 @@
         line-height: 1.7;
         font-size: 3.25rem;
       }
-    }
-  }
-
-  /* Desktop first, onde as exceções estão definidas para telas menores */
-  @media (max-width: 767px) {
-    margin-top: 0;
-
-    & > * {
-      padding: 3rem 0;
     }
   }
 }

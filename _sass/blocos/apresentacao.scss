@@ -35,6 +35,10 @@
 
   & .doar {
     margin: -1.5em auto 0;
+
+    & h3 {
+      padding: 0 4rem;
+    }
   }
 
   @media (min-width: 768px) {
