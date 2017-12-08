@@ -6,12 +6,6 @@
     font-size: 2.5rem;
   }
 
-  & .top-button {
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-
   & .container {
     text-align: center;
 
@@ -51,9 +45,13 @@
     border: solid 0.1875rem $white;
     color: $white;
     display: block;
-    font-size: 1.75rem;
-    height: 4rem;
-    line-height: 4rem;
+
+    & > h4 {
+      font-size: 1.75rem;
+      height: 4rem;
+      line-height: 4rem;
+      margin: 0;
+    }
   }
 }
 
