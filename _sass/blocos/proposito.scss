@@ -1,8 +1,8 @@
 .proposito {
-  background-image: url("/assets/img/home-proposito.jpg");
-  background-size: cover;
-  background-position: top center;
   background-color: $black;
+  background-image: url("/assets/img/home-proposito.jpg");
+  background-position: -15rem 0;
+  background-size: cover;
 
   & .botao h4 {
     padding: 0 1rem;

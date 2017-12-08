@@ -1,0 +1,75 @@
+.o-que-fazemos {
+  background-color: #858585;
+  background-image: url("/assets/img/home-o-que-fazemos.jpg");
+  background-position: -3rem -3rem;
+  background-size: auto 120%;
+
+  @media (min-width: 768px) {
+    background-position: top center;
+    background-size: cover;
+    font-size: 1.5rem;
+    text-align: left;
+
+    & p {
+      width: 20em;
+      margin-left: 0;
+    }
+  }
+}
+
+.estatisticas {
+  font-size: 1.375rem;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  width: 12em;
+
+  &:before, &:after {
+    content: "";
+    display: block;
+    width: 8.25rem;
+    margin: 0 auto;
+    border-bottom: solid 0.1875rem $orangey-yellow;
+  }
+
+  &:before {
+    margin-bottom: 1.5rem;
+  }
+
+  &:after {
+    margin-top: 1.5rem;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  & .numero {
+    color: $orangey-yellow;
+    font-size: 2.5em;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-right: 0.5rem;
+  }
+
+  & .descricao {
+    color: $white;
+    display: inline-block;
+    line-height: 1;
+    width: 6em;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 2.5rem;
+    margin-left: 0;
+
+    &:before {
+      margin-left: 0;
+    }
+
+    &:after {
+      display: none;
+    }
+
+  }
+}

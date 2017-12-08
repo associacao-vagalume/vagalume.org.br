@@ -1,11 +1,7 @@
-@import 'blocos/apresentacao';
-@import 'blocos/proposito';
-@import 'blocos/parceiros';
-
 .home {
 
   & p {
-    margin: 1em 0 3em;
+    margin: 1.5em auto;
     color: $white;
   }
 
@@ -30,7 +26,12 @@
   }
 
   & > * {
-    padding: 3rem 0;
+    padding: 4rem 1rem;
+  }
+
+  & > .apresentacao {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /* Mobile first, onde as exceções estão definidas para telas maiores */
@@ -54,3 +55,8 @@
     }
   }
 }
+
+@import 'blocos/apresentacao';
+@import 'blocos/proposito';
+@import 'blocos/oquefazemos';
+@import 'blocos/parceiros';
