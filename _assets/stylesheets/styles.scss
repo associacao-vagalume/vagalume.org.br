@@ -1,8 +1,7 @@
----
----
-
-@import 'variaveis';
+@import 'base';
+@import 'nav';
 @import 'home';
+@import 'blocos/apresentacao';
 @import 'blocos/proposito';
 @import 'blocos/oquefazemos';
 @import 'blocos/parceiros';

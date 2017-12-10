@@ -10,3 +10,4 @@ neste repositório.
 * [2. Utilizar Jekyll para construir a home da Vaga Lume](0002-utilizar-jekyll-para-construir-a-home-da-vaga-lume.md)
 * [3. Uso do Travis para publicar o site](0003-uso-do-travis-para-publicar-o-site.md)
 * [4. Usar arquivos de configuração para itens da página](0004-usar-arquivos-de-configuracao-para-itens-da-pagina.md)
+* [5. utiliza o plugin jekyll-assets](0005-utiliza-o-plugin-jekyll-assets.md)

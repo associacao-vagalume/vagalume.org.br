@@ -1,5 +1,7 @@
 _site
 .DS_Store
 .jekyll-metadata
+.asset-cache/
 .sass-cache/
 .vscode
+

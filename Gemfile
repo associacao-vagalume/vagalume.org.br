@@ -6,6 +6,7 @@ source 'https://rubygems.org' do
   gem 'liquid_pluralize'
   gem 'rake'
   gem 'rspec'
+  gem 'jekyll-assets'
   gem 'jekyll-last-modified-at'
   gem 'jekyll-sitemap'
 end
