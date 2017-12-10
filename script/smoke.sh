@@ -17,6 +17,7 @@ SMOKE_TESTS_RUN=0
 SMOKE_URL_PREFIX=""
 SMOKE_HEADER_HOST=""
 
+LOCATION_OPT="--location"
 
 if [ -z $DEBUG ]; then
   VERBOSE_LEVEL="--silent"
@@ -49,6 +50,10 @@ smoke_form_ok() {
 
     smoke_form "$URL" "$FORMDATA"
     smoke_assert_code_ok
+}
+
+smoke_no_follow() {
+  LOCATION_OPT=""
 }
 
 smoke_report() {
@@ -181,7 +186,7 @@ _smoke_success() {
 
 ## Curl helpers
 _curl() {
-  local opt=(--cookie $SMOKE_CURL_COOKIE_JAR --cookie-jar $SMOKE_CURL_COOKIE_JAR --location --dump-header $SMOKE_CURL_HEADERS $VERBOSE_LEVEL)
+  local opt=(--cookie $SMOKE_CURL_COOKIE_JAR --cookie-jar $SMOKE_CURL_COOKIE_JAR $LOCATION_OPT --dump-header $SMOKE_CURL_HEADERS $VERBOSE_LEVEL)
   if [[ -n "$SMOKE_HEADER_HOST" ]]
   then
     opt+=(-H "Host: $SMOKE_HEADER_HOST")

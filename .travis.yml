@@ -19,7 +19,7 @@ script: ./script/build
 
 # Deploy para staging ou produção via rsync
 before_deploy:
-- VERSAO=$(git describe --exact-match) && export VERSAO
+- VERSAO=$(git describe --abbrev=0) && export VERSAO
 deploy:
 - provider: script
   script: ./script/deploy

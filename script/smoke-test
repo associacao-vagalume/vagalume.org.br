@@ -8,7 +8,7 @@ case "$TRAVIS_BRANCH" in
     URL=staging.vagalume.org.br
     ;;
   "release")
-    URL=vagalume4.tempsite.ws
+    URL=vagalume.org.br
     ;;
   *)
     echo "Não é branch de release. Pulando smoke tests."
@@ -27,6 +27,8 @@ fi
 # URL para testar
 smoke_url_prefix $URL
 
+smoke_no_follow
+
 # Testes
 smoke_url_ok "/"
 smoke_assert_body "A Vaga Lume é uma associação sem fins lucrativos que \
@@ -35,5 +37,12 @@ compartilhar saberes."
 
 smoke_url_ok "/VERSAO.txt"
 smoke_assert_body "^$VERSAO$"
+smoke_assert_headers "^Pragma: no-cache"
+smoke_assert_headers "^Cache-Control:.*max-age=0"
+smoke_assert_headers "^Expires:.*1984"
+
+smoke_url "/interna/21/quem-somos"
+smoke_assert_code 302
+smoke_assert_headers "^Location:.*arquivo\.vagalume"
 
 smoke_report || exit 1
