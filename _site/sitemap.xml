@@ -2,6 +2,10 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://vagalume.org.br/</loc>
-<lastmod>2017-12-08T20:24:41+00:00</lastmod>
+<lastmod>2017-12-11T17:59:44+00:00</lastmod>
+</url>
+<url>
+<loc>http://vagalume.org.br/proposito/</loc>
+<lastmod>2017-12-11T17:59:44+00:00</lastmod>
 </url>
 </urlset>
