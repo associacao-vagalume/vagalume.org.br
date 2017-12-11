@@ -45,7 +45,7 @@ $brown: #aa6a01;
 
   & h2 {
     color: $brown;
-    font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+    font-family: $font-opensans;
     font-size: 2.125rem;
     font-weight: bold;
     margin-bottom: 1em;
@@ -55,7 +55,7 @@ $brown: #aa6a01;
   & .destaque {
     color: $white;
     display: block;
-    font-family: 'Amatic SC', 'Arial Narrow', sans-serif;
+    font-family: $font-amatic;
     font-size: 2.25rem;
     font-weight: 400;
   }

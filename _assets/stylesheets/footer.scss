@@ -45,13 +45,10 @@
     border: solid 0.1875rem $white;
     color: $white;
     display: block;
-
-    & > h4 {
-      font-size: 1.75rem;
-      height: 4rem;
-      line-height: 4rem;
-      margin: 0;
-    }
+    font-family: $font-amatic;
+    font-size: 1.75rem;
+    line-height: 4rem;
+    text-transform: uppercase;
   }
 }
 

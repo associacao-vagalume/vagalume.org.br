@@ -9,8 +9,11 @@ $orangey-yellow: #fdb913;
 $umber: #aa6a01;
 $white: #fff;
 
+$font-amatic: 'Amatic SC', 'Arial Narrow', sans-serif;
+$font-opensans: 'Open Sans Condensed', 'Arial', sans-serif;
+
 body {
-  font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+  font-family: $font-opensans;
   font-size: 1.25rem;
   text-align: center;
 }
@@ -20,7 +23,8 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Amatic SC', 'Arial Narrow', sans-serif;
+  font-family: $font-amatic;
+  font-weight: bold;
   line-height: 0.8;
   text-transform: uppercase;
 }
