@@ -8,7 +8,7 @@ principal:
   - nome: Quem Somos
     link: $antigo$/interna/21/quem-somos
   - nome: Propósito
-    link: $antigo$/interna/13/sobre-a-vaga-lume
+    link: /proposito/
   - nome: Localidades
     link: $antigo$/onde_atuamos
 

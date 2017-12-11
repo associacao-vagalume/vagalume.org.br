@@ -1,0 +1,122 @@
+$brown: #aa6a01;
+
+.pagina {
+  font-size: 1.5rem;
+  text-align: left;
+
+  & .fonte, & .footnote {
+    font-size: 0.75em;
+    font-style: italic;
+  }
+
+  & .fonte {
+    text-align: right;
+  }
+
+  & .footnote {
+    margin-top: 3rem;
+  }
+
+  & sup, & .numero-footnote {
+    font-weight: bold;
+    color: $brown;
+  }
+
+  & header {
+    background-size: cover;
+    background-position: center top;
+
+    & .container {
+      align-items: flex-end;
+      display: flex;
+      height: 24rem;
+      justify-content: center;
+    }
+  }
+
+
+  & h1 {
+    background-color: $orangey-yellow;
+    color: $white;
+    font-size: 3.75rem;
+    margin: 0;
+    padding: 0.3em 0.6em;
+  }
+
+  & h2 {
+    color: $brown;
+    font-family: 'Open Sans Condensed', 'Arial', sans-serif;
+    font-size: 2.125rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-transform: capitalize;
+  }
+
+  & .destaque {
+    color: $white;
+    display: block;
+    font-family: 'Amatic SC', 'Arial Narrow', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+
+  & .container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  & .bloco-1 {
+    background-color: $orangey-yellow;
+
+    & p {
+      text-align: center;
+    }
+  }
+
+  & .bloco-2 {
+    background-color: $greyish-brown;
+
+    & h2 {
+      color: #ffffff;
+    }
+
+    & ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    & li {
+      background-color: $orangey-yellow;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    & li + li {
+      margin-top: 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    & header .container {
+      justify-content: flex-start;
+    }
+
+    & .bloco-1 .destaque {
+      font-size: 3rem;
+    }
+
+    & .bloco-2 {
+      & ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-evenly;
+      }
+
+      & li {
+        width: 16rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+}
