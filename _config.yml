@@ -32,6 +32,7 @@ assets:
     css: true
     js: true
   digest: true
+  source_maps: false
 plugins:
 - jekyll-assets
 - jekyll-last-modified-at

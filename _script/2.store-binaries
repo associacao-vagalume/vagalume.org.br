@@ -9,10 +9,15 @@ then
   exit 0
 fi
 
-# Move site gerado para outro diretório para não conflitar com staging
-# quando fizermos o checkout
+# Identifica o commit atual, para adicionar como comentário ao criar a versão do site
 COMMIT_HASH=$(git log -1 --format="%h")
 COMMIT_INFO=$(git log -1)
+
+# Apaga arquivo .sprockets-manifest, que não é necessário em prod
+rm _site/assets/.sprockets-*
+
+# Move site gerado para outro diretório para não conflitar com staging
+# quando fizermos o checkout
 mv _site _site_novo
 
 # Captura número da versão das tags, que está no formato v[num versao].[ddmmYYYY]
