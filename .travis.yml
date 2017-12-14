@@ -1,6 +1,8 @@
 # Configurações do ambiente
 language: ruby
-sudo: false
+sudo: required
+services:
+  - docker
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
@@ -13,5 +15,6 @@ branches:
 before_script:
 - eval "$(ssh-agent -s)"
 - ./_script/0.key-install
-- ./_script/0.set-git-ssh
-script: ./_script/1.build-and-test && ./_script/2.store-binaries
+- ./_script/0.configure-git
+- echo '[localhost]:2222 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKIsU864x4DyIRhCr6dO4yxJkXVfqJ/962wdUrfsA2QXlir2IzTQMozThDSQthsVz9tIqi+cBgRw4o2qkhJBIE8=' >> ~/.ssh/known_hosts
+script: ./_script/ci-script

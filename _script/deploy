@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Faz o deploy do site para o ambiente especificado
+# Caso uma das variáveis de ambiente sejam falsas, o script falha
+
+set -ev
+
+test -n "$SERVER"
+test -n "$PORT"
+test -n "$TRAVIS_BUILD_DIR"
+
+rsync -a --delete-after --quiet -e "ssh -p $PORT" $TRAVIS_BUILD_DIR/_site_gerado/ $SERVER:public_html/

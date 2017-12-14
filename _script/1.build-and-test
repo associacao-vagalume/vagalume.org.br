@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-# Executa a compilação e os testes do site
-# Quando estiver no branch de release, compila o site para o ambiente
-# de produção
-
-set -e
-
-bundle exec rake acceptance

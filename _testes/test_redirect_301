@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+smoke_no_follow
+
+smoke_message 'interna.php?id=NUM redireciona permanentemente para interna/NUM'
+smoke_url '/interna.php?id=21'
+smoke_assert_code 301
+smoke_assert_headers '^Location:.*arquivo.*/interna/21'
+
+smoke_message 'interna_atuacao.php?id=NUM redireciona permanentemente para interna_atuacao/NUM'
+smoke_url '/interna_atuacao.php?id=51'
+smoke_assert_code 301
+smoke_assert_headers '^Location:.*arquivo.*/interna_atuacao/51'
+
+
+smoke_message 'noticia.php?id=NUM redireciona permanentemente para noticia/NUM'
+smoke_url '/noticia.php?id=757'
+smoke_assert_code 301
+smoke_assert_headers '^Location:.*arquivo.*/noticia/757'

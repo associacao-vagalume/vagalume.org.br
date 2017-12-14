@@ -12,3 +12,7 @@ fi
 
 GIT_URL=$(git remote get-url origin)
 git remote set-url origin ${GIT_URL/https:\/\/github.com\//git@github.com:}
+
+# Passo necessário para poder baixar staging, pois repo foi clonado usando --branch
+# Veja resposta no [Stack Overflow](https://stackoverflow.com/a/25941875/83284)
+git config remote.origin.fetch "+refs/heads/*:refs/remotes/origin/*"

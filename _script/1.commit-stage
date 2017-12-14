@@ -1,0 +1,42 @@
+#!/usr/bin/env bash
+# Executa a compilação e os testes do site gerado, armazenando o
+# artefato em um diretório local
+
+set -e
+
+echo "********************************************************************************"
+echo "   Commit Stage"
+echo "********************************************************************************"
+
+main() {
+  roda_testes
+  versiona_site
+  armazena_site
+}
+
+roda_testes() {
+  bundle exec rake integration
+}
+
+versiona_site() {
+  if [[ "$(git tag | sort -t 'v' -k2 -n | tail -1)" =~ ^v([0-9]+)\. ]]
+  then
+    NUMERO_VERSAO=$(expr "${BASH_REMATCH[1]}" + 1)
+  else
+    NUMERO_VERSAO=1
+  fi
+
+  VERSAO="v${NUMERO_VERSAO}.$(date +%d%m%Y)"
+
+  echo "$VERSAO" > _site/VERSAO.txt
+}
+
+armazena_site() {
+  rm -rf _site_gerado
+  mv _site _site_gerado
+  
+  # Apaga arquivo .sprockets-manifest, que não é necessário em prod
+  rm _site_gerado/assets/.sprockets-*
+}
+
+main

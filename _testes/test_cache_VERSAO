@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+smoke_no_follow
+
+smoke_message "O arquivo /VERSAO.txt não tem cache"
+smoke_url_ok "/VERSAO.txt"
+smoke_assert_headers "^Pragma: no-cache"
+smoke_assert_headers "^Cache-Control:.*max-age=0"
+smoke_assert_headers "^Expires:.*1984"

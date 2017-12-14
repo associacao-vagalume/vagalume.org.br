@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -e
+
+echo "********************************************************************************"
+echo "   Deploy para aceitação"
+echo "********************************************************************************"
+
+
+test -n "$SSH_PUBKEY" || (echo "Variável SSH_PUBKEY não está definida"; exit 1)
+
+echo "Parando instâncias anteriores do servidor de aceitação"
+docker stop acceptance || true
+
+docker run --rm -d -e SSH_PUBKEY="$SSH_PUBKEY" -p 2222:22 -p 8080:80 --name acceptance pevangelista/apache-rsync
+echo "Esperando servidor de aceitação ficar disponível"
+
+n=0
+while ! curl -sf localhost:8080 > /dev/null; do
+  if (( ++n == 5 )); then
+    echo " servidor não subiu";
+    docker kill acceptance
+    exit 1
+  fi
+
+  echo -n "."
+
+  sleep 1
+done
+
+echo ""
+
+./_script/deploy

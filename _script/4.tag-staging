@@ -1,0 +1,55 @@
+#!/usr/bin/env bash
+# Armazena o site gerado no branch 'staging'
+
+set -e
+
+echo "********************************************************************************"
+echo "   Cria tag para staging"
+echo "********************************************************************************"
+
+if [[ "$TRAVIS_PULL_REQUEST" != "false" ]]
+then
+  echo "Não armazena o artefato em pull requests"
+  exit 0
+fi
+
+if [[ "$TRAVIS_BRANCH" != "master" ]]
+then
+  echo "Não armazena o artefato fora do master"
+  exit 0
+fi
+
+# Identifica o commit atual, para adicionar como comentário ao criar a versão do site
+COMMIT_HASH=$(git log -1 --format="%h")
+COMMIT_INFO=$(git log -1)
+
+# O site é salvo e a tag é criada no branch de staging
+git fetch origin staging
+git checkout staging
+
+# Queremos substituir completamente o conteúdo de `_site` por `_site_gerado`,
+# por isso fazemos esse mecanismo de apagar `_site` e renomear `_site_gerado`.
+rm -rf _site
+mv _site_gerado _site
+git add -A _site
+
+# Termina o script caso não haja diferença entre as versões
+if git diff --cached --exit-code
+then
+  echo "Não há alterações no site"
+  exit 0
+fi
+
+VERSAO=$(cat _site/VERSAO.txt)
+
+git commit \
+  -m "Atualiza site para versão ${VERSAO}" \
+  -m "${COMMIT_INFO}"
+
+git tag -a "$VERSAO" \
+  -m "Versão gerada a partir do commit ${COMMIT_HASH}" \
+  -m "${COMMIT_INFO}"
+
+# Atualiza o repositório
+git push origin "$VERSAO"
+git push origin staging
