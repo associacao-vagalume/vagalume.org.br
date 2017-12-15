@@ -60,7 +60,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     .secao-proposito .destaque {
       font-size: 3rem;
     }

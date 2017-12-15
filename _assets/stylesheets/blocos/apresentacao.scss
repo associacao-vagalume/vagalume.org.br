@@ -4,7 +4,7 @@
   background-position: top center;
   background-size: cover;
 
-  & .frame {
+  .frame {
     border: 0.25rem solid $orangey-yellow;
     height: 27.5rem;
     display: flex;
@@ -12,7 +12,7 @@
     align-items: center;
     flex-direction: column;
 
-    & h2 {
+    h2 {
       color: $white;
       font-size: 6.875rem;
       margin-bottom: 2rem;
@@ -20,7 +20,7 @@
       white-space: nowrap;
     }
 
-    & .play {
+    .play {
       width: 7.375rem;
       height: 7.375rem;
 
@@ -34,26 +34,26 @@
     max-width: 70%;
   }
 
-  & .doar {
+  .doar {
     margin: -1.5em auto 0;
 
-    & h3 {
+    h3 {
       padding: 0 4rem;
     }
   }
 
-  @media (min-width: 768px) {
-    & .doar {
+  @include media-breakpoint-up(md) {
+    .doar {
       margin: -1.25em auto 0;
     }
   }
 
-  @media (max-width: 767px) {
-    & .frame {
-      & h2 {
+  @include media-breakpoint-down(sm) {
+    .frame {
+      h2 {
         font-size: 4.125rem;
 
-        & span:before {
+        span:before {
           content: "\a";
           white-space: pre;
         }

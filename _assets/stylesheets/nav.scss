@@ -7,11 +7,11 @@
   text-align: left;
   white-space: nowrap;
 
-  & a {
+  a {
     color: $black;
   }
 
-  & h1 {
+  h1 {
     margin: 0 auto;
     z-index: 1;
   }
@@ -38,7 +38,7 @@
     text-align: center;
   }
 
-  & li {
+  li {
     line-height: 1.25;
     margin-right: 2rem;
   }
@@ -53,16 +53,16 @@
     order: 1;
     text-transform: lowercase;
 
-    & a {
+    a {
       color: $grey;
     }
   }
 
-  & .donate-now-expanded {
+  .donate-now-expanded {
     display: none;
   }
 
-  & .donate-now {
+  .donate-now {
     align-self: flex-start;
     background-color: $orangey-yellow;
     font-size: 2rem;
@@ -75,24 +75,24 @@
     width: 10rem;
   }
 
-  & .logo {
+  .logo {
     height: $logo-size;
   }
 
-  & .alt-logo {
+  .alt-logo {
     display: block !important;
     left: -9999px !important;
     position: absolute !important;
   }
 
   /* Regra mobile first, onde as exceções são definidas para telas maiores */
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     & + * {
       margin-top: 5.5rem;
     }
   }
 
-  @media (max-width: 767px) {
+  @include media-breakpoint-down(sm) {
     position: initial;
 
     &-toggler {
@@ -119,7 +119,7 @@
       margin: auto;
     }
 
-    & li {
+    li {
       margin-right: 0;
     }
 
@@ -140,11 +140,11 @@
       order: 2;
     }
 
-    & .donate-now {
+    .donate-now {
       display: none;
     }
 
-    & .donate-now-expanded {
+    .donate-now-expanded {
       background-color: $orangey-yellow;
       display: block;
       line-height: 2;
@@ -155,7 +155,7 @@
       width: 16rem;
     }
 
-    & .container {
+    .container {
       justify-content: space-between;
       max-width: 100%;
       padding: 1rem;

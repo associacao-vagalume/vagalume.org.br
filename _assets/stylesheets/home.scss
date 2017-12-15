@@ -1,11 +1,11 @@
 .home {
 
-  & p {
+  p {
     margin: 1.5em auto;
     color: $white;
   }
 
-  & .botao {
+  .botao {
     display: block;
     text-decoration: none;
 
@@ -19,7 +19,7 @@
     }
   }
 
-  & h3 {
+  h3 {
     color: $white;
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -35,18 +35,18 @@
   }
 
   /* Mobile first, onde as exceções estão definidas para telas maiores */
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     & > * {
       padding: 6rem 0;
     }
     
-    & h3 {
+    h3 {
       color: $orangey-yellow;
       font-size: 5rem;
       margin-bottom: 3rem;
     }
 
-    & .botao {
+    .botao {
 
       & > * {
         line-height: 1.7;

@@ -4,16 +4,16 @@
   background-position: -15rem 0;
   background-size: cover;
 
-  & .botao h4 {
+  .botao h4 {
     padding: 0 1rem;
   }
 
-  @media (min-width: 768px) {
-    & p {
+  @include media-breakpoint-up(md) {
+    p {
       padding: 0 9rem;
     }
 
-    & .botao h4 {
+    .botao h4 {
       padding: 0 4rem;
     }
   }

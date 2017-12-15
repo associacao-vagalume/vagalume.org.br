@@ -1,25 +1,25 @@
 .parceiros {
   background-color: $greyish-brown;
 
-  & h3 {
+  h3 {
     color: $orangey-yellow;
   }
 
   /* A regra * + * define o espaçamento vertical para todos os itens */
-  & * + * {
+  * + * {
     margin: 3em 0 0;
   }
 
-  & .grupo {
+  .grupo {
     font-size: 1.5rem;
 
-    & > * {
+    > * {
       font-size: 0.5rem;
     }
   }
   /* fim do espaçamento vertical */
 
-  & .grupo, & ul {
+  .grupo, ul {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -27,35 +27,41 @@
     padding: 0;
   }
 
-  & .grupo-nivel, & .logo {
+  .grupo-nivel, .logo {
     height: 3rem;
     max-width: 10rem;
   }
 
-  & li {
+  li {
     list-style: none;
   }
 
-  @media (min-width: 768px) {
-    & .grupo, & ul {
+  @include media-breakpoint-up(md) {
+    .grupo, ul {
       flex-direction: row;
       justify-content: space-between;
     }
 
-    & .grupo * {
+    .grupo * {
       margin-top: 0;
     }
 
-    & .logo {
+    .logo {
       height: 4rem;
     }
 
-    & .grupo-nivel {
+    .grupo-nivel {
       min-width: 6rem;
     }
 
-    & ul {
+    li {
+      margin-bottom: 2rem;
+    }
+
+    ul {
       flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: space-around;
       margin-left: 3rem;
     }
   }

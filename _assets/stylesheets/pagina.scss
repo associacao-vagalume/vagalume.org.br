@@ -37,7 +37,7 @@ $brown: #aa6a01;
     padding: 2.5rem 1.5rem;
   }
 
-  @media (min-width: 768px) {
+  @include media-breakpoint-up(md) {
     header .container {
       justify-content: flex-start;
     }

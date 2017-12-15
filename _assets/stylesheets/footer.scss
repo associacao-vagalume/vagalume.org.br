@@ -6,7 +6,7 @@
     font-size: 2.5rem;
   }
 
-  & .container {
+  .container {
     text-align: center;
 
     & > * + * {
@@ -14,34 +14,34 @@
     }
   }
 
-  & address {
+  address {
     display: flex;
     flex-direction: column;
 
-    & p {
+    p {
       margin-bottom: 0.5rem;
     }
   }
   
-  & a {
+  a {
     color: $black;
     display: inline-block;
   }
 
-  & a + a {
+  a + a {
     margin-left: 1.125rem;
   }
 
-  & .social-icons {
-    & a:hover {
+  .social-icons {
+    a:hover {
       text-decoration: none;
     }
-    & img {
+    img {
       width: 3.75rem;
     }
   }
   
-  & .top-button {
+  .top-button {
     border: solid 0.1875rem $white;
     color: $white;
     display: block;
@@ -52,20 +52,20 @@
   }
 }
 
-@media (min-width: 768px) {
+@include media-breakpoint-up(md) {
   .footer {
     font-size: 1.25rem;
     padding: 6rem 0;
 
-    & .container {
+    .container {
       text-align: left;
     }
 
-    & .top-button {
+    .top-button {
       display: none;
     }
 
-    & .phone {
+    .phone {
       font-weight: bold;
       order: 3;
     }
