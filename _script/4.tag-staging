@@ -24,7 +24,6 @@ COMMIT_HASH=$(git log -1 --format="%h")
 COMMIT_INFO=$(git log -1)
 
 # O site é salvo e a tag é criada no branch de staging
-git fetch --tags
 git checkout staging
 
 # Queremos substituir completamente o conteúdo de `_site` por `_site_gerado`,
