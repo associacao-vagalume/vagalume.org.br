@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Troca a url do remoto para utilizar o ssh
-# Dessa maneira é possível utilizar a chave configurada neste repositório
+# Troca a url do origin para utilizar o ssh, podendo assim usar a chave
+# que já está disponível na pipeline
+# Também faz fetch dos outros branches e tags, necessário para os passos
+# de adicionar tag e iniciar o processo em staging
 
 set -e
 

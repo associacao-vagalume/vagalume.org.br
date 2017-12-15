@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Adiciona o fingerprint do docker na lista de known_hosts
+# Isso evita que o comando de rsync levante um prompt e trave a pipeline
+
+set -e
+
+echo '[localhost]:2222 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKIsU864x4DyIRhCr6dO4yxJkXVfqJ/962wdUrfsA2QXlir2IzTQMozThDSQthsVz9tIqi+cBgRw4o2qkhJBIE8=' >> ~/.ssh/known_hosts

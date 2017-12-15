@@ -16,5 +16,5 @@ before_script:
 - eval "$(ssh-agent -s)"
 - ./_script/0.key-install
 - ./_script/0.configure-git
-- echo '[localhost]:2222 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKIsU864x4DyIRhCr6dO4yxJkXVfqJ/962wdUrfsA2QXlir2IzTQMozThDSQthsVz9tIqi+cBgRw4o2qkhJBIE8=' >> ~/.ssh/known_hosts
+- ./_script/0.known-hosts
 script: ./_script/ci-script
