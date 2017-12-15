@@ -3,16 +3,38 @@
   background-image: url("/assets/img/home-o-que-fazemos.jpg");
   background-position: -3rem -3rem;
   background-size: auto 120%;
+  font-size: 1.25rem;
 
-  @media (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .mapa {
+    display: none;
+  }
+
+  @include media-breakpoint-up(md) {
     background-position: top center;
     background-size: cover;
     font-size: 1.5rem;
     text-align: left;
+  }
 
-    & p {
-      width: 20em;
-      margin-left: 0;
+  /* O mapa só aparece em telas grandes */
+  @include media-breakpoint-up(lg) {
+    .conteudo {
+      flex: 0 0 30%;
+      text-align: left;
+    }
+    
+    .mapa {
+      display: block;
+      margin-left: 1rem;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }
@@ -26,10 +48,10 @@
 
   &:before, &:after {
     content: "";
-    display: block;
-    width: 8.25rem;
-    margin: 0 auto;
     border-bottom: solid 0.1875rem $orangey-yellow;
+    display: block;
+    margin: 0 auto;
+    width: 8.25rem;
   }
 
   &:before {
@@ -44,7 +66,7 @@
     list-style: none;
   }
 
-  & .numero {
+  .numero {
     color: $orangey-yellow;
     font-size: 2.5em;
     font-weight: bold;
@@ -52,15 +74,15 @@
     margin-right: 0.5rem;
   }
 
-  & .descricao {
+  .descricao {
     color: $white;
     display: inline-block;
     line-height: 1;
     width: 6em;
   }
 
-  @media (min-width: 768px) {
-    font-size: 2.5rem;
+  @include media-breakpoint-up(md) {
+    font-size: 2.125rem;
     margin-left: 0;
 
     &:before {
@@ -70,6 +92,5 @@
     &:after {
       display: none;
     }
-
   }
 }
