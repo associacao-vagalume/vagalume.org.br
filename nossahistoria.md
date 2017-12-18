@@ -5,7 +5,6 @@ layout: pagina-simples
 imagem: "/assets/img/paginas/nossahistoria.jpg"
 ---
 
-
 Sylvia, Laís e Fofa queriam conhecer mais sobre o pais onde viviam e, por isso, escolheram ir para a maior região do Brasil: a Amazônia Legal brasileira, que ocupa 60% do nosso território. Mas elas não queriam ir, aprender, conhecer e não deixar algo para quem elas conheceriam no caminho. Elas queriam trocar, aprender e ensinar, e foi aí que tiveram a ideia de levar livros e formar mediadores de leitura pelos lugares onde passassem.
 
 Então, em 2001, as três amigas partiram para implementar um projeto piloto em municípios do Pará. A coisa foi tão bem aceita pelas comunidades que em 2002 elas fizeram uma viagem de 10 meses por todos os estados da Amazônia Legal brasileira levando livros e formações por 53 comunidades rurais.
