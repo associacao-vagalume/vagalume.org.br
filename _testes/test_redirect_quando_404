@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+smoke_no_follow
+
+smoke_message "Páginas não encontradas são redirecionadas para arquivo.vagalume.org.br"
+smoke_url "/naoexisto"
+smoke_assert_code 302
+smoke_assert_headers "^Location:.*arquivo\.vagalume"

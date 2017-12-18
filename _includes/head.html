@@ -2,7 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>{{ site.title }}</title>
+{% assign nome_pagina = site.title %}
+{% if page.title != 'Home' %}
+  {% assign nome_pagina = page.title | append: ' | ' | append: site.title %}
+{% endif %}
+    <title>{{ nome_pagina }}</title>
 {% include partial/favicons.html %}
 {% include partial/meta.html %}
 {% include partial/social.html %}
