@@ -33,6 +33,10 @@ $brown: #aa6a01;
     text-transform: capitalize;
   }
 
+  p + h2 {
+    margin-top: 1.5em;
+  }
+
   .container {
     padding: 2.5rem 1.5rem;
   }
