@@ -4,5 +4,7 @@ smoke_no_follow
 
 smoke_message 'A página /proposito existe'
 smoke_url_ok '/proposito/'
+smoke_assert_body "description.*content=\"Conheça o propósito do nosso projeto, nossos \
+valores e entenda os oito princípios que seguimos para atingir nossa principal missão.\""
 smoke_assert_body "<title>Propósito | Vaga Lume - Empoderando crianças na Amazônia</title>"
 smoke_assert_body '<h1>Propósito</h1>'

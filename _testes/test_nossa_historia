@@ -4,5 +4,7 @@ smoke_no_follow
 
 smoke_message 'A página /nossa-historia existe'
 smoke_url_ok '/nossa-historia/'
+smoke_assert_body "description.*content=\"Conheça como começou a história da Vaga Lume, desde \
+o início, passando pelos nossos 16 anos de atuação.\""
 smoke_assert_body "<title>Nossa História | Vaga Lume - Empoderando crianças na Amazônia</title>"
 smoke_assert_body '<h1>Nossa História</h1>'

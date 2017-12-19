@@ -8,7 +8,8 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
+description: >-
+  A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
   e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
 keywords:
 - Vaga Lume

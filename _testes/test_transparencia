@@ -4,6 +4,8 @@ smoke_no_follow
 
 smoke_message 'A página /transparencia existe'
 smoke_url_ok '/transparencia/'
+smoke_assert_body "description.*content=\"Conheça nossas relatórios anuais de atividades e \
+auditoria e saiba mais sobre os números da Vaga Lume e seu impacto.\""
 smoke_assert_body "<title>Transparência | Vaga Lume - Empoderando crianças na Amazônia</title>"
 smoke_assert_body '<h1>Transparência</h1>'
 smoke_assert_body '<h2>Relatórios Anuais de Atividades</h2>'

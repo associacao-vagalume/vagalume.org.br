@@ -5,6 +5,8 @@ smoke_no_follow
 smoke_message "Home existe e tem descrição"
 smoke_url_ok "/"
 smoke_assert_body "<title>Vaga Lume - Empoderando crianças na Amazônia</title>"
+smoke_assert_body "description.*content=\"A Vaga Lume é uma associação sem fins lucrativos que promove a leitura \
+e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.\""
 smoke_assert_body "A Vaga Lume é uma associação sem fins lucrativos que \
 promove a leitura e a gestão de bibliotecas comunitárias como espaço para \
 compartilhar saberes."
