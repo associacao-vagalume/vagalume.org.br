@@ -3,9 +3,8 @@ title: Nossa História
 permalink: "/nossa-historia/"
 layout: pagina-simples
 imagem: "/assets/img/paginas/nossa-historia.jpg"
-description: >-
-  Conheça como começou a história da Vaga Lume, desde o início,
-  passando pelos nossos 16 anos de atuação.
+description: Conheça como começou a história da Vaga Lume, desde o início, passando
+  pelos nossos 16 anos de atuação.
 ---
 
 Sylvia, Laís e Fofa queriam conhecer mais sobre o pais onde viviam e, por isso, escolheram ir para a maior região do Brasil: a Amazônia Legal brasileira, que ocupa 60% do nosso território. Mas elas não queriam ir, aprender, conhecer e não deixar algo para quem elas conheceriam no caminho. Elas queriam trocar, aprender e ensinar, e foi aí que tiveram a ideia de levar livros e formar mediadores de leitura pelos lugares onde passassem.
