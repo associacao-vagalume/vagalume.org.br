@@ -9,6 +9,8 @@ principal:
     link: $antigo$/interna/21/quem-somos
   - nome: Propósito
     link: /proposito/
+  - nome: Nossa História
+    link: /nossa-historia/
   - nome: Localidades
     link: $antigo$/onde_atuamos
 
