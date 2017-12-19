@@ -1,0 +1,68 @@
+.pagina {
+
+  .atividades, .auditorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    
+    a {
+      color: #be8a1f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .relatorio {
+      background-color: $white;
+      max-width: 17rem;
+
+      & + .relatorio {
+        margin-top: 2rem;
+      }
+    }
+
+    .capa {
+      width: 100%;
+    }
+
+    .titulo {
+      margin: 0;
+      padding: 1rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      .relatorio {
+        margin-bottom: 2rem;
+      }
+      .relatorio + .relatorio {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .auditorias {
+    justify-content: start;
+    list-style-image: url('/assets/img/relatorios/icone-relatorio.png');
+    text-align: left;
+    
+    li {
+      margin-left: 3rem;
+    }
+
+    @include media-breakpoint-up(md) {
+      justify-content: space-between;
+
+      li {
+        width: 18rem;
+      }
+    }
+  }
+  
+  .relatorios {
+    text-align: center;
+  }
+}

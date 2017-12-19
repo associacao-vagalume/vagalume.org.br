@@ -121,3 +121,7 @@ end
 def load_home
   Nokogiri::HTML(File.open('_site/index.html'))
 end
+
+def load_page(name)
+  Nokogiri::HTML(File.open("_site/#{name}/index.html"))
+end

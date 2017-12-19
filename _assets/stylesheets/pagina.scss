@@ -41,6 +41,18 @@ $brown: #aa6a01;
     padding: 2.5rem 1.5rem;
   }
 
+  .secao-fundo-escuro {
+    background-color: $greyish-brown;
+
+    h2 {
+      color: #ffffff;
+    }
+  }
+
+  .secao-fundo-claro {
+    background-color: $orangey-yellow;
+  }
+
   @include media-breakpoint-up(md) {
     header .container {
       justify-content: flex-start;
@@ -49,3 +61,4 @@ $brown: #aa6a01;
 }
 
 @import 'paginas/proposito';
+@import 'paginas/transparencia';

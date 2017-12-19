@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+smoke_no_follow
+
+smoke_message 'A página /transparencia existe'
+smoke_url_ok '/transparencia/'
+smoke_assert_body "<title>Transparência | Vaga Lume - Empoderando crianças na Amazônia</title>"
+smoke_assert_body '<h1>Transparência</h1>'
+smoke_assert_body '<h2>Relatórios Anuais de Atividades</h2>'
+smoke_assert_body '<h2>Relatórios Anuais de Auditoria</h2>'
