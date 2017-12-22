@@ -12,7 +12,7 @@ describe 'Parceiros' do
       it 'os parceiros estão definidos em grupos' do
         expect(grupos).to all(have_key('lampadas').and have_key('lista'))
       end
-  
+
       it 'todas as imagens existem' do
         expect(url_imagens).to all(
           satisfy do |url|

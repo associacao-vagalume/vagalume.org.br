@@ -4,10 +4,10 @@ describe 'Transparência' do
 
   context 'quando os relatórios estão definidos no arquivo _data/transparencia.yml' do
     let(:relatorios) { load_data('transparencia') }
-    
+
     context 'quando olhando para o arquivo' do
       let(:capas) { relatorios.fetch('atividades').map { |a| a.fetch('capa') }}
-  
+
       it 'todas as imagens existem' do
         expect(capas).to all(
           satisfy do |url|
@@ -28,11 +28,11 @@ describe 'Transparência' do
           it "contém todos os itens" do
             expect(elementos.size).to eq(esperado.size)
           end
-          
+
           it 'contém os links corretos' do
             expect(elementos.map { |a| a.attr('href') }).to eq(esperado.map{ |a| a.fetch('link') })
           end
-          
+
           it 'contém os textos corretos' do
             expect(elementos.map { |a| a.content.strip }).to eq(esperado.map{ |a| a.fetch('texto') })
           end

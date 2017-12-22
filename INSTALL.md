@@ -2,9 +2,18 @@
 
 ## Índice
 
-* [Instale a versão correta do Ruby](#instale-a-vers%C3%A3o-correta-do-ruby)
+* [Instale o plugin para o EditorConfig](#instale-o-plugin-para-o-editorconfig)
+*-[Instale a versão correta do Ruby](#instale-a-vers%C3%A3o-correta-do-ruby)
 * [Instale o Bundler](#instale-o-bundler)
 * [Instale as dependências do projeto](#instale-as-depend%C3%AAncias-do-projeto)
+
+## Instale o plugin para o EditorConfig
+
+Estamos utilizando o arquivo [.editorconfig](http://editorconfig.org/) neste
+projeto para definir diretrizes básicas para o código. Para ver se seu editor
+suporta esta configuração, acesse o [site](http://editorconfig.org/#download)
+do EditorConfig. Lá você encontrará instruções de onde encontrar as extensões
+necessárias.
 
 ## Instale a versão correta do Ruby
 

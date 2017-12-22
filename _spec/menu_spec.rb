@@ -28,7 +28,7 @@ describe 'Menu' do
 
     it_behaves_like('menu', 'navbar-primary', 'principal')
     it_behaves_like('menu', 'navbar-secondary', 'secundario')
-    
+
   end
 
 end

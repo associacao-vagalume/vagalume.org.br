@@ -34,7 +34,7 @@ versiona_site() {
 armazena_site() {
   rm -rf _site_gerado
   mv _site _site_gerado
-  
+
   # Apaga arquivo .sprockets-manifest, que não é necessário em prod
   rm _site_gerado/assets/.sprockets-*
 }

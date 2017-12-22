@@ -49,7 +49,7 @@ RSpec.configure do |config|
   end
 
   config.filter_run_when_matching :focus
-  
+
 # The settings below are suggested to provide a good initial experience
 # with RSpec, but feel free to customize to your heart's content.
 =begin

@@ -13,3 +13,4 @@ neste repositório.
 * [5. utiliza o plugin jekyll-assets](0005-utiliza-o-plugin-jekyll-assets.md)
 * [6. Redireciona erros 404 para arquivo.vagalume.org.br](0006-redireciona-erros-404-para-arquivo-vagalume-org-br.md)
 * [7. Utiliza Real Favicon Generator para gerar os favicons do site](0007-utiliza-real-favicon-generator-para-gerar-os-favicons-do-site.md)
+* [8. Utiliza Editor Config no projeto](0008-utiliza-editor-config-no-projeto.md)

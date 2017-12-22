@@ -17,4 +17,3 @@ echo "Parando o servidor de aceitação"
 docker stop acceptance
 
 smoke_report || exit 1
-

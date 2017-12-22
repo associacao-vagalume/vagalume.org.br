@@ -23,4 +23,4 @@ Optamos por utilizá-la para gerar os favicons necessários.
 
 Pode ser que esse site saia fora do ar no futuro e portanto não será possível
 reproduzir esses favicons. Como esse processo deve ser feito somente uma vez,
-acreditamos que o impacto é bem controlado. 
+acreditamos que o impacto é bem controlado.
