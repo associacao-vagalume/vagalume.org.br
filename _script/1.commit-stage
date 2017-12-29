@@ -15,7 +15,7 @@ main() {
 }
 
 roda_testes() {
-  bundle exec rake integration
+  bundle exec rake -q integration
 }
 
 versiona_site() {

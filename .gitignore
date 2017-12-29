@@ -1,8 +1,11 @@
-_site
-_site_gerado
+_reports/
+_site/
+_site_gerado/
 .asset-cache/
+.bundle/
+.DS_Store
 .jekyll-metadata
 .sass-cache/
 .vscode
-.DS_Store
+vendor/
 *.code-workspace
