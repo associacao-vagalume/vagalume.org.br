@@ -4,4 +4,6 @@
 
 set -e
 
-echo '[localhost]:2222 ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBKIsU864x4DyIRhCr6dO4yxJkXVfqJ/962wdUrfsA2QXlir2IzTQMozThDSQthsVz9tIqi+cBgRw4o2qkhJBIE8=' >> ~/.ssh/known_hosts
+ACCEPTANCE_HOST_KEY=$(docker run --rm pevangelista/apache-rsync cat /etc/ssh/ssh_host_ecdsa_key.pub | cut -d ' ' -f 1,2)
+
+echo "[localhost]:2222 $ACCEPTANCE_HOST_KEY" >> ~/.ssh/known_hosts
