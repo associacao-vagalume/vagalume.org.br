@@ -66,6 +66,7 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
+    json (2.1.0)
     kramdown (1.14.0)
     liquid (4.0.0)
     liquid_pluralize (1.0.3)
@@ -134,6 +135,7 @@ DEPENDENCIES
   jekyll-assets!
   jekyll-last-modified-at!
   jekyll-sitemap!
+  json!
   liquid_pluralize!
   rake!
   rspec!
@@ -143,4 +145,4 @@ RUBY VERSION
    ruby 2.4.2p198
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
