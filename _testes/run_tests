@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if [ -z "$1" ]; then
+  echo "Servidor a ser testado não foi especificado"
+  echo "Uso: $0 <servidor>"
+
+  exit 1
+fi
+
+SERVIDOR=$1
+
+source _script/smoke.sh
+
+smoke_url_prefix $SERVIDOR
+
+for test_file in _testes/test_*; do
+  source $test_file
+done
+
+smoke_report || exit 1

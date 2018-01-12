@@ -4,16 +4,7 @@ echo "**************************************************************************
 echo "   Executa testes de aceitação"
 echo "********************************************************************************"
 
-
-source _script/smoke.sh
-
-smoke_url_prefix localhost:8080
-
-for test_file in _testes/*; do
-  source $test_file
-done
+./_testes/run_tests localhost:8080
 
 echo "Parando o servidor de aceitação"
 docker stop acceptance
-
-smoke_report || exit 1
