@@ -1,19 +1,39 @@
 #!/usr/bin/env bash
 
+help() {
+  echo
+  echo "Uso: $0 <SERVIDOR> [FILTRO]"
+  echo
+  echo "Executa os testes de aceitação para o site da Vaga Lume"
+  echo
+  echo "Opções:"
+  echo
+  echo "  SERVIDOR - o endereço do servidor onde o site da Vaga Lume está."
+  echo "  FILTRO - um filtro glob para os nomes dos testes, entre aspas."
+}
+
 if [ -z "$1" ]; then
-  echo "Servidor a ser testado não foi especificado"
-  echo "Uso: $0 <servidor>"
+  echo
+  echo "Erro: Servidor a ser testado não foi especificado"
+  echo
+  echo "Execute $0 --help"
 
   exit 1
 fi
 
+if [ "$1" = "--help" ]; then
+  help
+  exit 0
+fi
+
 SERVIDOR=$1
+TESTE_ESPECIFICO=${2:-"*"}
 
 source _script/smoke.sh
 
 smoke_url_prefix $SERVIDOR
 
-for test_file in _testes/test_*; do
+for test_file in _testes/test_$TESTE_ESPECIFICO; do
   source $test_file
 done
 
