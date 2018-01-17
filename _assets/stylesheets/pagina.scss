@@ -7,22 +7,23 @@ $brown: #aa6a01;
   header {
     background-color: $grey;
     background-size: cover;
-    background-position: center top;
+    background-position: center;
 
     .container {
       align-items: flex-end;
       display: flex;
-      height: 24rem;
+      height: 30rem;
       justify-content: center;
+      padding-bottom: 1.5rem;
     }
   }
 
   h1 {
     background-color: $orangey-yellow;
     color: $white;
-    font-size: 3.75rem;
+    font-size: 3.3rem;
     margin: 0;
-    padding: 0.3em 0.6em;
+    padding: 0.3em;
   }
 
   h2 {
@@ -57,6 +58,7 @@ $brown: #aa6a01;
   @include media-breakpoint-up(md) {
     header .container {
       justify-content: flex-start;
+      height: 25rem;
     }
   }
 }

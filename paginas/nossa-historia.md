@@ -2,7 +2,8 @@
 title: Nossa História
 permalink: "/nossa-historia/"
 layout: pagina-simples
-imagem: "/assets/img/paginas/nossa-historia.jpg"
+imagem: "/assets/img/paginas/nossa-historia-desktop.jpg"
+imagem_mobile: "/assets/img/paginas/nossa-historia-mobile.jpg"
 description: Conheça como começou a história da Vaga Lume, desde o início, passando
   pelos nossos 16 anos de atuação.
 ---
