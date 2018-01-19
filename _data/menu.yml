@@ -17,7 +17,7 @@ principal:
 secundario:
   - nome: Transparência
     link: /transparencia/
-  - nome: Parcerias
-    link: $antigo$/interna/378/parceiros
+  - nome: Parceiros
+    link: /parceiros/
   - nome: Contato
     link: $antigo$/contato

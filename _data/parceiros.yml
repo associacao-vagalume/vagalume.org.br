@@ -2,6 +2,7 @@
 # Os parceiros devem ser agrupados por número de lâmpadas
 # Eles são apresentados na ordem adicionada aqui
 
+financiadores:
 - lampadas: 3
   lista:
   - nome: Fundación MAPFRE
@@ -24,3 +25,37 @@
     url_img: /assets/img/parceiros/soenergy.svg
   - nome: Mercur
     url_img: /assets/img/parceiros/mercur.svg
+- lampadas: 1
+  lista:
+  - nome: Souza, Cescon, Barrieu, & Flesch Advogados
+    url_img: /assets/img/parceiros/souza-cescon.svg
+  - nome: Danny Cosméticos
+    url_img: /assets/img/parceiros/danny-cosmeticos.svg
+  - nome: OMA - Condomínio, Locação, Venda
+    url_img: /assets/img/parceiros/oma.png
+  - nome: Aster - Segurança e Facilites
+    url_img: /assets/img/parceiros/aster.png
+
+apoiadores:
+- servico: Assessoria Jurídica
+  lista:
+  - nome: Felsberg Advogados
+    url_img: /assets/img/parceiros/felsberg.png
+- servico: Auditoria
+  lista:
+  - nome: BDO Brazil
+    url_img: /assets/img/parceiros/bdo.png
+- servico: Transportadora Oficial
+  lista:
+  - nome: TNT - Serviço de envio de remessas
+    url_img: /assets/img/parceiros/tnt.svg
+- servico: Comunicação
+  lista:
+  - nome: Zaic – branding, da estratégia ao design
+    url_img: /assets/img/parceiros/zaic.png
+  - nome: Salem Comunicação - Agência 360
+    url_img: /assets/img/parceiros/salem.svg
+- servico: Hospedagem do Site
+  lista:
+  - nome: Locaweb - Hospedagem de Site
+    url_img: /assets/img/parceiros/locaweb.svg

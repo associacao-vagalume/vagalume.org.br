@@ -78,7 +78,9 @@ layout: home
 <div class="parceiros">
   <div class="container">
     <h3>Parceiros</h3>
-    {% for grupo in site.data.parceiros %}
+    {% assign parceiros = site.data.parceiros.financiadores %}
+    {% for grupo in parceiros %}
+      {% if forloop.index <= 2 %}
       <div class="grupo">
         <img class="grupo-nivel" src="/assets/img/parceiros/{{ grupo.lampadas }}-lampada.svg" alt="Parceiro {{ grupo.lampadas | pluralize: 'lâmpada', 'lâmpadas' }}">
         <ul>
@@ -89,6 +91,7 @@ layout: home
           {% endfor %}
         </ul>
       </div>
+      {% endif %}
     {% endfor %}
   </div>
 </div>

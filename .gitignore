@@ -9,3 +9,4 @@ _site_gerado/
 .vscode
 vendor/
 *.code-workspace
+.byebug_history

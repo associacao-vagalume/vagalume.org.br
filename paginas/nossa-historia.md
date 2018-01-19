@@ -1,7 +1,7 @@
 ---
 title: Nossa História
 permalink: "/nossa-historia/"
-layout: pagina-simples
+layout: pagina-markdown
 imagem: "/assets/img/paginas/nossa-historia-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/nossa-historia-mobile.jpg"
 description: Conheça como começou a história da Vaga Lume, desde o início, passando
