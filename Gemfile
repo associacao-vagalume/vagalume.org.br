@@ -11,13 +11,14 @@ source 'https://rubygems.org' do
 
   group :jekyll_plugins do
     gem 'bootstrap', '~> 4.0.0.beta2.1'
+    gem 'jekyll-admin'
     gem 'jekyll-assets'
     gem 'jekyll-last-modified-at'
     gem 'jekyll-sitemap'
     gem 'liquid_pluralize'
   end
 
-  gem "byebug", :groups => [:development, :test]  
+  gem "byebug", :groups => [:development, :test]
 
   group :test do
     gem 'html-proofer'

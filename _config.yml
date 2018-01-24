@@ -35,6 +35,7 @@ assets:
   digest: true
   source_maps: false
 plugins:
+- jekyll-admin
 - jekyll-assets
 - jekyll-last-modified-at
 - jekyll-sitemap
