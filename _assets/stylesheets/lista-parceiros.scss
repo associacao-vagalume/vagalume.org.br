@@ -1,0 +1,90 @@
+.lei-incentivo-cultura, .ministerio-cultura {
+  margin: 0 auto;
+  display: block;
+}
+
+.lei-incentivo-cultura {
+  margin-bottom: 3em;
+}
+
+.lista-parceiros, .lista-apoiadores {
+  .grupo-nivel, .logo {
+    height: 3rem;
+    max-width: 10rem;
+  }
+
+  .grupo {
+    font-size: 1.5rem;
+  }
+
+  ul {
+    font-size: 0.5rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    margin-top: 2rem;
+  }
+
+  .grupo {
+    margin-bottom: 3em;
+  }
+
+  .grupo, ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: initial 0;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .lista-parceiros, .lista-apoiadores {
+    .grupo-nivel {
+      margin-right: 3rem;
+    }
+
+    li + li {
+      margin-left: 3rem;
+    }
+
+    ul {
+      flex-grow: 1;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-top: -2rem;
+    }
+  }
+
+  .lista-parceiros {
+    .grupo, ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  
+    .logo {
+      height: 4rem;
+    }
+  
+    .grupo-nivel {
+      min-width: 6rem;
+    }
+  }
+
+  .lista-apoiadores {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .grupo + .grupo {
+      margin-left: 2em;
+    }
+
+    ul {
+      flex-direction: row;
+      justify-content: space-around;
+    }
+  }
+}
