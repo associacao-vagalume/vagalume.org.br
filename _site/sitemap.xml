@@ -2,11 +2,15 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>http://vagalume.org.br/</loc>
-<lastmod>2017-12-18T20:08:52+00:00</lastmod>
+<lastmod>2018-01-30T18:28:44+00:00</lastmod>
 </url>
 <url>
 <loc>http://vagalume.org.br/nossa-historia/</loc>
-<lastmod>2018-01-17T18:40:22+00:00</lastmod>
+<lastmod>2018-01-26T14:05:08+00:00</lastmod>
+</url>
+<url>
+<loc>http://vagalume.org.br/parceiros/</loc>
+<lastmod>2018-01-30T18:45:28+00:00</lastmod>
 </url>
 <url>
 <loc>http://vagalume.org.br/proposito/</loc>
