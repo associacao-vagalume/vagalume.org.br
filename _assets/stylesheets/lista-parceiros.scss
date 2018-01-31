@@ -78,8 +78,9 @@
     justify-content: space-around;
     flex-wrap: wrap;
 
-    .grupo + .grupo {
+    .grupo {
       margin-left: 2em;
+      margin-right: 2em;
     }
 
     ul {
