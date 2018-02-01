@@ -40,8 +40,10 @@
     }
 
     h3 {
+      color: $orangey-yellow;
       font-size: 5rem;
       margin-bottom: 3rem;
+      text-align: left;
     }
 
     .botao {
@@ -58,3 +60,4 @@
 @import 'blocos/proposito';
 @import 'blocos/oquefazemos';
 @import 'blocos/parceiros';
+@import 'blocos/como-colaborar';

@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+smoke_no_follow
+
+smoke_message "Home existe e tem descrição"
+smoke_url_ok "/"
+smoke_assert_body "<title>Vaga Lume - Empoderando crianças na Amazônia</title>"
+smoke_assert_body "description.*content=\"A Vaga Lume é uma associação sem fins \
+lucrativos que promove a leitura e a gestão de bibliotecas comunitárias como \
+espaço para compartilhar saberes.\""
+smoke_assert_body "A Vaga Lume é uma associação sem fins lucrativos que \
+promove a leitura e a gestão de bibliotecas comunitárias como espaço para \
+compartilhar saberes."
+smoke_assert_body "<h3>Como Colaborar</h3>"
+smoke_assert_body "Você pode ajudar na criação de bibliotecas em comunidades \
+rurais na Amazônia e, com isso, incentivar a gestão comunitária e a \
+valorização da cultura local!"

@@ -1,0 +1,114 @@
+.como-colaborar {
+  background-color: $orangey-yellow;
+  background-image: url(/assets/img/home-colaborar.jpg);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto 9em;
+  padding-bottom: 10em;
+
+  .modalidades {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h4 {
+    color: $umber;
+    font-family: $font-opensans;
+    font-size: 1rem;
+    margin: 0;
+    padding: 1rem;
+    text-transform: uppercase;
+  }
+
+  input[type=radio], .modalidade {
+    display: none;
+  }
+
+  .modalidade {
+    color: $white;
+    order: 1;
+    text-align: left;
+    width: 100%;
+  }
+
+  ul {
+    height: 8.5em;
+    margin: 0;
+    padding: 1em;
+  }
+
+  label {
+    cursor: pointer;
+    z-index: 1;
+  }
+
+  input[type=radio]:checked + label {
+    border-bottom: 0.1875rem solid $white;
+
+    h4 {
+      color: $white;
+    }
+  }
+
+  input[type=radio]:checked + label + .modalidade {
+    display: block;
+  }
+
+  .botao-branco {
+    border: 3px solid $white;
+    display: block;
+    text-align: center;
+
+    h4 {
+      color: $white;
+      font-family: $font-amatic;
+      font-size: 1.75rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    font-size: 1.5rem;
+
+    h3 {
+      color: $umber;
+    }
+
+    p {
+      width: 32rem;
+      text-align: left;
+      margin-left: 0;
+    }
+
+    label {
+      cursor: auto;
+
+      h4 {
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: left;
+        width: 12rem;
+      }
+    }
+
+    .modalidade {
+      display: block;
+      margin-left: -12rem;
+      margin-top: 3rem;
+      order: unset;
+      width: 50%;
+    }
+
+    .botao-branco {
+      width: 20rem;
+      margin: 0;
+    }
+
+    input[type=radio]:checked + label {
+      border: 0;
+
+      h4 {
+        color: $umber;
+      }
+    }
+  }
+}

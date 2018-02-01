@@ -1,3 +1,11 @@
 .parceiros {
   background-color: $greyish-brown;
+
+  .grupo:last-of-type {
+    margin: 0;
+  }
+
+  h3 {
+    color: $orangey-yellow;
+  }
 }
