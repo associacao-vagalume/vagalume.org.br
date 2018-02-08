@@ -18,3 +18,16 @@ describe 'Google Tag Manager' do
     end
   end
 end
+
+describe 'Link externo para doação' do
+  context 'Na página inicial' do
+    let(:doc) { load_home }
+    let(:url_doar) { load_config.fetch('url_doar') }
+
+    it 'encontra os links de doação' do
+      links_encontrados = doc.css('a.doar').map { |e| e['href'] }
+
+      expect(links_encontrados).to all(eq url_doar)
+    end
+  end
+end
