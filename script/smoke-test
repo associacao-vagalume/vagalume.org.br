@@ -5,10 +5,10 @@
 
 case "$TRAVIS_BRANCH" in
   "staging")
-    URL=staging.vagalume.org.br
+    URL=www.staging.vagalume.org.br
     ;;
   "release")
-    URL=vagalume.org.br
+    URL=www.vagalume.org.br
     ;;
   *)
     echo "Não é branch de release. Pulando smoke tests."
