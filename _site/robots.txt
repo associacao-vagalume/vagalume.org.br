@@ -1,1 +1,1 @@
-Sitemap: http://vagalume.org.br/sitemap.xml
+Sitemap: https://www.vagalume.org.br/sitemap.xml
