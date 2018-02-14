@@ -36,11 +36,16 @@ Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 RewriteEngine On
 
 # Redireciona para WWW (veja www.yes-www.org)
-RewriteCond %{HTTP_HOST} ^vagalume\.org.br$ [NC]
-RewriteRule ^(.*)$ http://www.vagalume.org.br/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^vagalume\.org\.br$ [NC]
+RewriteRule ^(.*)$ https://www.vagalume.org.br/$1 [R=301,L]
 
-RewriteCond %{HTTP_HOST} ^staging.vagalume\.org.br$ [NC]
-RewriteRule ^(.*)$ http://www.staging.vagalume.org.br/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^staging.vagalume\.org\.br$ [NC]
+RewriteRule ^(.*)$ https://www.staging.vagalume.org.br/$1 [R=301,L]
+
+# Redireciona para https
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} vagalume\.org\.br$ [NC]
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
 # Correções de SEO do Google
 RewriteCond %{QUERY_STRING} ^id=([0-9]*)$

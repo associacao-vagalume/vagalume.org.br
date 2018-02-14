@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
-smoke_host "vagalume.org.br"
+smoke_host "www.vagalume.org.br"
 
-smoke_message 'vagalume.org.br redireciona para www.vagalume.org.br'
+smoke_message 'redireciona www.vagalume.org.br para https://'
 smoke_url '/'
 smoke_assert_code 301
 smoke_assert_headers '^Location: https://www.vagalume.org.br'
 
-smoke_host "staging.vagalume.org.br"
+smoke_host "www.staging.vagalume.org.br"
 
-smoke_message 'staging.vagalume.org.br redireciona para www.staging.vagalume.org.br'
+smoke_message 'redireciona www.staging.vagalume.org.br para https'
 smoke_url '/'
 smoke_assert_code 301
 smoke_assert_headers '^Location: https://www.staging.vagalume.org.br'
