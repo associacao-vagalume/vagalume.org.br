@@ -33,17 +33,16 @@ Header set Pragma "no-cache"
 Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </Files>
 
-# Como o site atual não possui muitas das páginas do site anterior,
-# estamos redirecionado todo 404 para o site arquivo.vagalume.org.br
 RewriteEngine On
 
+# Redireciona para WWW (veja www.yes-www.org)
 RewriteCond %{HTTP_HOST} ^vagalume\.org.br$ [NC]
 RewriteRule ^(.*)$ http://www.vagalume.org.br/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^staging.vagalume\.org.br$ [NC]
 RewriteRule ^(.*)$ http://www.staging.vagalume.org.br/$1 [R=301,L]
 
-# Existem algumas páginas que não existem em lugar nenhum
+# Correções de SEO do Google
 RewriteCond %{QUERY_STRING} ^id=([0-9]*)$
 RewriteRule ^interna\.php$ http://arquivo.vagalume.org.br/interna/%1? [L,R=301]
 
@@ -53,9 +52,9 @@ RewriteRule ^interna_atuacao\.php$ http://arquivo.vagalume.org.br/interna_atuaca
 RewriteCond %{QUERY_STRING} ^id=([0-9]*)$
 RewriteRule ^noticia\.php$ http://arquivo.vagalume.org.br/noticia/%1? [L,R=301]
 
-# Para as páginas não encontradas, vamos usar 302 pois não queremos
-# redirecionar de maneira permanente páginas que possam existir no site atual,
-# como por exemplo 'quem-somos'
+# Para as páginas não encontradas, vamos redirecionar para arquivo.vagalume.org.br com 302,
+# pois não queremos que o redirecionamento seja permanente.
+# Há páginas que eventualmente irão migrar para o site novo, como por exemplo 'quem-somos'
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ http://arquivo.vagalume.org.br/$1 [L,R=302]
