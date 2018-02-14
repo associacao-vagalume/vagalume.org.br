@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-smoke_no_follow
-
 smoke_message 'A página /proposito existe'
 smoke_url_ok '/proposito/'
 smoke_assert_body "description.*content=\"Conheça o propósito do nosso projeto, nossos \

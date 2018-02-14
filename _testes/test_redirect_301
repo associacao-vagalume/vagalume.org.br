@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-smoke_no_follow
-
 smoke_message 'interna.php?id=NUM redireciona permanentemente para interna/NUM'
 smoke_url '/interna.php?id=21'
 smoke_assert_code 301

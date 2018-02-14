@@ -32,6 +32,7 @@ TESTE_ESPECIFICO=${2:-"*"}
 source _script/smoke.sh
 
 smoke_url_prefix $SERVIDOR
+smoke_no_follow
 
 for test_file in _testes/test_$TESTE_ESPECIFICO; do
   source $test_file

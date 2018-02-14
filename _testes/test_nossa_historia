@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-smoke_no_follow
-
 smoke_message 'A página /nossa-historia existe'
 smoke_url_ok '/nossa-historia/'
 smoke_assert_body "description.*content=\"Conheça como começou a história da Vaga Lume, desde \

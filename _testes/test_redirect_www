@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+smoke_host "vagalume.org.br"
+
+smoke_message 'vagalume.org.br redireciona para www.vagalume.org.br'
+smoke_url '/'
+smoke_assert_code 301
+smoke_assert_headers '^Location: http://www.vagalume.org.br'
+
+smoke_host "staging.vagalume.org.br"
+
+smoke_message 'staging.vagalume.org.br redireciona para www.staging.vagalume.org.br'
+smoke_url '/'
+smoke_assert_code 301
+smoke_assert_headers '^Location: http://www.staging.vagalume.org.br'
+
+smoke_host $SERVIDOR

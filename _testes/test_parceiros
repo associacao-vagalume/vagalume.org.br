@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-smoke_no_follow
-
 smoke_message 'A página /parceiros existe'
 smoke_url_ok '/parceiros/'
 smoke_assert_body "description.*content=\"Descubra quem são as empresas que, \

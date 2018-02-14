@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-smoke_no_follow
-
 smoke_message 'A página /transparencia existe'
 smoke_url_ok '/transparencia/'
 smoke_assert_body "description.*content=\"Conheça nossas relatórios anuais de atividades e \
