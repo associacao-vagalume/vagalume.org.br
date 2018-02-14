@@ -132,6 +132,6 @@ O último passo não será rodado localmente.
 [jekyll-doc]: http://jekyll-brasil.github.io/
 [rbenv]: https://github.com/rbenv/rbenv
 [rvm]: https://rvm.io
-[staging]: http://staging.vagalume.org.br
+[staging]: https://www.staging.vagalume.org.br
 [travis]: https://travis-ci.org/associacao-vagalume/associacao-vagalume.github.io
-[vagalume]: http://vagalume.org.br
+[vagalume]: https://www.vagalume.org.br
