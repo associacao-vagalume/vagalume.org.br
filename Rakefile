@@ -12,8 +12,10 @@ task :default => :build
 desc 'Limpa o workspace'
 task :clean do |t|
   puts t.full_comment
+  rm_rf '.asset-cache'
   rm_rf '_site'
-  rm_rf '_report'
+  rm_rf '_site_gerado'
+  rm_rf '_reports'
 end
 
 desc 'Compila o site'
