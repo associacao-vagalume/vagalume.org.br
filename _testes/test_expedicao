@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+smoke_message 'A página /programa-expedicao existe'
+
+smoke_url_ok '/programa-expedicao/'
+smoke_assert_body "<title>Programa Expedição | Vaga Lume - Empoderando \
+crianças na Amazônia</title>"
+smoke_assert_body "description.*content=\"Saiba mais sobre o Programa \
+Expedição, cujo principal objetivos é promover o acesso à leitura em \
+comunidades rurais da Amazônia.\""
+smoke_assert_body "<h1>Programa Expedição</h1>"

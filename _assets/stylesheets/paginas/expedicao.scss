@@ -1,0 +1,81 @@
+.galeria {
+  display: none;
+
+  img {
+    width: 100%;
+  }
+
+  figcaption {
+    background-color: rgba(0,0,0,.6);
+    bottom: 0;
+    color: $white;
+    font-size: .8em;
+    line-height: .8em;
+    margin: 1rem;
+    padding: 1rem;
+    position: absolute;
+  }
+
+  .slidesjs-navigation {
+    display: none;
+  }
+
+  .slidesjs-pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      margin: 1rem .2rem;
+    }
+
+    a:link {
+      background-color: $orangey-yellow;
+      border-radius: 1rem;
+      color: $orangey-yellow;
+      display: block;
+      height: 1rem;
+      overflow: hidden;
+      width: 1rem;
+    }
+
+    a:link.active {
+      background-color: $umber;
+      color: $umber;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    position: relative;
+
+    .slidesjs-container {
+      z-index: 1;
+    }
+
+    .slidesjs-navigation {
+      align-items: center;
+      bottom: 0;
+      color: $white;
+      display: flex;
+      font-size: 10rem;
+      justify-content: center;
+      padding-bottom: 3rem;
+      position: absolute;
+      text-decoration: none;
+      text-shadow: 1px 1px 2px black;
+      top: 0;
+      width: 6rem;
+      z-index: 2;
+    }
+
+    .slidesjs-previous {
+      left: 0;
+    }
+
+    .slidesjs-next {
+      right: 0;
+    }
+  }
+}
