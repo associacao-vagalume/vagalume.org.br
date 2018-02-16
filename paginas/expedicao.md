@@ -2,8 +2,8 @@
 title: Programa Expedição
 permalink: /programa-expedicao/
 layout: pagina-markdown
-imagem: ''
-imagem_mobile: ''
+imagem: '/assets/img/paginas/programa-expedicao-desktop.jpg'
+imagem_mobile: '/assets/img/paginas/programa-expedicao-mobile.jpg'
 description: Saiba mais sobre o Programa Expedição, cujo principal objetivos é
   promover o acesso à leitura em comunidades rurais da Amazônia.
 galeria:
