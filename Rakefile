@@ -13,6 +13,7 @@ desc 'Limpa o workspace'
 task :clean do |t|
   puts t.full_comment
   rm_rf '.asset-cache'
+  rm_rf '.jekyll-cache'
   rm_rf '_site'
   rm_rf '_site_gerado'
   rm_rf '_reports'
