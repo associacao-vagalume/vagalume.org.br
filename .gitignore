@@ -10,3 +10,4 @@ _site_gerado/
 vendor/
 *.code-workspace
 .byebug_history
+.local.env
