@@ -1,13 +1,6 @@
 ---
+# Metadados do site
 title: Vaga Lume - Empoderando crianças na Amazônia
-timezone: UTC
-collections:
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 description: >-
   A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
   e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
@@ -23,12 +16,32 @@ keywords:
 - empoderamento
 - transformação social
 - bibliotecas
+# Compartilhamento em redes sociais
 url: https://www.vagalume.org.br
-url_antigo: http://arquivo.vagalume.org.br
-url_doar: https://vagalume.colabore.org/inicial
-twitter_username: VagaLume_ONG
 share_image: assets/img/fb_op1.jpg
 share_image_alt: Grupo de leitura com crianças da Amazônia
+twitter_username: VagaLume_ONG
+# Apontamentos para outros sites
+url_antigo: http://arquivo.vagalume.org.br
+url_doar: https://vagalume.colabore.org/inicial
+# Video da home-page
+home_video_id: xt2qJwwnH2U
+home_video_titulo: Expedição Vaga Lume - 15 anos
+# Dados do rodapé
+contato:
+  email: falecom@vagalume.org.br
+  telefone: (11) 3032-6032
+  endereco_1: Rua Aspicuelta, 678, Vila Madalena
+  endereco_2: 05433-011 - São Paulo - SP
+# Configurações da ferramenta
+timezone: UTC
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
 assets:
   compress:
     css: true

@@ -2,10 +2,10 @@
 title: Programa Expedição
 permalink: /programa-expedicao/
 layout: pagina-markdown
-imagem: '/assets/img/paginas/programa-expedicao-desktop.jpg'
-imagem_mobile: '/assets/img/paginas/programa-expedicao-mobile.jpg'
-description: Saiba mais sobre o Programa Expedição, cujo principal objetivos é
-  promover o acesso à leitura em comunidades rurais da Amazônia.
+imagem: /assets/img/paginas/programa-expedicao-desktop.jpg
+imagem_mobile: /assets/img/paginas/programa-expedicao-mobile.jpg
+description: 'Saiba mais sobre o Programa Expedição, cujo principal objetivos é
+  promover o acesso à leitura em comunidades rurais da Amazônia.'
 galeria:
   - img_src: /assets/img/expedicao/aldeia-campina-cruzeiro-do-sul-ac-rayssa-coe.jpg
     legenda: Aldeia Campina - Cruzeiro do Sul, AC (Rayssa Coe)
@@ -36,17 +36,6 @@ E para que tudo isso faça ainda mais sentido para as comunidades, valorizamos a
 local incentivando e capacitando a comunidade a escrever livros artesanais com as suas
 próprias histórias.
 
-<div class="galeria" id="galeria">
-{% for foto in page.galeria %}
-  <figure>
-    <img src="{{ foto.img_src }}" alt="{{ foto.legenda }}">
-    <figcaption>
-      {{ foto.legenda }}
-    </figcaption>
-  </figure>
-{% endfor %}
-  <a href="" class="slidesjs-previous slidesjs-navigation">&lt;</a>
-  <a href="" class="slidesjs-next slidesjs-navigation">&gt;</a>
-</div>
+{% include_relative _includes/galeria.html %}
 
 Desse jeito trabalhamos para formar leitores, pois acreditamos que a leitura abre novas portas e oferece muitas possibilidades de caminhos para crianças e jovens da Amazônia.
