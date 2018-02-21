@@ -133,5 +133,5 @@ O último passo não será rodado localmente.
 [rbenv]: https://github.com/rbenv/rbenv
 [rvm]: https://rvm.io
 [staging]: https://www.staging.vagalume.org.br
-[travis]: https://travis-ci.org/associacao-vagalume/associacao-vagalume.github.io
+[travis]: https://travis-ci.org/associacao-vagalume/vagalume.org.br
 [vagalume]: https://www.vagalume.org.br
