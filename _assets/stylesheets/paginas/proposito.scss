@@ -1,5 +1,5 @@
 .pagina {
-  .fonte, .footnote {
+  .fonte, .footnotes {
     font-size: 0.75em;
     font-style: italic;
   }
@@ -8,11 +8,26 @@
     text-align: right;
   }
 
-  .footnote {
-    margin-top: 3rem;
+  .footnotes {
+    @include make-container();
+    @include make-container-max-widths();
+
+    color: $brown;
+    font-weight: bold;
+    padding: 0 1.5rem 2.5rem;
+
+    p {
+      color: initial;
+      font-weight: initial;
+    }
+
+    ol {
+      padding-left: 1rem;
+    }
+
   }
 
-  sup, .numero-footnote {
+  .footnote, .reversefootnote {
     font-weight: bold;
     color: $brown;
   }
@@ -23,6 +38,10 @@
     font-family: $font-amatic;
     font-size: 2.25rem;
     font-weight: 400;
+  }
+
+  .secao-proposito, .secao-principios {
+    order: 1;
   }
 
   .secao-proposito {

@@ -3,6 +3,8 @@ $brown: #aa6a01;
 .pagina {
   font-size: 1.5rem;
   text-align: left;
+  display: flex;
+  flex-direction: column;
 
   header {
     background-color: $grey;
