@@ -1,12 +1,11 @@
 ---
 title: Propósito
-permalink: /proposito/
+permalink: "/proposito/"
 layout: pagina
-imagem: /assets/img/paginas/proposito.jpg
-imagem_mobile: /assets/img/paginas/proposito.jpg
-description: 'Conheça o propósito do nosso projeto, nossos valores e entenda os oito
-  princípios que seguimos para atingir nossa principal missão.'
-
+imagem: "/assets/img/paginas/proposito.jpg"
+imagem_mobile: "/assets/img/paginas/proposito.jpg"
+description: Conheça o propósito do nosso projeto, nossos valores e entenda os oito
+  princípios que seguimos para atingir nossa principal missão.
 principios:
 - nome: Humanismo
   descricao: São as pessoas que transformam sua realidade.
@@ -15,20 +14,18 @@ principios:
 - nome: Leitura
   descricao: Empodera e possibilida a transformação social.
 - nome: Mediação
-  descricao: 'Construímos pontes entre as pessoas, comunidades, gerações e os diversos
-    saberes.'
+  descricao: Construímos pontes entre as pessoas, comunidades, gerações e os diversos
+    saberes.
 - nome: Escuta
-  descricao: 'Compreendemos o outro e construímos junto, estabelecendo um diálogo
-    verdadeiro.'
+  descricao: Compreendemos o outro e construímos junto, estabelecendo um diálogo verdadeiro.
 - nome: Interesse
   descricao: Toda mudança acontece de dentro para fora.
 - nome: Diversidade cultural
-  descricao: 'Conhecer as diferenças e reconhecer as semelhanças para melhor conviver em
-    um mundo plural.'
+  descricao: Conhecer as diferenças e reconhecer as semelhanças para melhor conviver
+    em um mundo plural.
 - nome: Cultura local
-  descricao: 'Valorização da memória, ancestralidade e saber tradicional nutrem nossas
-    raízes e nos fortalecem.'
-
+  descricao: Valorização da memória, ancestralidade e saber tradicional nutrem nossas
+    raízes e nos fortalecem.
 ---
 
 <div class="container">

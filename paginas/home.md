@@ -1,13 +1,12 @@
 ---
 title: Home
-permalink: /
+permalink: "/"
 layout: home
-
 o_que_fazemos:
-  descricao: 'Por meio da formação de mediadores de leitura e criação de bibliotecas
-    comunitárias para crianças da Amazônia, promovemos intercâmbios
-    culturais com a leitura, a escrita e a oralidade para ajudar a formar
-    pessoas mais engajadas na transformação de suas realidades.'
+  descricao: Por meio da formação de mediadores de leitura e criação de bibliotecas
+    comunitárias para crianças da Amazônia, promovemos intercâmbios culturais com
+    a leitura, a escrita e a oralidade para ajudar a formar pessoas mais engajadas
+    na transformação de suas realidades.
   estatisticas:
   - numero: 23
     descricao: Municípios da Amazônia Legal
@@ -15,22 +14,22 @@ o_que_fazemos:
     descricao: bibliotecas comunitárias
   - numero: 3.633
     descricao: mediadores de leitura formados
-
 como_colaborar:
-  descricao: 'Você pode ajudar na criação de bibliotecas em comunidades rurais na Amazônia e, com isso, incentivar a gestão comunitária e a valorização da cultura local!'
+  descricao: Você pode ajudar na criação de bibliotecas em comunidades rurais na Amazônia
+    e, com isso, incentivar a gestão comunitária e a valorização da cultura local!
   pessoa_fisica:
     chamada: Seja um Vaga Lume
     modos:
-      - Lei Rouanet
-      - Voluntariado
-      - Compra de produtos Vaga Lume
-      - Doação recorrente
+    - Lei Rouanet
+    - Voluntariado
+    - Compra de produtos Vaga Lume
+    - Doação recorrente
   pessoa_juridica:
     chamada: Faça Parte
     modos:
-      - Lei Rouanet
-      - Parceria
-      - Doação para projetos
+    - Lei Rouanet
+    - Parceria
+    - Doação para projetos
 ---
 
 {% include_relative _includes/home-apresentacao.html

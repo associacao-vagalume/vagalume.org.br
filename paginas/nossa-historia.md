@@ -1,11 +1,11 @@
 ---
 title: Nossa História
-permalink: /nossa-historia/
+permalink: "/nossa-historia/"
 layout: pagina-markdown
-imagem: /assets/img/paginas/nossa-historia-desktop.jpg
-imagem_mobile: /assets/img/paginas/nossa-historia-mobile.jpg
-description: 'Conheça como começou a história da Vaga Lume, desde o início, passando
-  pelos nossos 16 anos de atuação.'
+imagem: "/assets/img/paginas/nossa-historia-desktop.jpg"
+imagem_mobile: "/assets/img/paginas/nossa-historia-mobile.jpg"
+description: Conheça como começou a história da Vaga Lume, desde o início, passando
+  pelos nossos 16 anos de atuação.
 ---
 
 Sylvia, Laís e Fofa queriam conhecer mais sobre o pais onde viviam e, por isso,
