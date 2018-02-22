@@ -55,14 +55,19 @@ auditorias:
   link: http://arquivo.vagalume.org.br/painel/dbarquivos/dbanexos/parecerauditoria2007e2008p.pdf
 ---
 
+{::options parse_block_html="true" /}
+
 <div class="container">
-  <p>Queremos que você confie cada vez mais em nosso trabalho, por isso te
+  Queremos que você confie cada vez mais em nosso trabalho, por isso te
   contamos em relatórios anuais o que fazemos nos municípios e comunidades onde
   estamos e em nosso escritório em São Paulo e também como aplicamos o dinheiro
-  que recebemos de pessoas e de empresas.</p>
-  <p>Conheça os nossos relatórios de atividade e também os nosso relatórios
-  financeiros que passam por uma auditoria externa:</p>
+  que recebemos de pessoas e de empresas.
+
+  Conheça os nossos relatórios de atividade e também os nosso relatórios
+  financeiros que passam por uma auditoria externa:
 </div>
+
+{::options parse_block_html="false" /}
 
 {% include_relative _includes/relatorios-atividades.html %}
 {% include_relative _includes/relatorios-auditoria.html %}
