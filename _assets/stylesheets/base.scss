@@ -6,6 +6,7 @@ $black: #000;
 $grey: #858585;
 $greyish-brown: #6f6251;
 $orangey-yellow: #fdb913;
+$yellowey-white: #fde9b7;
 $umber: #aa6a01;
 $white: #fff;
 
@@ -32,6 +33,20 @@ h2 {
 h3 {
   color: $orangey-yellow;
   margin-bottom: 1rem;
+}
+
+.botao {
+  display: block;
+  text-decoration: none;
+
+  & > * {
+    background-color: $orangey-yellow;
+    color: $black;
+    display: inline-block;
+    font-size: 1.75rem;
+    line-height: 2;
+    margin: 0;
+  }
 }
 
 @include media-breakpoint-up(md) {
