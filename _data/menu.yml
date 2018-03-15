@@ -5,21 +5,21 @@
 # configurado no arquivo _config.yml.
 
 principal:
-  - nome: Quem Somos
-    link: $antigo$/interna/21/quem-somos
   - nome: Propósito
     link: /proposito/
   - nome: Nossa História
     link: /nossa-historia/
-  - nome: Localidades
-    link: $antigo$/onde_atuamos
   - nome: O que fazemos
-    link: /programa-expedicao/
-
-secundario:
-  - nome: Transparência
-    link: /transparencia/
+    link: /o-que-fazemos/
   - nome: Parceiros
     link: /parceiros/
+
+secundario:
+  - nome: Quem Somos
+    link: $antigo$/interna/21/quem-somos
+  - nome: Transparência
+    link: /transparencia/
+  - nome: Localidades
+    link: $antigo$/onde_atuamos
   - nome: Contato
     link: $antigo$/contato
