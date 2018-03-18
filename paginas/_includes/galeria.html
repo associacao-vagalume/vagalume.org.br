@@ -2,9 +2,11 @@
   {% for foto in page.galeria %}
     <figure>
       <img src="{{ foto.img_src }}" alt="{{ foto.legenda }}">
+      {% if foto.legenda %}
       <figcaption>
         {{ foto.legenda }}
       </figcaption>
+      {% endif %}
     </figure>
   {% endfor %}
   <a href="" class="slidesjs-previous slidesjs-navigation">&lt;</a>

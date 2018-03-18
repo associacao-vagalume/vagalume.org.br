@@ -27,7 +27,7 @@ numeros_em_destaque:
     <a class="botao" href="/programa-expedicao">
       <h3>Programa Expedição</h3>
     </a>
-    <a class="botao" style="display: none;" href="/programa-rede">
+    <a class="botao" href="/programa-rede">
       <h3>Programa Rede</h3>
     </a>
   </div>
