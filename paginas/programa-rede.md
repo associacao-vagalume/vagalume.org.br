@@ -5,7 +5,8 @@ layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-rede-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/programa-rede-mobile.jpg"
 description: Tudo sobre o Programa Rede, iniciativa que conecta jovens das comunidades
-  rurais da Amazônia e jovens da cidade de São Paulo, criando oportunidades de intercâmbio cultural.
+  rurais da Amazônia e jovens da cidade de São Paulo, criando oportunidades de intercâmbio
+  cultural.
 galeria:
 - img_src: "/assets/img/rede/rede_1.jpg"
 - img_src: "/assets/img/rede/rede_2.jpg"
