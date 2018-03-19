@@ -1,7 +1,7 @@
 <div class="galeria" id="galeria">
   {% for foto in page.galeria %}
     <figure>
-      <img src="{{ foto.img_src }}" alt="{{ foto.legenda }}">
+      <img src="{{ foto.img_src }}" alt="{{ foto.legenda | default: 'Foto' }}">
       {% if foto.legenda %}
       <figcaption>
         {{ foto.legenda }}
