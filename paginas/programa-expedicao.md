@@ -21,16 +21,10 @@ galeria:
   legenda: São Sebastião - Portel, PA (Emilie Rivas)
 ---
 
-Com esse programa promovemos o acesso à leitura em comunidades rurais da Amazônia.
-Fazemos isso doando livros, estantes e esteiras para a comunidade montar a sua própria
-biblioteca, capacitamos mães, pais, educadores - e quem mais se interessar - como
-mediadores de leitura, fazendo com que os livros saiam das prateleiras e cheguem até as
-crianças jovens e adultos.
-E também incentivamos a gestão comunitária, afinal, essa biblioteca é da comunidade!
-E para que tudo isso faça ainda mais sentido para as comunidades, valorizamos a cultura
-local incentivando e capacitando a comunidade a escrever livros artesanais com as suas
-próprias histórias.
+Com esse programa, promovemos o acesso à leitura em comunidades rurais da Amazônia. Para tanto, doamos livros, estantes e esteiras para a comunidade montar a sua própria biblioteca e capacitamos mães, pais, educadores – e quem mais se interessar – como mediadores de leitura, fazendo com que os livros saiam das prateleiras e cheguem até crianças, jovens e adultos.
+
+Também incentivamos a gestão comunitária, afinal, essa biblioteca é da comunidade! E para que tudo isso faça ainda mais sentido, valorizamos a cultura local, incentivando e capacitando a comunidade a escrever livros artesanais com suas próprias histórias.
 
 {% include_relative _includes/galeria.html %}
 
-Desse jeito trabalhamos para formar leitores, pois acreditamos que a leitura abre novas portas e oferece muitas possibilidades de caminhos para crianças e jovens da Amazônia.
+Assim, trabalhamos para formar leitores, pois acreditamos que a leitura abre novas portas e oferece inúmeros caminhos para crianças e jovens da Amazônia.
