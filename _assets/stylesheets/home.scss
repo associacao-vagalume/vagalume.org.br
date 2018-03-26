@@ -10,6 +10,10 @@
     font-size: 2.5rem;
   }
 
+  .botao h3  {
+    color: $black;
+  }
+
   & > * {
     padding: 4rem 1rem;
   }
@@ -33,10 +37,9 @@
     }
 
     .botao {
-
       & > * {
-        line-height: 1.7;
         font-size: 3.25rem;
+        line-height: 1.7;
       }
     }
   }
