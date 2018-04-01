@@ -16,7 +16,7 @@ principal:
 
 secundario:
   - nome: Quem Somos
-    link: $antigo$/interna/21/quem-somos
+    link: /quem-somos/
   - nome: Transparência
     link: /transparencia/
   - nome: Localidades

@@ -1,0 +1,66 @@
+.pagina {
+
+  .time {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+
+    li {
+      max-width: 300px;
+    }
+
+    .foto {
+      width: 100%;
+    }
+
+    .quem-e {
+      background-color: $orangey-yellow;
+      font-size: 1.2rem;
+      line-height: 1.25;
+      height: 396px;
+      padding: 0.9rem 1rem;
+    }
+  }
+
+  .quem-somos {
+    color: $white;
+
+    h2 {
+      color: $orangey-yellow;
+      line-height: 1.2;
+    }
+
+    .associados, .conselho-consultivo, .conselho-fiscal {
+      list-style: none;
+      padding: 0 0 2em;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .time {
+
+      li {
+        height: 396px;
+
+        &:hover .quem-e {
+          display: block;
+        }
+      }
+
+      .quem-e {
+        display: none;
+        opacity: 0.75;
+        position: relative;
+        top: -396px;
+      }
+    }
+
+    .quem-somos {
+      .associados, .conselho-consultivo, .conselho-fiscal {
+        column-count: 3;
+      }
+    }
+  }
+}
