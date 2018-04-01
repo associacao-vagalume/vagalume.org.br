@@ -1,9 +1,9 @@
 <!-- Tags meta para compartilhamento -->
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:url" content="{{ site.url }}">
-<meta property="og:title" content="{{ site.title }}">
-<meta property="og:description" content="{{ site.description }}">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:url" content="{{ site.url | url_escape }}">
+<meta property="og:title" content="{{ site.title | escape }}">
+<meta property="og:description" content="{{ site.description | escape }}">
 <meta property="og:image" content="{{ site.url }}/{{ site.share_image}}">
 <meta property="og:image:alt" content="{{ site.share_image_alt }}">
 <meta name="twitter:card" content="summary_large_image">

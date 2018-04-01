@@ -1,6 +1,6 @@
 <!-- Metadados do site -->
-<meta name="description" content="{{ page.description | default: site.description }}">
-<meta name="keywords" content="{{ site.keywords | join: ', ' }}"/>
+<meta name="description" content="{{ (page.description | default: site.description) | escape }}">
+<meta name="keywords" content="{{ site.keywords | join: ', ' | escape }}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <!-- Fim Metadados do site -->
