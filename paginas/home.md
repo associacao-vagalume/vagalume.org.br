@@ -15,21 +15,21 @@ o_que_fazemos:
   - numero: 3.633
     descricao: mediadores de leitura formados
 como_colaborar:
-  descricao: Você pode ajudar na criação de bibliotecas em comunidades rurais na Amazônia
-    e, com isso, incentivar a gestão comunitária e a valorização da cultura local!
+  descricao: "Colaborar com os nossos Programas é uma oportunidade de você se tornar um agente de transformação social e contribuir com o empoderamento de comunidades rurais da Amazônia.\n\nDoe e vamos escrever juntos novas histórias na Amazônia!"
   pessoa_fisica:
     chamada: Seja um Vaga Lume
     modos:
-    - Lei Rouanet
-    - Voluntariado
-    - Compra de produtos Vaga Lume
-    - Doação recorrente
+    - Doe
+    - Voluntarie-se
+    - Doe seu Imposto de Renda
   pessoa_juridica:
     chamada: Faça Parte
     modos:
-    - Lei Rouanet
-    - Parceria
-    - Doação para projetos
+    - Investimento Social Direto
+    - Investimento com Incentivos Fiscais
+    - Serviços de assessoria
+    - Licenciamento de marca
+    - Marketing relacionado à causa
 ---
 
 {% include_relative _includes/home-apresentacao.html

@@ -1,7 +1,7 @@
 <div class="como-colaborar">
   <div class="container">
     <h3>Como Colaborar</h3>
-    <p>{{ page.como_colaborar.descricao }}</p>
+    <p>{{ page.como_colaborar.descricao | markdownify }}</p>
       <div class="modalidades">
         <input type="radio" name="colaborar-modalidades" id="pessoa-fisica" checked="checked">
         <label for="pessoa-fisica"><h4>Pessoa Física</h4></label>
