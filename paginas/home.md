@@ -15,7 +15,10 @@ o_que_fazemos:
   - numero: 3.633
     descricao: mediadores de leitura formados
 como_colaborar:
-  descricao: "Colaborar com os nossos Programas é uma oportunidade de você se tornar um agente de transformação social e contribuir com o empoderamento de comunidades rurais da Amazônia.\n\nDoe e vamos escrever juntos novas histórias na Amazônia!"
+  descricao: |-
+    Colaborar com os nossos Programas é uma oportunidade de você se tornar um agente de transformação social e contribuir com o empoderamento de comunidades rurais da Amazônia.
+
+    Doe e vamos escrever juntos novas histórias na Amazônia!
   pessoa_fisica:
     chamada: Seja um Vaga Lume
     modos:
