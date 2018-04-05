@@ -3,38 +3,39 @@
 # Eles são apresentados na ordem adicionada aqui
 
 financiadores:
+- lampadas: 4
+  lista:
+    - nome: Samsung
+      url_img: /assets/img/parceiros/samsung.svg
+    - nome: Visa
+      url_img: /assets/img/parceiros/visa.svg
+    - nome: CTG Brasil
+      url_img: /assets/img/parceiros/ctg-brasil.svg
+    - nome: Criança Esperança
+      url_img: /assets/img/parceiros/crianca-esperanca.jpg
+
 - lampadas: 3
   lista:
   - nome: Fundación MAPFRE
     url_img: /assets/img/parceiros/mapfre.svg
-  - nome: Machado Meyer Advogados
-    url_img: /assets/img/parceiros/machado-meyer.svg
-  - nome: Dresser Rand
-    url_img: /assets/img/parceiros/dresser-rand.svg
   - nome: Manserv
     url_img: /assets/img/parceiros/manserv.svg
-- lampadas: 2
-  lista:
-  - nome: Azul
-    url_img: /assets/img/parceiros/azul.svg
-  - nome: Alupar - Taesa
-    url_img: /assets/img/parceiros/alupar-taesa.svg
+  - nome: Bemol
+    url_img: /assets/img/parceiros/bemol.png
+  - nome: FTD
+    url_img: /assets/img/parceiros/ftd.jpg
+  - nome: Machado Meyer Advogados
+    url_img: /assets/img/parceiros/machado-meyer.svg
+  - nome: TBE
+    url_img: /assets/img/parceiros/tbe.jpg
   - nome: Arredondar
     url_img: /assets/img/parceiros/arredondar.svg
-  - nome: SO Energy International
-    url_img: /assets/img/parceiros/soenergy.svg
-  - nome: Mercur
-    url_img: /assets/img/parceiros/mercur.svg
-- lampadas: 1
+- lampadas: 2
   lista:
-  - nome: Cescon, Barrieu, & Flesch Advogados
-    url_img: /assets/img/parceiros/cescon-barrieu.svg
-  - nome: Danny Cosméticos
-    url_img: /assets/img/parceiros/danny-cosmeticos.svg
-  - nome: OMA - Condomínio, Locação, Venda
-    url_img: /assets/img/parceiros/oma.png
-  - nome: Aster - Segurança e Facilites
-    url_img: /assets/img/parceiros/aster.png
+  - nome: Bank of America
+    url_img: /assets/img/parceiros/bank-of-america.svg
+  - nome: Renascença
+    url_img: /assets/img/parceiros/renascenca.png
 
 apoiadores:
 - servico: Assessoria Jurídica
