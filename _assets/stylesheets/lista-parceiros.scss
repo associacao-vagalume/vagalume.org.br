@@ -9,8 +9,8 @@
 
 .lista-parceiros, .lista-apoiadores {
   .grupo-nivel, .logo {
-    height: 3rem;
-    max-width: 10rem;
+    max-height: 4rem;
+    max-width: 12rem;
   }
 
   .grupo {
@@ -63,11 +63,11 @@
       flex-direction: row;
       justify-content: space-around;
     }
-  
+
     .logo {
-      height: 4rem;
+      max-height: 6rem;
     }
-  
+
     .grupo-nivel {
       min-width: 6rem;
     }

@@ -26,12 +26,16 @@ financiadores:
     url_img: /assets/img/parceiros/ftd.jpg
   - nome: Machado Meyer Advogados
     url_img: /assets/img/parceiros/machado-meyer.svg
-  - nome: TBE
-    url_img: /assets/img/parceiros/tbe.jpg
+  - nome: Alupar-Taesa
+    url_img: /assets/img/parceiros/alupar-taesa.svg
   - nome: Arredondar
     url_img: /assets/img/parceiros/arredondar.svg
+  - nome: Somos Educação
+    url_img: /assets/img/parceiros/somos-educacao.png
 - lampadas: 2
   lista:
+  - nome: Azul
+    url_img: /assets/img/parceiros/azul.svg
   - nome: Bank of America
     url_img: /assets/img/parceiros/bank-of-america.svg
   - nome: Renascença
@@ -54,8 +58,6 @@ apoiadores:
   lista:
   - nome: Zaic – branding, da estratégia ao design
     url_img: /assets/img/parceiros/zaic.png
-  - nome: Salem Comunicação - Agência 360
-    url_img: /assets/img/parceiros/salem.svg
 - servico: Hospedagem do Site
   lista:
   - nome: Locaweb - Hospedagem de Site
