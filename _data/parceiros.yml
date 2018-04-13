@@ -5,31 +5,31 @@
 financiadores:
 - lampadas: 4
   lista:
-    - nome: Samsung
-      url_img: /assets/img/parceiros/samsung.svg
-    - nome: Visa
-      url_img: /assets/img/parceiros/visa.svg
     - nome: CTG Brasil
       url_img: /assets/img/parceiros/ctg-brasil.svg
     - nome: Criança Esperança
       url_img: /assets/img/parceiros/crianca-esperanca.jpg
+    - nome: Samsung
+      url_img: /assets/img/parceiros/samsung.svg
+    - nome: Visa
+      url_img: /assets/img/parceiros/visa.svg
 
 - lampadas: 3
   lista:
-  - nome: Fundación MAPFRE
-    url_img: /assets/img/parceiros/mapfre.svg
-  - nome: Manserv
-    url_img: /assets/img/parceiros/manserv.svg
-  - nome: Bemol
-    url_img: /assets/img/parceiros/bemol.png
-  - nome: FTD
-    url_img: /assets/img/parceiros/ftd.jpg
-  - nome: Machado Meyer Advogados
-    url_img: /assets/img/parceiros/machado-meyer.svg
   - nome: Alupar-Taesa
     url_img: /assets/img/parceiros/alupar-taesa.svg
   - nome: Arredondar
     url_img: /assets/img/parceiros/arredondar.svg
+  - nome: Bemol
+    url_img: /assets/img/parceiros/bemol.png
+  - nome: FTD
+    url_img: /assets/img/parceiros/ftd.jpg
+  - nome: Fundación MAPFRE
+    url_img: /assets/img/parceiros/mapfre.svg
+  - nome: Machado Meyer Advogados
+    url_img: /assets/img/parceiros/machado-meyer.svg
+  - nome: Manserv
+    url_img: /assets/img/parceiros/manserv.svg
   - nome: Somos Educação
     url_img: /assets/img/parceiros/somos-educacao.png
 - lampadas: 2
