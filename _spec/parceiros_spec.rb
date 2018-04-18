@@ -84,7 +84,7 @@ end
 def obtem_imagens(dados)
   grupos_parceiros = [obtem_apoiadores(dados), obtem_financiadores(dados)].flatten
   parceiros = grupos_parceiros.map { |grupo| grupo.fetch('lista') }.flatten
-  imagens = parceiros.map { |parceiro| parceiro.fetch('url_img') }
-  
+  imagens = parceiros.map{ |parceiro| parceiro['url_img'] }.compact
+
   imagens
 end

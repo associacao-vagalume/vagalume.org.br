@@ -9,7 +9,11 @@
       <ul>
         {% for parceiro in grupo['lista'] %}
           <li>
+            {% if grupo.lampadas > 1 %}
             <img class="logo" src="{{ parceiro.url_img }}" alt="{{ parceiro.nome }}">
+            {% else %}
+            {{ parceiros }}
+            {% endif %}
           </li>
         {% endfor %}
       </ul>

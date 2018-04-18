@@ -40,6 +40,17 @@ financiadores:
     url_img: /assets/img/parceiros/bank-of-america.svg
   - nome: Renascença
     url_img: /assets/img/parceiros/renascenca.png
+- lampadas: 1
+  lista:
+  - nome: 4Bio Medicamentos S.A.
+  - nome: Danny Cosméticos
+  - nome: Escola Santi
+  - nome: Escola Vera Cruz
+  - nome: Fundação Tide Setubal
+  - nome: HJC Meinberg Fomento Mercantil Ltda
+  - nome: Mercur S.A.
+  - nome: SoEnergy Sistemas Interacionais de Energia S/A
+  - nome: Souza, Cescon, Barrieu & Flesch Advogados
 
 apoiadores:
 - servico: Assessoria Jurídica
