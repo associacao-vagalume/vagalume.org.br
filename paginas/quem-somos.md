@@ -7,7 +7,6 @@ imagem_mobile: "/assets/img/paginas/quem-somos-mobile.jpg"
 description: Saiba "quem é quem" na equipe Vaga Lume e conheça as pessoas que fazem
   parte da Assembléia de Associados, do Conselho Consultivo, do Conselho Fiscal, do
   Conselho Literário e da Direção da associação.
-
 ---
 
 <div class="quem-somos secao-fundo-escuro">
