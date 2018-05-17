@@ -77,14 +77,14 @@ Siga as instruções descritas em [INSTALL.md](INSTALL.md)
 
 ## Decisões de arquitetura
 
-Saiba mais sobre as decisões de arquitetura tomadas neste projeto em [_doc/decisoes/README.md](doc/decisoes/README.md)
+Saiba mais sobre as decisões de arquitetura tomadas neste projeto em [_doc/decisoes/README.md](_doc/decisoes/README.md)
 
 ## Executando os testes
 
 O site possui uma série de testes para garantir que o html gerado está correto.
 Para executar os testes de corretude, rode `bundle exec rake test`. Existe um
 outro teste mais demorado, que verifica se os links da página apontam para
-páginas existentes. Para rodá-los, execute `bundle exec rake acceptance`.
+páginas existentes. Para rodá-los, execute `bundle exec rake integration`.
 
 ## Rodando o site localmente
 
@@ -125,7 +125,6 @@ Este script realiza os seguintes passos:
 4. Versiona o site e salva em `staging`
 
 O último passo não será rodado localmente.
-
 
 [chruby]: https://github.com/postmodern/chruby
 [jekyll]: https://jekyllrb.com
