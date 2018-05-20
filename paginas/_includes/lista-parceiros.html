@@ -4,7 +4,7 @@
   class="lei-incentivo-cultura">
 <div class="lista-parceiros">
   {% for grupo in include.financiadores %}
-    <div class="grupo">
+    <div class="grupo lampadas-{{ grupo.lampadas }}">
       <img class="grupo-nivel" src="/assets/img/parceiros/{{ grupo.lampadas }}-lampada.svg" alt="Parceiro {{ grupo.lampadas | pluralize: 'lâmpada', 'lâmpadas' }}">
       <ul>
         {% for parceiro in grupo['lista'] %}

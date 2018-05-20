@@ -2,8 +2,8 @@
   <div class="container lista-parceiros">
     <h3>Parceiros</h3>
     {% for grupo in include.parceiros %}
-      {% if forloop.index <= 2 %}
-      <div class="grupo">
+      {% if forloop.index <= 3 %}
+      <div class="grupo lampadas-{{ grupo.lampadas }}">
         <img class="grupo-nivel" src="/assets/img/parceiros/{{ grupo.lampadas }}-lampada.svg" alt="Parceiro {{ grupo.lampadas | pluralize: 'lâmpada', 'lâmpadas' }}">
         <ul>
           {% for parceiro in grupo['lista'] %}

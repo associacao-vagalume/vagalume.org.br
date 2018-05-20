@@ -7,10 +7,27 @@
   margin-bottom: 3em;
 }
 
+.lista-apoiadores {
+  .logo {
+    height: 3rem;
+  }
+}
+
 .lista-parceiros, .lista-apoiadores {
-  .grupo-nivel, .logo {
-    max-height: 4rem;
-    max-width: 12rem;
+  .grupo-nivel {
+    height: 3rem;
+  }
+
+  .lampadas-4 .logo {
+    height: 4rem;
+  }
+
+  .lampadas-3 .logo {
+    height: 3rem;
+  }
+
+  .lampadas-2 .logo {
+    height: 3rem;
   }
 
   .grupo {
@@ -64,8 +81,16 @@
       justify-content: space-around;
     }
 
-    .logo {
-      max-height: 6rem;
+    .lampadas-4 .logo {
+      height: 6rem;
+    }
+
+    .lampadas-3 .logo {
+      height: 4rem;
+    }
+
+    .lampadas-2 .logo {
+      height: 2rem;
     }
 
     .grupo-nivel {
@@ -77,6 +102,10 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+
+    .logo {
+      height: 4rem;
+    }
 
     .grupo {
       margin-left: 2em;

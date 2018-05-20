@@ -8,11 +8,11 @@ financiadores:
     - nome: Criança Esperança
       url_img: /assets/img/parceiros/crianca-esperanca.jpg
     - nome: CTG Brasil
-      url_img: /assets/img/parceiros/ctg-brasil.svg
+      url_img: /assets/img/parceiros/ctg-brasil.png
     - nome: Samsung
-      url_img: /assets/img/parceiros/samsung.svg
+      url_img: /assets/img/parceiros/samsung.png
     - nome: Visa
-      url_img: /assets/img/parceiros/visa.svg
+      url_img: /assets/img/parceiros/visa.png
 
 - lampadas: 3
   lista:
@@ -38,19 +38,22 @@ financiadores:
     url_img: /assets/img/parceiros/azul.svg
   - nome: Bank of America
     url_img: /assets/img/parceiros/bank-of-america.svg
+  - nome: Mercur S.A.
+    url_img: /assets/img/parceiros/mercur.svg
   - nome: Renascença
     url_img: /assets/img/parceiros/renascenca.png
 - lampadas: 1
   lista:
-  - nome: 4Bio Medicamentos S.A.
+  - nome: 4BIO Medicamentos S.A.
+  - nome: Cescon, Barrieu, Flesch & Barreto Advogados
+  - nome: Colégio Ph
   - nome: Danny Cosméticos
   - nome: Escola Santi
   - nome: Escola Vera Cruz
   - nome: Fundação Tide Setubal
   - nome: HJC Meinberg Fomento Mercantil Ltda
-  - nome: Mercur S.A.
   - nome: SoEnergy Sistemas Interacionais de Energia S/A
-  - nome: Souza, Cescon, Barrieu & Flesch Advogados
+  - nome: Turismo Consciente
 
 apoiadores:
 - servico: Assessoria Jurídica
@@ -61,10 +64,6 @@ apoiadores:
   lista:
   - nome: BDO Brazil
     url_img: /assets/img/parceiros/bdo.png
-- servico: Transportadora Oficial
-  lista:
-  - nome: TNT - Serviço de envio de remessas
-    url_img: /assets/img/parceiros/tnt.svg
 - servico: Comunicação
   lista:
   - nome: Zaic – branding, da estratégia ao design
@@ -72,4 +71,4 @@ apoiadores:
 - servico: Hospedagem do Site
   lista:
   - nome: Locaweb - Hospedagem de Site
-    url_img: /assets/img/parceiros/locaweb.svg
+    url_img: /assets/img/parceiros/locaweb.png
