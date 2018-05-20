@@ -38,13 +38,6 @@ describe 'Parceiros da Vaga Lume' do
 
       let(:home) { load_home }
 
-      it 'aparecem dois primeiros grupos de financiadores' do
-        parceiros_arquivo = obtem_financiadores(dados).take(2)
-        grupos_parceiros = obtem_financiadores_home(home)
-
-        expect(grupos_parceiros).to eq(parceiros_arquivo)
-      end
-
       it 'as imagens estão definidas' do
         imagens = obtem_imagens(dados)
         imagens_home = obtem_imagens_home(home)
