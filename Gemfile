@@ -10,7 +10,7 @@ source 'https://rubygems.org' do
   end
 
   group :jekyll_plugins do
-    gem 'bootstrap', '~> 4.0.0.beta2.1'
+    gem 'bootstrap'
     gem 'jekyll-admin'
     gem 'jekyll-assets'
     gem 'jekyll-last-modified-at'
