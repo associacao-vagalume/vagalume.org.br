@@ -9,17 +9,17 @@ principal:
     link: /proposito/
   - nome: Nossa História
     link: /nossa-historia/
-  - nome: O que fazemos
-    link: /o-que-fazemos/
   - nome: Parceiros
     link: /parceiros/
 
 secundario:
   - nome: Quem Somos
     link: /quem-somos/
+  - nome: O que fazemos
+    link: /o-que-fazemos/
   - nome: Transparência
     link: /transparencia/
-  - nome: Localidades
-    link: $antigo$/onde_atuamos
-  - nome: Contato
-    link: $antigo$/contato
+#  - nome: Localidades
+#    link: $antigo$/onde_atuamos
+#  - nome: Contato
+#    link: $antigo$/contato
