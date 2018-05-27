@@ -17,23 +17,23 @@ description: Saiba "quem é quem" na equipe Vaga Lume e conheça as pessoas que 
       <li>{{ membro }}</li>
       {% endfor %}
     </ol>
-    <h2>Assembleia de Associados</h2>
+    <h2>Conselho ({{ site.data.equipe.conselho.mandato }})</h2>
+    <h3>Conselho Fiscal</h3>
     <ol>
-      {% for associado in site.data.equipe.associados %}
-        <li>{{ associado }}</li>
+      {% for membro in site.data.equipe.conselho.conselho_fiscal %}
+        <li>{{ membro }}</li>
       {% endfor %}
     </ol>
-    <h2>Conselho ({{ site.data.equipe.conselho.mandato }})</h2>
-    <h3>Conselho Consultivo (Político-Estratégico)</h3>
+    <h3>Conselho Consultivo</h3>
     <ol>
       {% for membro in site.data.equipe.conselho.conselho_consultivo %}
         <li>{{ membro }}</li>
       {% endfor %}
     </ol>
-    <h3>Conselho Fiscal</h3>
+    <h2>Assembleia de Associados</h2>
     <ol>
-      {% for membro in site.data.equipe.conselho.conselho_fiscal %}
-        <li>{{ membro }}</li>
+      {% for associado in site.data.equipe.associados %}
+        <li>{{ associado }}</li>
       {% endfor %}
     </ol>
   </div>
