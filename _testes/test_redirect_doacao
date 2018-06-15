@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+smoke_host "vagalume.org.br"
+
+smoke_message 'vagalume.org.br/doe redireciona para vagalume.colabore.org/'
+smoke_url '/doe'
+smoke_assert_code 302
+smoke_assert_headers '^Location: https://vagalume.colabore.org'
+
+smoke_host "staging.vagalume.org.br"
+
+smoke_message 'staging.vagalume.org.br/doe redireciona para vagalume.colabore.org'
+smoke_url '/doe'
+smoke_assert_code 302
+smoke_assert_headers '^Location: https://vagalume.colabore.org'
+
+smoke_host $SERVIDOR
