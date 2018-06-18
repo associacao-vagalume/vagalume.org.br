@@ -55,13 +55,66 @@
 @include media-breakpoint-up(md) {
   .footer {
     font-size: 1.25rem;
-    padding: 6rem 0;
 
     .container {
       text-align: left;
+
+      .contact-us {
+        #thankyou_message {
+          display: none;
+          p {
+            margin-top: 1.5rem;
+          }
+        }
+
+        #honeypot {
+          display: none;
+        }
+
+        label {
+          color: $umber;
+          display: block;
+          font-weight: bold;
+          text-transform: uppercase;
+          margin-bottom: 0em;
+        }
+
+        input[type="email"], textarea {
+          width: 100%;
+          margin-bottom: 0.5em;
+          border: 2px solid $umber;
+        }
+
+        input[type="submit"] {
+          display: block;
+          border:	2px solid $white;
+          padding-left: 1.5em;
+          padding-right: 1.5em;
+          background-color: transparent;
+          color:$white;
+        }
+
+        input[type="submit"] {
+          float: right;
+          cursor: pointer;
+        }
+
+        input[type="submit"]:disabled {
+          opacity:0.5;
+          cursor: not-allowed;
+        }
+      }
     }
 
-    .top-button {
+    .contact-info {
+      padding-left: 3em;
+    }
+
+    address {
+      margin-top: 1.5rem
+    }
+
+    .top-button, .email-contact {
       display: none;
     }
 
@@ -70,4 +123,22 @@
       order: 3;
     }
   }
+}
+
+@mixin placeholder {
+  ::-webkit-input-placeholder {@content}
+  :-moz-placeholder           {@content}
+  ::-moz-placeholder          {@content}
+  :-ms-input-placeholder      {@content}
+  *:focus::-webkit-input-placeholder { color:transparent; }
+  *:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+  *:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+  *:focus:-ms-input-placeholder { color:transparent; }
+}
+
+@include placeholder {
+    font-family: $font-amatic;
+    color: gray;
+    font-weight:100;
+    padding-left: 0.5em;
 }

@@ -1,23 +1,66 @@
 <footer class="footer">
   <div class="container">
     <h2>Fale com a gente</h2>
-    <a class="email-contact" href="mailto:{{ site.contato.email }}">{{ site.contato.email }}</a>
-    <address>
-      <p class="phone">{{ site.contato.telefone }}</p>
-      <p class="address-1">{{ site.contato.endereco_1 }}</p>
-      <p class="address-2">{{ site.contato.endereco_2 }}</p>
-    </address>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/associacaovagalume/" target="_blank">
-        <img src="/assets/img/facebook.png" alt="Vaga Lume no Facebook">
-      </a>
-      <a href="https://www.instagram.com/_vaga_lume_/" target="_blank">
-        <img src="/assets/img/instagram.png" alt="Vaga Lume no Instagram">
-      </a>
+    <div class="row">
+      <div class="contact-us col-md-4 d-none d-md-block">
+        <form id="gform" method="POST" action="{{ site.contato.formulario_google_app_script }}">
+          <label class="sr-only">Keep this field blank</label>
+          <input id="honeypot" type="text" name="honeypot" value="" />
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input id="email"
+                   type="email"
+                   name="email"
+                   required
+                   placeholder="Digite seu email"
+                   oninvalid="this.setCustomValidity('Por favor preencha com um e-mail válido')"
+                   oninput="setCustomValidity('')"
+                   class="required" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message"
+                      required
+                      name="message"
+                      rows="4"
+                      placeholder="Deixe sua mensagem para nós"
+                      oninvalid="this.setCustomValidity('Você deve preencher com alguma mensagem')"
+                      oninput="setCustomValidity('')"
+                      class="required"></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" disabled=true value="Enviar" />
+          </div>
+        </form>
+
+        <div id="thankyou_message">
+          <p>
+            Obrigado! Sua mensagem foi enviada com sucesso!
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-info col-md-4">
+        <a class="email-contact" href="mailto:{{ site.contato.email }}">{{ site.contato.email }}</a>
+        <address>
+          <p class="phone">{{ site.contato.telefone }}</p>
+          <p class="address-1">{{ site.contato.endereco_1 }}</p>
+          <p class="address-2">{{ site.contato.endereco_2 }}</p>
+        </address>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/associacaovagalume/" target="_blank">
+            <img src="/assets/img/facebook.png" alt="Vaga Lume no Facebook">
+          </a>
+          <a href="https://www.instagram.com/_vaga_lume_/" target="_blank">
+            <img src="/assets/img/instagram.png" alt="Vaga Lume no Instagram">
+          </a>
+        </div>
+      </div>
     </div>
     <a class="top-button" href="#top">Voltar ao Topo &#9650;</a>
   </div>
 </footer>
+
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
@@ -27,11 +70,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
   integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
   crossorigin="anonymous"></script>
-  {% asset jquery.slides.min.js %}
-  {% asset home.js %}
-  {% asset expedicao.js %}
+
+{% asset jquery.slides.min %}
+{% asset home.js %}
+{% asset expedicao %}
+{% asset form-submission-handler %}
 
 </body>
-
 </html>
-

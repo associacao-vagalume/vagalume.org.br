@@ -33,7 +33,7 @@ contato:
   telefone: (11) 3032-6032
   endereco_1: Rua Aspicuelta, 678, Vila Madalena
   endereco_2: 05433-011 - São Paulo - SP
-# Configurações da ferramenta
+  formulario_google_app_script: https://script.google.com/macros/s/AKfycbzsH6VKhze2mrBehy5YvporLJ24IbjQUSzhykhsgalUroMiBpI/exec
 timezone: UTC
 collections:
   posts:

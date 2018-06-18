@@ -109,7 +109,7 @@ o servidor onde o site será instalado.
     export TRAVIS_PULL_REQUEST=false
 
 Se você adicionar uma chave pública SSH neste arquivo, o deploy não irá precisar
-de senha. Essa chave pode ser encontrada em `~/.ssh/id_rs.pub`. Se não existir,
+de senha. Essa chave pode ser encontrada em `~/.ssh/id_rsa.pub`. Se não existir,
 será necessário criá-la com o comando
 `ssh-keygen -t rsa -b 4096 -C "your_email@example.com"`
 
