@@ -7,6 +7,9 @@ imagem_mobile: "/assets/img/paginas/transparencia-mobile.jpg"
 description: Conheça nossas relatórios anuais de atividades e auditoria e saiba mais
   sobre os números da Vaga Lume e seu impacto.
 atividades:
+- texto: Relatório de Atividades 2017
+  capa: "/assets/img/relatorios/capa-relatorio-atividades-2017.jpg"
+  link: https://drive.google.com/file/d/1g1m7Un4vL0wLVh2sIxGS6FVH8zMMivrV/view
 - texto: Relatório de Atividades 2016
   capa: "/assets/img/relatorios/capa-relatorio-atividades-2016.jpg"
   link: https://drive.google.com/file/d/0B8AOZ9OyBTBsUHYxU1g4V3k5dXc/view
