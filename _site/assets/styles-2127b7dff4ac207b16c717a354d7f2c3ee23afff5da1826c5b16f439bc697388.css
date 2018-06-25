@@ -4802,81 +4802,12 @@ h3 {
 
 @media (min-width: 768px) {
   .footer {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    padding: 6rem 0; }
     .footer .container {
       text-align: left; }
-      .footer .container .contact-us #thankyou_message {
-        display: none; }
-        .footer .container .contact-us #thankyou_message p {
-          margin-top: 1.5rem; }
-      .footer .container .contact-us #honeypot {
-        display: none; }
-      .footer .container .contact-us label {
-        color: #aa6a01;
-        display: block;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 0em; }
-      .footer .container .contact-us input[type="email"], .footer .container .contact-us textarea {
-        width: 100%;
-        margin-bottom: 0.5em;
-        border: 2px solid #aa6a01; }
-      .footer .container .contact-us input[type="submit"] {
-        display: block;
-        border: 2px solid #fff;
-        padding-left: 1.5em;
-        padding-right: 1.5em;
-        background-color: transparent;
-        color: #fff; }
-      .footer .container .contact-us input[type="submit"] {
-        float: right;
-        cursor: pointer; }
-      .footer .container .contact-us input[type="submit"]:disabled {
-        opacity: 0.5;
-        cursor: not-allowed; }
-    .footer .contact-info {
-      padding-left: 3em; }
-    .footer address {
-      margin-top: 1.5rem; }
-    .footer .top-button, .footer .email-contact {
+    .footer .top-button {
       display: none; }
     .footer .phone {
       font-weight: bold;
       order: 3; } }
-::-webkit-input-placeholder {
-  font-family: "Amatic SC", "Arial Narrow", sans-serif;
-  color: gray;
-  font-weight: 100;
-  padding-left: 0.5em; }
-
-:-moz-placeholder {
-  font-family: "Amatic SC", "Arial Narrow", sans-serif;
-  color: gray;
-  font-weight: 100;
-  padding-left: 0.5em; }
-
-::-moz-placeholder {
-  font-family: "Amatic SC", "Arial Narrow", sans-serif;
-  color: gray;
-  font-weight: 100;
-  padding-left: 0.5em; }
-
-:-ms-input-placeholder {
-  font-family: "Amatic SC", "Arial Narrow", sans-serif;
-  color: gray;
-  font-weight: 100;
-  padding-left: 0.5em; }
-
-*:focus::-webkit-input-placeholder {
-  color: transparent; }
-
-*:focus:-moz-placeholder {
-  color: transparent; }
-
-/* FF 4-18 */
-*:focus::-moz-placeholder {
-  color: transparent; }
-
-/* FF 19+ */
-*:focus:-ms-input-placeholder {
-  color: transparent; }
