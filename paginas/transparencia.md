@@ -38,6 +38,9 @@ atividades:
   capa: "/assets/img/relatorios/capa-relatorio-atividades-2008.jpg"
   link: http://arquivo.vagalume.org.br/painel/dbarquivos/dbanexos/relatorioanual2008p.pdf
 auditorias:
+- texto: Relatório de Auditoria 2017
+  link: https://drive.google.com/file/d/17wh81UebUOBx1JZnFwKIt5GZkxNbowsX/view
+auditorias:
 - texto: Relatório de Auditoria 2016
   link: https://drive.google.com/file/d/0B8AOZ9OyBTBsMTJRcHI2X0JrSDQ/view
 - texto: Relatório de Auditoria 2015
