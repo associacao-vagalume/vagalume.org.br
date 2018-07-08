@@ -7,16 +7,16 @@
 principal:
   - nome: Propósito
     link: /proposito/
-  - nome: Nossa História
-    link: /nossa-historia/
+  - nome: O que fazemos
+    link: /o-que-fazemos/
   - nome: Parceiros
     link: /parceiros/
 
 secundario:
   - nome: Quem Somos
     link: /quem-somos/
-  - nome: O que fazemos
-    link: /o-que-fazemos/
+  - nome: Nossa História
+    link: /nossa-historia/
   - nome: Transparência
     link: /transparencia/
 #  - nome: Localidades
