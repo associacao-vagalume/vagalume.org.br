@@ -8,11 +8,11 @@ o_que_fazemos:
     a leitura, a escrita e a oralidade para ajudar a formar pessoas mais engajadas
     na transformação de suas realidades.
   estatisticas:
-  - numero: 23
+  - numero: 22
     descricao: Municípios da Amazônia Legal
-  - numero: 149
+  - numero: 99
     descricao: bibliotecas comunitárias
-  - numero: 3.633
+  - numero: 4000
     descricao: mediadores de leitura formados
 como_colaborar:
   descricao: |-

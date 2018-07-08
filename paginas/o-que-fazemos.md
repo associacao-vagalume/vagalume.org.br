@@ -7,7 +7,7 @@ imagem_mobile: "/assets/img/paginas/o-que-fazemos-mobile.jpg"
 description: Há mais de 15 anos nós criamos e mantemos bibliotecas em comunidades
   rurais da Amazônia como ferramenta de transformação social e de trocas culturais.
 numeros_em_destaque:
-- numero: '25.000'
+- numero: '15.000'
   texto: 'Atuação em um universo de # crianças e jovens'
 - numero: '100.000'
   texto: "# livros distribuidos"
