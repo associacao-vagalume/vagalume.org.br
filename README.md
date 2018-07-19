@@ -103,7 +103,7 @@ o servidor onde o site será instalado.
 
     export PORT=2222
     export SERVER=ssh_user@localhost
-    export SSH_PUBKEY="INSIRA AQUI SUA CHAVE PÚBLICA"
+    export SSH_PUBKEY="$(cat ~/.ssh/id_rsa.pub)"
     export TRAVIS_BRANCH=local
     export TRAVIS_BUILD_DIR="."
     export TRAVIS_PULL_REQUEST=false
