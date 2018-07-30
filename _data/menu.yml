@@ -4,21 +4,48 @@
 # O texto $antigo$ é substituido pela url do site antigo, que está
 # configurado no arquivo _config.yml.
 
-principal:
-  - nome: Propósito
-    link: /proposito/
-  - nome: O que fazemos
-    link: /o-que-fazemos/
-  - nome: Parceiros
-    link: /parceiros/
+pt:
+  home_url: /
+  ajuda_botao: Abre/fecha o menu
+  botao_menu: Menu
+  botao_fechar: Fechar
+  doe: Doe agora
+  principal:
+    - nome: Propósito
+      link: /proposito/
+    - nome: O que fazemos
+      link: /o-que-fazemos/
+    - nome: Parceiros
+      link: /parceiros/
 
-secundario:
-  - nome: Quem Somos
-    link: /quem-somos/
-  - nome: Nossa História
-    link: /nossa-historia/
-  - nome: Transparência
-    link: /transparencia/
+  secundario:
+    - nome: Quem Somos
+      link: /quem-somos/
+    - nome: Nossa História
+      link: /nossa-historia/
+    - nome: Transparência
+      link: /transparencia/
+en:
+  home_url: /en/
+  ajuda_botao: Expands/collapses menu
+  botao_menu: Menu
+  botao_fechar: Close
+  doe: Donate
+  principal:
+    - nome: Purpose
+      link: /en/purpose
+    - nome: What we do
+      link: /en/what-we-do/
+    - nome: Partners
+      link: /en/partners/
+
+  secundario:
+    - nome: Who we are
+      link: /en/who-we-are/
+    - nome: Our History
+      link: /en/our-history/
+    - nome: Transparency
+      link: /en/transparency/
 #  - nome: Localidades
 #    link: $antigo$/onde_atuamos
 #  - nome: Contato

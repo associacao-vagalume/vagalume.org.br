@@ -1,0 +1,32 @@
+<div class="como-colaborar">
+  <div class="container">
+    <h3>Como Colaborar</h3>
+    {{ page.como_colaborar.descricao | markdownify }}
+    <div class="modalidades">
+      <input type="radio" name="colaborar-modalidades" id="pessoa-fisica" checked="checked">
+      <label for="pessoa-fisica"><h4>Pessoa Física</h4></label>
+      <div class="modalidade">
+        <ul>
+        {% for modo in page.como_colaborar.pessoa_fisica.modos %}
+          <li>{{ modo }}</li>
+        {% endfor %}
+        </ul>
+        <a href="{{ include.url_fisica }}" class="botao-branco doar">
+          <h4>{{ page.como_colaborar.pessoa_fisica.chamada }}</h4>
+        </a>
+      </div>
+      <input type="radio" name="colaborar-modalidades" id="pessoa-juridica">
+      <label for="pessoa-juridica"><h4>Pessoa Jurídica</h4></label>
+      <div class="modalidade">
+        <ul>
+        {% for modo in page.como_colaborar.pessoa_juridica.modos %}
+          <li>{{ modo }}</li>
+        {% endfor %}
+        </ul>
+        <a href="{{ include.url_juridica }}" target="_blank" class="botao-branco">
+          <h4>{{ page.como_colaborar.pessoa_juridica.chamada }}</h4>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,21 +1,26 @@
+{% if page.url contains "/en/" %}
+  {% assign footer = site.data.footer.en %}
+{% else %}
+  {% assign footer = site.data.footer.pt %}
+{% endif %}
 <footer class="footer">
   <div class="container">
-    <h2>Fale com a gente</h2>
-    <a class="email-contact" href="mailto:{{ site.contato.email }}">{{ site.contato.email }}</a>
+    <h2>{{ footer.fale_com_a_gente }}</h2>
+    <a class="email-contact" href="mailto:{{ footer.contato.email }}">{{ footer.contato.email }}</a>
     <address>
-      <p class="phone">{{ site.contato.telefone }}</p>
-      <p class="address-1">{{ site.contato.endereco_1 }}</p>
-      <p class="address-2">{{ site.contato.endereco_2 }}</p>
+      <p class="phone">{{ footer.contato.telefone }}</p>
+      <p class="address-1">{{ footer.contato.endereco_1 }}</p>
+      <p class="address-2">{{ footer.contato.endereco_2 }}</p>
     </address>
     <div class="social-icons">
       <a href="https://www.facebook.com/associacaovagalume/" target="_blank">
-        <img src="/assets/img/facebook.png" alt="Vaga Lume no Facebook">
+        <img src="/assets/img/facebook.png" alt="{{ footer.alt_facebook }}">
       </a>
       <a href="https://www.instagram.com/_vaga_lume_/" target="_blank">
-        <img src="/assets/img/instagram.png" alt="Vaga Lume no Instagram">
+        <img src="/assets/img/instagram.png" alt="{{ footer.alt_instagram }}">
       </a>
     </div>
-    <a class="top-button" href="#top">Voltar ao Topo &#9650;</a>
+    <a class="top-button" href="#top">{{ footer.voltar_ao_topo }} &#9650;</a>
   </div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"

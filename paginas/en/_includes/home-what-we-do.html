@@ -1,0 +1,19 @@
+<div class="o-que-fazemos">
+  <div class="container">
+    <div class="conteudo">
+      <h3>What we do</h3>
+      <p>{{ page.o_que_fazemos.descricao }}</p>
+      <ul class="estatisticas">
+      {% for estatistica in page.o_que_fazemos.estatisticas %}
+        <li>
+          <span class="numero">{{ estatistica.numero }}</span>
+          <span class="descricao">{{ estatistica.descricao }}</span>
+        </li>
+      {% endfor %}
+      </ul>
+    </div>
+    <aside class="mapa">
+      <img src="/assets/img/mapa.png" alt="Mapa do Brasil com as bibliotecas da Vaga Lume destacadas, encompassando toda a região norte, Maranhão, Mato Grosso e São Paulo">
+    </aside>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="secao-fundo-escuro secao-principios">
+  <div class="container">
+    <h2>Principles</h2>
+    <ul>
+      {% for principio in include.principios %}
+      <li>
+        <span class="destaque">{{ principio.nome }}</span>
+        {{ principio.descricao }}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

@@ -1,42 +1,47 @@
+{% if page.url contains "/en/" %}
+  {% assign menu = site.data.menu.en %}
+{% else %}
+  {% assign menu = site.data.menu.pt %}
+{% endif %}
 <nav class="navbar navbar-expand-md fixed-top">
   <div class="container">
     {% if page.title == 'Home' %}
     <h1>
-        {% include partial/logo.html %}
+        {% include partial/logo.html home_url=menu.home_url %}
         <span class=alt-logo>Vaga Lume</span>
     </h1>
     {% else %}
-      {% include partial/logo.html %}
+      {% include partial/logo.html home_url=menu.home_url %}
     {% endif %}
 
     <button class="navbar-toggler navbar-toggler-open collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-      aria-expanded="false" aria-label="Abre/fecha o menu">
-      Menu
+      aria-expanded="false" aria-label="{{ menu.ajuda_botao }}">
+      {{ menu.botao_menu }}
     </button>
 
     <button class="navbar-toggler navbar-toggler-close collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-    aria-expanded="false" aria-label="Abre/fecha o menu">
-      Fechar
+    aria-expanded="false" aria-label="{{ menu.ajuda_botao }}">
+      {{ menu.botao_fechar }}
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav navbar-primary">
-        {% for item in site.data.menu.principal %}
+        {% for item in menu.principal %}
         <li>
           <a href="{{ item.link | replace_first: '$antigo$', site.url_antigo }}">{{ item.nome }}</a>
         </li>
         {% endfor %}
       </ul>
       <ul class="navbar-nav navbar-secondary">
-        {% for item in site.data.menu.secundario %}
+        {% for item in menu.secundario %}
         <li>
           <a href="{{ item.link | replace_first: '$antigo$', site.url_antigo }}">{{ item.nome }}</a>
         </li>
         {% endfor %}
       </ul>
-      <a class="donate-now-expanded doar" href="/doe">Doe Agora</a>
+      <a class="donate-now-expanded doar" href="/doe">{{ menu.doe }}</a>
     </div>
 
-    <a class="donate-now doar" href="/doe">Doe Agora</a>
+    <a class="donate-now doar" href="/doe">{{ menu.doe }}</a>
   </div>
 </nav>

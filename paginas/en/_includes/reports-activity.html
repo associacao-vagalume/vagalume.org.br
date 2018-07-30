@@ -1,0 +1,17 @@
+<div class="relatorios secao-fundo-escuro">
+  <div class="container">
+    <h2>Activity Reports</h2>
+    <ul class="atividades">
+      {% for relatorio in page.atividades %}
+      <li class="relatorio">
+        <a href="{{ relatorio.link }}">
+          <img src="{{ relatorio.capa}}" alt="Capa do {{ relatorio.texto }}" class="capa">
+          <p class="titulo">
+            {{ relatorio.texto }}
+          </p>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

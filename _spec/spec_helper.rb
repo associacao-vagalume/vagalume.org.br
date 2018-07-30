@@ -119,7 +119,17 @@ def load_data(name)
 end
 
 def load_home
-  Nokogiri::HTML(File.open('_site/index.html'))
+  load_home_lang('pt')
+end
+
+def load_home_lang(lang)
+  if lang == 'en'
+    Nokogiri::HTML(File.open('_site/en/index.html'))
+  elsif lang == 'pt'
+    Nokogiri::HTML(File.open('_site/index.html'))
+  else
+    throw "Linguagem #{lang} não encontrada"
+  end
 end
 
 def load_page(name)

@@ -1,0 +1,12 @@
+<div class="relatorios">
+  <div class="container">
+    <h2>Financial Reports</h2>
+    <ul class="auditorias">
+      {% for relatorio in page.auditorias %}
+      <li>
+        <a href="{{ relatorio.link }}">{{ relatorio.texto }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

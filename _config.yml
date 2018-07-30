@@ -27,12 +27,15 @@ url_doar: https://vagalume.colabore.org
 # Video da home-page
 home_video_id: xt2qJwwnH2U
 home_video_titulo: Expedição Vaga Lume - 15 anos
-# Dados do rodapé
-contato:
-  email: falecom@vagalume.org.br
-  telefone: (11) 3032-6032
-  endereco_1: Rua Aspicuelta, 678, Vila Madalena
-  endereco_2: 05433-011 - São Paulo - SP
+home:
+  video:
+    id:
+      pt: xt2qJwwnH2U
+      en: xt2qJwwnH2U
+    titulo:
+      pt: Expedição Vaga Lume - 15 anos
+      en: Vaga Lume Expedition - 15 years
+
 # Configurações da ferramenta
 timezone: UTC
 collections:

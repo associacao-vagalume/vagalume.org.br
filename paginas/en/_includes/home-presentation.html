@@ -1,0 +1,34 @@
+<div class="apresentacao">
+  <div class="container">
+    <div class="frame">
+      <h2>A book <span>changes lives</span></h2>
+
+      <a class="d-md-none" target="_blank" href="https://www.youtube.com/embed/{{ include.video_id }}?rel=0&amp;autoplay=1;fs=0;autohide=0;hd=0;">
+        <img class="play" src="/assets/img/home-play.svg" alt="Click to watch">
+      </a>
+
+      <img src="/assets/img/home-play.svg" class="play	desktop d-none d-md-block invisible" data-toggle="modal" data-target="#modal" alt="Click to watch">
+
+    </div>
+    <a href="/doe" alt="Clique para doar" class="doar botao">
+      <h3>Donate</h3>
+    </a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">{{ include.video_titulo }}</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body embed-responsive embed-responsive-16by9">
+          <div id="player"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
