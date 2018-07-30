@@ -3,7 +3,10 @@ title: Home
 permalink: "/en/"
 layout: home
 o_que_fazemos:
-  descricao: Through the qualification of reading mediators and the creation of community libraries for children in the Amazon, we promote cultural interchanges using reading, writing and orality to help shape people more engaged with the transformation of their realities.
+  descricao: Through the qualification of reading mediators and the creation of community
+    libraries for children in the Amazon, we promote cultural interchanges using reading,
+    writing and orality to help shape people more engaged with the transformation
+    of their realities.
   estatisticas:
   - numero: 22
     descricao: municipalities from the Legal Amazon
