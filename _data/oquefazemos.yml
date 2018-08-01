@@ -1,0 +1,54 @@
+pt:
+  descricao: Por meio da formação de mediadores de leitura e criação de bibliotecas
+    comunitárias para crianças da Amazônia, promovemos intercâmbios culturais com
+    a leitura, a escrita e a oralidade para ajudar a formar pessoas mais engajadas
+    na transformação de suas realidades.
+  descricao_mapa: Mapa do Brasil com as bibliotecas da Vaga Lume destacadas,
+    encompassando toda a região norte, Maranhão, Mato Grosso e São Paulo
+  estatisticas:
+  - numero: 22
+    descricao: Municípios da Amazônia Legal
+  - numero: 99
+    descricao: bibliotecas comunitárias
+  - numero: 4000
+    descricao: mediadores de leitura formados
+  numeros_em_destaque:
+  - numero: '15.000'
+    texto: 'Atuação em um universo de # crianças e jovens'
+  - numero: '100.000'
+    texto: "# livros distribuidos"
+  - numero: '900'
+    texto: 'Mais de # voluntários atuantes'
+  - numero: '2.182'
+    texto: "# jovens de diferentes realidades que se conheceram"
+  - numero: '4.000'
+    texto: "# mediadores de leitura"
+  - numero: '15'
+    texto: "# congressos com a rede de voluntários"
+en:
+  descricao: Through the qualification of reading mediators and the creation of
+    community libraries for children in the Amazon, we promote cultural
+    interchanges using reading, writing and orality to help shape people more
+    engaged with the transformation of their realities.
+  descricao_mapa: Mapa do Brasil com as bibliotecas da Vaga Lume destacadas,
+    encompassando toda a região norte, Maranhão, Mato Grosso e São Paulo
+  estatisticas:
+  - numero: 22
+    descricao: municipalities from the Legal Amazon
+  - numero: 99
+    descricao: community libraries
+  - numero: 4000
+    descricao: reading mediators qualified
+  numeros_em_destaque:
+  - numero: '15,000'
+    texto: 'Presence within a range of # children and youngsters'
+  - numero: '100,000'
+    texto: "# books distributed"
+  - numero: '900'
+    texto: 'More than # volunteers engaged'
+  - numero: '2,182'
+    texto: "# youngsters from different realities have met each other"
+  - numero: '4,000'
+    texto: "# reading mediators"
+  - numero: '15'
+    texto: "# congresses with the network of volunteers"

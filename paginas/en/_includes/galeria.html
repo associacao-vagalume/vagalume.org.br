@@ -1,0 +1,14 @@
+<div class="galeria" id="galeria">
+  {% for foto in page.galeria %}
+    <figure>
+      <img src="{{ foto.img_src }}" alt="{{ foto.legenda | default: 'Photo' }}">
+      {% if foto.legenda %}
+      <figcaption>
+        {{ foto.legenda }}
+      </figcaption>
+      {% endif %}
+    </figure>
+  {% endfor %}
+  <a href="" class="slidesjs-previous slidesjs-navigation">&lt;</a>
+  <a href="" class="slidesjs-next slidesjs-navigation">&gt;</a>
+</div>

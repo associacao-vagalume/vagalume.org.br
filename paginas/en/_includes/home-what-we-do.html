@@ -2,9 +2,9 @@
   <div class="container">
     <div class="conteudo">
       <h3>What we do</h3>
-      <p>{{ page.o_que_fazemos.descricao }}</p>
+      <p>{{ site.data.oquefazemos.en.descricao }}</p>
       <ul class="estatisticas">
-      {% for estatistica in page.o_que_fazemos.estatisticas %}
+      {% for estatistica in site.data.oquefazemos.en.estatisticas %}
         <li>
           <span class="numero">{{ estatistica.numero }}</span>
           <span class="descricao">{{ estatistica.descricao }}</span>
