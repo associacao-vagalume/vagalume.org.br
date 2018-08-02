@@ -1,5 +1,5 @@
 ---
-title: Parceiros
+title: Partners
 permalink: "/en/partners/"
 layout: pagina-markdown
 imagem: "/assets/img/paginas/parceiros-desktop.jpg"
