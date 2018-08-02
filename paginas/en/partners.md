@@ -10,7 +10,7 @@ description: Descubra quem são as empresas que, assim como nós, acreditam no e
 
 [comment]: # Os parceiros estão definidos no arquivo _data/parceiros.yml
 
-{% include_relative _includes/lista-parceiros.html
+{% include_relative _includes/partners-list.html
   financiadores=site.data.parceiros.financiadores
   apoiadores=site.data.parceiros.apoiadores
 %}

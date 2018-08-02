@@ -1,6 +1,6 @@
 ---
-title: Purpose
-permalink: "/en/purpose/"
+title: Mission
+permalink: "/en/mission/"
 layout: pagina
 imagem: "/assets/img/paginas/proposito.jpg"
 imagem_mobile: "/assets/img/paginas/proposito.jpg"
@@ -29,5 +29,5 @@ ajuda: Para alterar o propósito e os princípios, mude o arquivo _data/principi
 
 {::options parse_block_html="false" /}
 
-{% include_relative _includes/purpose.html proposito=site.data.proposito.en.descricao %}
+{% include_relative _includes/mission.html proposito=site.data.proposito.en.descricao %}
 {% include_relative _includes/principles.html principios=site.data.proposito.en.principios %}

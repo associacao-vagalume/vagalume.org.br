@@ -10,7 +10,7 @@ layout: home
 
 {% include_relative _includes/home-what-we-do.html %}
 
-{% include_relative _includes/home-purpose.html
+{% include_relative _includes/home-mission.html
   descricao=site.data.proposito.en.descricao %}
 
 

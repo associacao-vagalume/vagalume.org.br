@@ -28,20 +28,20 @@
       <ul class="navbar-nav navbar-primary">
         {% for item in menu.principal %}
         <li>
-          <a href="{{ item.link | replace_first: '$antigo$', site.url_antigo }}">{{ item.nome }}</a>
+          <a href="{{ item.link }}">{{ item.nome }}</a>
         </li>
         {% endfor %}
       </ul>
       <ul class="navbar-nav navbar-secondary">
         {% for item in menu.secundario %}
         <li>
-          <a href="{{ item.link | replace_first: '$antigo$', site.url_antigo }}">{{ item.nome }}</a>
+          <a href="{{ item.link }}">{{ item.nome }}</a>
         </li>
         {% endfor %}
       </ul>
-      <a class="donate-now-expanded doar" href="/doe">{{ menu.doe }}</a>
+      <a class="donate-now-expanded doar" href="{{ menu.url_doe }}">{{ menu.doe }}</a>
     </div>
 
-    <a class="donate-now doar" href="/doe">{{ menu.doe }}</a>
+    <a class="donate-now doar" href="{{ menu.url_doe }}">{{ menu.doe }}</a>
   </div>
 </nav>

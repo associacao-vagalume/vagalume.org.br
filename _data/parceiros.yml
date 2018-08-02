@@ -53,19 +53,35 @@ financiadores:
   - nome: Turismo Consciente
 
 apoiadores:
-- servico: Assessoria Jurídica
+- servico:
+    pt: Assessoria Jurídica
+    en: Legal Advisory
   lista:
-  - nome: Felsberg Advogados
+  - nome:
+      pt: Felsberg Advogados
+      en: Felsberg Advogados
     url_img: /assets/img/parceiros/felsberg.png
-- servico: Auditoria
+- servico:
+    pt: Auditoria
+    en: Audit
   lista:
-  - nome: BDO Brazil
+  - nome:
+      pt: BDO Brazil
+      en: BDO Brazil
     url_img: /assets/img/parceiros/bdo.png
-- servico: Comunicação
+- servico:
+    pt: Comunicação
+    en: Communication
   lista:
-  - nome: Zaic – branding, da estratégia ao design
+  - nome:
+      pt: Zaic – branding, da estratégia ao design
+      en: Zaic – branding, from strategy to design
     url_img: /assets/img/parceiros/zaic.png
-- servico: Hospedagem do Site
+- servico:
+    pt: Hospedagem do Site
+    en: Website Host
   lista:
-  - nome: Locaweb - Hospedagem de Site
+  - nome:
+      pt: Locaweb - Hospedagem de Site
+      en: Locaweb - Website Host
     url_img: /assets/img/parceiros/locaweb.png

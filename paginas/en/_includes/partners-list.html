@@ -23,11 +23,11 @@
 <div class="lista-apoiadores">
   {% for grupo in include.apoiadores %}
     <div class="grupo">
-      <h3>{{ grupo.servico }}</h3>
+      <h3>{{ grupo.servico.en }}</h3>
       <ul>
         {% for parceiro in grupo['lista'] %}
           <li>
-            <img class="logo" src="{{ parceiro.url_img }}" alt="{{ parceiro.nome }}">
+            <img class="logo" src="{{ parceiro.url_img }}" alt="{{ parceiro.nome.en }}">
           </li>
         {% endfor %}
       </ul>
