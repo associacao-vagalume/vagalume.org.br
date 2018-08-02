@@ -33,6 +33,10 @@ Header set Pragma "no-cache"
 Header set Expires "Wed, 11 Jan 1984 05:00:00 GMT"
 </Files>
 
+<IfModule mod_headers.c>
+Header set Content-Language "pt, en"
+</IfModule>
+
 RewriteEngine On
 
 # Redireciona para página de doação

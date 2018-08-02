@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://www.vagalume.org.br/doe/</loc>
-<lastmod>2018-07-30T02:18:35+00:00</lastmod>
+<lastmod>2018-08-02T03:19:58+00:00</lastmod>
 </url>
 <url>
 <loc>https://www.vagalume.org.br/en/expedition-program/</loc>
@@ -10,11 +10,15 @@
 </url>
 <url>
 <loc>https://www.vagalume.org.br/en/</loc>
-<lastmod>2018-08-01T02:19:06+00:00</lastmod>
+<lastmod>2018-08-02T03:19:58+00:00</lastmod>
 </url>
 <url>
 <loc>https://www.vagalume.org.br/</loc>
 <lastmod>2018-08-01T02:19:06+00:00</lastmod>
+</url>
+<url>
+<loc>https://www.vagalume.org.br/en/mission/</loc>
+<lastmod>2018-08-02T03:19:58+00:00</lastmod>
 </url>
 <url>
 <loc>https://www.vagalume.org.br/en/net-program/</loc>
@@ -38,7 +42,7 @@
 </url>
 <url>
 <loc>https://www.vagalume.org.br/en/partners/</loc>
-<lastmod>2018-07-30T02:18:35+00:00</lastmod>
+<lastmod>2018-08-02T03:19:58+00:00</lastmod>
 </url>
 <url>
 <loc>https://www.vagalume.org.br/programa-expedicao/</loc>
@@ -50,10 +54,6 @@
 </url>
 <url>
 <loc>https://www.vagalume.org.br/proposito/</loc>
-<lastmod>2018-07-30T02:18:35+00:00</lastmod>
-</url>
-<url>
-<loc>https://www.vagalume.org.br/en/purpose/</loc>
 <lastmod>2018-07-30T02:18:35+00:00</lastmod>
 </url>
 <url>
