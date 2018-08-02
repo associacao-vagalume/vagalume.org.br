@@ -1,5 +1,10 @@
 <!doctype html>
-<html>
+{% if page.url contains "/en/" %}
+  {% assign lang = "en" %}
+{% else %}
+  {% assign lang = "pt" %}
+{% endif %}
+<html lang="{{ lang }}">
   <head>
     <meta charset="utf-8">
 {% assign nome_pagina = site.title %}

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+smoke_message "O servidor responde com Content-Language pt e en"
+smoke_url_ok "/"
+smoke_assert_headers "^Content-Language: pt, en"
