@@ -1,5 +1,6 @@
 ---
 title: Mission
+lang: en
 permalink: "/en/mission/"
 layout: pagina
 imagem: "/assets/img/paginas/proposito.jpg"

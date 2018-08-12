@@ -5,32 +5,64 @@ description: >-
   A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
   e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
 keywords:
-- Vaga Lume
-- vagalume
-- leitura
-- crianças
-- Amazônia
-- mediação
-- cultura local
-- escuta
-- empoderamento
-- transformação social
-- bibliotecas
+  - Vaga Lume
+  - vagalume
+  - leitura
+  - crianças
+  - Amazônia
+  - mediação
+  - cultura local
+  - escuta
+  - empoderamento
+  - transformação social
+  - bibliotecas
+en:
+  title: Vaga Lume - Empowering children in the Amazon
+  description: >-
+    Vaga Lume is a non-profit organization which promotes reading and
+    management of community libraries as a space of knowledge sharing.
+  share_image: assets/img/fb_op1.jpg
+  share_image_alt: Reading aloud with Amazon children
+  video:
+    id: xt2qJwwnH2U
+    titulo: Vaga Lume Expedition - 15 years
+  keywords:
+    - Vaga Lume
+    - vagalume
+    - Reading
+    - Children
+    - Amazon
+    - Mediation
+    - Local Culture
+    - Listening
+    - Empowering
+    - Social Transformation
+    - Libraries
+pt:
+  title: Vaga Lume - Empoderando crianças na Amazônia
+  description: >-
+    A Vaga Lume é uma associação sem fins lucrativos que promove a leitura
+    e a gestão de bibliotecas comunitárias como espaço para compartilhar saberes.
+  share_image: assets/img/fb_op1.jpg
+  share_image_alt: Grupo de leitura com crianças da Amazônia
+  video:
+    id: xt2qJwwnH2U
+    titulo: Expedição Vaga Lume - 15 anos
+  keywords:
+    - Vaga Lume
+    - vagalume
+    - leitura
+    - crianças
+    - Amazônia
+    - mediação
+    - cultura local
+    - escuta
+    - empoderamento
+    - transformação social
+    - bibliotecas
 # Compartilhamento em redes sociais
 url: https://www.vagalume.org.br
-share_image: assets/img/fb_op1.jpg
-share_image_alt: Grupo de leitura com crianças da Amazônia
 twitter_username: VagaLume_ONG
-# Video da home-page
-home:
-  video:
-    id:
-      pt: xt2qJwwnH2U
-      en: xt2qJwwnH2U
-    titulo:
-      pt: Expedição Vaga Lume - 15 anos
-      en: Vaga Lume Expedition - 15 years
-
 # Configurações da ferramenta
 timezone: UTC
 collections:

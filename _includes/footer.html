@@ -1,8 +1,4 @@
-{% if page.url contains "/en/" %}
-  {% assign footer = site.data.footer.en %}
-{% else %}
-  {% assign footer = site.data.footer.pt %}
-{% endif %}
+{% assign footer = site.data.footer[page.lang] %}
 <footer class="footer">
   <div class="container">
     <h2>{{ footer.fale_com_a_gente }}</h2>
@@ -32,10 +28,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"
   integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
   crossorigin="anonymous"></script>
-  {% asset jquery.slides.min.js %}
-  {% asset home.js %}
-  {% asset expedicao.js %}
+<script>
+  videoId='{{ site[page.lang].video.id }}'
+</script>
 
+{% asset jquery.slides.min.js %}
+{% asset home.js %}
+{% asset expedicao.js %}
 </body>
 
 </html>

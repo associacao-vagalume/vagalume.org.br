@@ -3,7 +3,7 @@
     <div class="frame">
       <h2>A book <span>changes lives</span></h2>
 
-      <a class="d-md-none" target="_blank" href="https://www.youtube.com/embed/{{ include.video_id }}?rel=0&amp;autoplay=1;fs=0;autohide=0;hd=0;">
+      <a class="d-md-none" target="_blank" href="https://www.youtube.com/embed/{{ site[page.lang].video.id }}?rel=0&amp;autoplay=1;fs=0;autohide=0;hd=0;">
         <img class="play" src="/assets/img/home-play.svg" alt="Click to watch">
       </a>
 
@@ -20,7 +20,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">{{ include.video_titulo }}</h5>
+          <h5 class="modal-title" id="exampleModalLabel">{{ site[page.lang].video.titulo }}</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>

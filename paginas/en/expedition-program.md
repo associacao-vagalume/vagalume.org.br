@@ -1,5 +1,6 @@
 ---
 title: Expedition Program
+lang: en
 permalink: "/en/expedition-program/"
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-expedicao-desktop.jpg"

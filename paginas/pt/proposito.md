@@ -1,5 +1,6 @@
 ---
 title: Propósito
+lang: pt
 permalink: "/proposito/"
 layout: pagina
 imagem: "/assets/img/paginas/proposito.jpg"

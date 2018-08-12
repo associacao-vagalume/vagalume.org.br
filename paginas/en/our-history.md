@@ -1,5 +1,6 @@
 ---
 title: Our history
+lang: en
 permalink: "/en/our-history/"
 layout: pagina-markdown
 imagem: "/assets/img/paginas/nossa-historia-desktop.jpg"

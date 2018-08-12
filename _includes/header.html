@@ -1,8 +1,4 @@
-{% if page.url contains "/en/" %}
-  {% assign menu = site.data.menu.en %}
-{% else %}
-  {% assign menu = site.data.menu.pt %}
-{% endif %}
+{% assign menu = site.data.menu[page.lang] %}
 <nav class="navbar navbar-expand-md fixed-top">
   <div class="container">
     {% if page.title == 'Home' %}

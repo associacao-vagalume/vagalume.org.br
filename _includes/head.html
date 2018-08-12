@@ -1,17 +1,9 @@
 <!doctype html>
-{% if page.url contains "/en/" %}
-  {% assign lang = "en" %}
-{% else %}
-  {% assign lang = "pt" %}
-{% endif %}
+{% assign title = page.title | append: ' | ' | append: site[page.lang].title %}
 <html lang="{{ lang }}">
   <head>
     <meta charset="utf-8">
-{% assign nome_pagina = site.title %}
-{% if page.title != 'Home' %}
-  {% assign nome_pagina = page.title | append: ' | ' | append: site.title %}
-{% endif %}
-    <title>{{ nome_pagina }}</title>
+    <title>{{ title }}</title>
 {% include partial/favicons.html %}
 {% include partial/meta.html %}
 {% include partial/social.html %}

@@ -1,5 +1,6 @@
 ---
 title: Net Program
+lang: en
 permalink: "/en/net-program/"
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-rede-desktop.jpg"

@@ -1,5 +1,6 @@
 ---
 title: Who we are
+lang: en
 permalink: "/en/who-we-are/"
 layout: pagina
 imagem: "/assets/img/paginas/quem-somos-desktop.jpg"

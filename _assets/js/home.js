@@ -27,7 +27,7 @@ function onYouTubeIframeAPIReady() {
       vq: 'hd1080',
       hd: '1'
     },
-    videoId: '{{ site.home_video_id }}',
+    videoId: videoId,
     events: {
       'onReady': onPlayerReady
     }

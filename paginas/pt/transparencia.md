@@ -1,5 +1,6 @@
 ---
 title: Transparência
+lang: pt
 permalink: "/transparencia/"
 layout: pagina
 imagem: "/assets/img/paginas/transparencia-desktop.jpg"

@@ -1,16 +1,15 @@
 <!-- Tags meta para compartilhamento -->
-{% assign description = (page.description | default: site.description) | escape %}
-{% assign title = site.title %}
-{% if page.title != 'Home' %}
-  {% assign title = page.title | append: ' | ' | append: site.title %}
-{% endif %}
+{% assign title = page.title | append: ' | ' | append: site[page.lang].title %}
+{% assign description = (page.description | default: site[page.lang]description) | escape %}
+{% assign share_image = site[page.lang].share_image %}
+{% assign share_image_alt = site[page.lang].share_image_alt %}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="{{ title | escape }}">
 <meta property="og:url" content="{{ site.url | append: page.url | url_escape }}">
 <meta property="og:title" content="{{ title | escape }}">
-<meta property="og:description" content="{{ description | escape }}">
-<meta property="og:image" content="{{ site.url }}/{{ site.share_image}}">
-<meta property="og:image:alt" content="{{ site.share_image_alt }}">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:image" content="{{ site.url }}/{{ share_image}}">
+<meta property="og:image:alt" content="{{ share_image_alt }}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="{{ site.twitter_username | remove_first: '@' | prepend: '@' }}">
 <meta name="twitter:creator" content="{{ site.twitter_username | remove_first: '@' | prepend: '@' }}">

@@ -1,12 +1,11 @@
 ---
 title: Home
+lang: pt
 permalink: "/"
 layout: home
 ---
 
-{% include_relative _includes/home-apresentacao.html
-  video_id=site.home_video_id
-  video_titulo=site.home_video_titulo %}
+{% include_relative _includes/home-apresentacao.html %}
 
 {% include_relative _includes/home-proposito.html
   descricao=site.data.proposito.descricao %}

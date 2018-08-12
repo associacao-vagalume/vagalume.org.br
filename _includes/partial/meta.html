@@ -1,7 +1,8 @@
 <!-- Metadados do site -->
-{% assign description = (page.description | default: site.description) | escape %}
+{% assign description = (page.description | default: site[page.lang].description) | escape %}
+{% assign keywords = site[page.lang].keywords | join: ', ' | escape %}
 <meta name="description" content="{{ description }}">
-<meta name="keywords" content="{{ site.keywords | join: ', ' | escape }}"/>
+<meta name="keywords" content="{{ keywords }}"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="index, follow">
 <!-- Fim Metadados do site -->
