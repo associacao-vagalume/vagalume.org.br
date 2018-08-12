@@ -5,8 +5,7 @@ permalink: "/en/transparency/"
 layout: pagina
 imagem: "/assets/img/paginas/transparencia-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/transparencia-mobile.jpg"
-description: Conheça nossas relatórios anuais de atividades e auditoria e saiba mais
-  sobre os números da Vaga Lume e seu impacto.
+description: Get to know our financial activities and  annual reports and find out more about Vaga Lume’s impact.
 atividades:
 - texto: Activity Report 2017
   capa: "/assets/img/relatorios/capa-relatorio-atividades-2017.jpg"

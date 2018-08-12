@@ -5,8 +5,7 @@ permalink: "/en/expedition-program/"
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-expedicao-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/programa-expedicao-mobile.jpg"
-description: Saiba mais sobre o Programa Expedição, cujo principal objetivos é promover
-  o acesso à leitura em comunidades rurais da Amazônia.
+description: Get to know more about the Expedition Program, which is aimed to encourage the access to reading in the Amazon rural communities.
 galeria:
 - img_src: "/assets/img/expedicao/aldeia-campina-cruzeiro-do-sul-ac-rayssa-coe.jpg"
   legenda: Aldeia Campina - Cruzeiro do Sul, AC (Rayssa Coe)

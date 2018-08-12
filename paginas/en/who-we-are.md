@@ -5,9 +5,7 @@ permalink: "/en/who-we-are/"
 layout: pagina
 imagem: "/assets/img/paginas/quem-somos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/quem-somos-mobile.jpg"
-description: Saiba "quem é quem" na equipe Vaga Lume e conheça as pessoas que fazem
-  parte da Assembléia de Associados, do Conselho Consultivo, do Conselho Fiscal, do
-  Conselho Literário e da Direção da associação.
+description: Get to know who Vaga Lume’s team members are and the people that take part on our Assembly of Associates, our Financial and Consulting Board.
 ---
 
 <div class="quem-somos secao-fundo-escuro">

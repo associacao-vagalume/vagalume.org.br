@@ -5,9 +5,7 @@ permalink: "/en/net-program/"
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-rede-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/programa-rede-mobile.jpg"
-description: Tudo sobre o Programa Rede, iniciativa que conecta jovens das comunidades
-  rurais da Amazônia e jovens da cidade de São Paulo, criando oportunidades de intercâmbio
-  cultural.
+description: Everything about the Net Program, which connects youngsters from the Amazon rural communities and from the city of São Paulo, creating cultural exchanges opportunities.
 galeria:
 - img_src: "/assets/img/rede/rede_1.jpg"
 - img_src: "/assets/img/rede/rede_2.jpg"

@@ -5,8 +5,7 @@ permalink: "/en/what-we-do/"
 layout: pagina
 imagem: "/assets/img/paginas/o-que-fazemos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/o-que-fazemos-mobile.jpg"
-description: Há mais de 15 anos nós criamos e mantemos bibliotecas em comunidades
-  rurais da Amazônia como ferramenta de transformação social e de trocas culturais.
+description: For more than 15 years, we create and maintain community libraries on Amazon rural area as a social transformation and cultural exchange tool.
 ---
 
 <div class="container">
