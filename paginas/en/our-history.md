@@ -1,11 +1,12 @@
 ---
 title: Our history
-lang: en
 permalink: "/en/our-history/"
+lang: en
 layout: pagina-markdown
 imagem: "/assets/img/paginas/nossa-historia-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/nossa-historia-mobile.jpg"
-description: Understand how Vaga Lume’s history from the begin and through all our work in the past 16 years.
+description: Understand how Vaga Lume’s history from the begin and through all our
+  work in the past 16 years.
 ---
 
 Sylvia, Laís and Fofa wanted to know more about the country they live in and, for this reason, chose to travel to the largest region of Brazil: the Brazilian Legal Amazon, which corresponds to 60% of our territory. But they did not want to visit, learn, experience and not leave something to the people they would meet along the way. They wanted to exchange, learn and teach, and with this in mind they had the idea of bringing books and training reading mediators wherever they would go.

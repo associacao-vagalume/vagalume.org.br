@@ -1,7 +1,7 @@
 ---
 title: Doe Agora
-lang: pt
 permalink: "/doe/"
+lang: pt
 layout: pagina-markdown
 imagem: "/assets/img/paginas/quem-somos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/quem-somos-mobile.jpg"

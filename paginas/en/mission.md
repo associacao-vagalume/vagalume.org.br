@@ -1,11 +1,12 @@
 ---
 title: Mission
-lang: en
 permalink: "/en/mission/"
+lang: en
 layout: pagina
 imagem: "/assets/img/paginas/proposito.jpg"
 imagem_mobile: "/assets/img/paginas/proposito.jpg"
-description: Get to know our project’s purpose, our values and understand the eight principles that lead us to pursue our main mission.
+description: Get to know our project’s purpose, our values and understand the eight
+  principles that lead us to pursue our main mission.
 ajuda: Para alterar o propósito e os princípios, mude o arquivo _data/principios.yml
 ---
 

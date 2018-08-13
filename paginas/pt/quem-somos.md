@@ -1,7 +1,7 @@
 ---
 title: Quem Somos
-lang: pt
 permalink: "/quem-somos/"
+lang: pt
 layout: pagina
 imagem: "/assets/img/paginas/quem-somos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/quem-somos-mobile.jpg"

@@ -1,11 +1,12 @@
 ---
 title: What we do
-lang: en
 permalink: "/en/what-we-do/"
+lang: en
 layout: pagina
 imagem: "/assets/img/paginas/o-que-fazemos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/o-que-fazemos-mobile.jpg"
-description: For more than 15 years, we create and maintain community libraries on Amazon rural area as a social transformation and cultural exchange tool.
+description: For more than 15 years, we create and maintain community libraries on
+  Amazon rural area as a social transformation and cultural exchange tool.
 ---
 
 <div class="container">

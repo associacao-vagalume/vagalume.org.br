@@ -1,7 +1,7 @@
 ---
 title: O que fazemos
-lang: pt
 permalink: "/o-que-fazemos/"
+lang: pt
 layout: pagina
 imagem: "/assets/img/paginas/o-que-fazemos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/o-que-fazemos-mobile.jpg"

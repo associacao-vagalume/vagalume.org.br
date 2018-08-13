@@ -1,7 +1,7 @@
 ---
 title: Home
-lang: pt
 permalink: "/"
+lang: pt
 layout: home
 ---
 

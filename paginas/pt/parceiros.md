@@ -1,7 +1,7 @@
 ---
 title: Parceiros
-lang: pt
 permalink: "/parceiros/"
+lang: pt
 layout: pagina-markdown
 imagem: "/assets/img/paginas/parceiros-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/parceiros-mobile.jpg"

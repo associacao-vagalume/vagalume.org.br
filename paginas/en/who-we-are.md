@@ -1,11 +1,12 @@
 ---
 title: Who we are
-lang: en
 permalink: "/en/who-we-are/"
+lang: en
 layout: pagina
 imagem: "/assets/img/paginas/quem-somos-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/quem-somos-mobile.jpg"
-description: Get to know who Vaga Lume’s team members are and the people that take part on our Assembly of Associates, our Financial and Consulting Board.
+description: Get to know who Vaga Lume’s team members are and the people that take
+  part on our Assembly of Associates, our Financial and Consulting Board.
 ---
 
 <div class="quem-somos secao-fundo-escuro">

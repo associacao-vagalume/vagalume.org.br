@@ -1,7 +1,7 @@
 ---
 title: Home
-lang: en
 permalink: "/en/"
+lang: en
 layout: home
 ---
 

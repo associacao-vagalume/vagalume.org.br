@@ -1,7 +1,7 @@
 ---
 title: Programa Rede
-lang: pt
 permalink: "/programa-rede/"
+lang: pt
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-rede-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/programa-rede-mobile.jpg"

@@ -1,7 +1,7 @@
 ---
 title: Programa Expedição
-lang: pt
 permalink: "/programa-expedicao/"
+lang: pt
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-expedicao-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/programa-expedicao-mobile.jpg"

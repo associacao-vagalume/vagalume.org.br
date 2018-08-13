@@ -1,11 +1,12 @@
 ---
 title: Transparency
-lang: en
 permalink: "/en/transparency/"
+lang: en
 layout: pagina
 imagem: "/assets/img/paginas/transparencia-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/transparencia-mobile.jpg"
-description: Get to know our financial activities and  annual reports and find out more about Vaga Lume’s impact.
+description: Get to know our financial activities and  annual reports and find out
+  more about Vaga Lume’s impact.
 atividades:
 - texto: Activity Report 2017
   capa: "/assets/img/relatorios/capa-relatorio-atividades-2017.jpg"

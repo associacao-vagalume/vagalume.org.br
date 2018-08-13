@@ -1,11 +1,13 @@
 ---
 title: Net Program
-lang: en
 permalink: "/en/net-program/"
+lang: en
 layout: pagina-markdown
 imagem: "/assets/img/paginas/programa-rede-desktop.jpg"
 imagem_mobile: "/assets/img/paginas/programa-rede-mobile.jpg"
-description: Everything about the Net Program, which connects youngsters from the Amazon rural communities and from the city of São Paulo, creating cultural exchanges opportunities.
+description: Everything about the Net Program, which connects youngsters from the
+  Amazon rural communities and from the city of São Paulo, creating cultural exchanges
+  opportunities.
 galeria:
 - img_src: "/assets/img/rede/rede_1.jpg"
 - img_src: "/assets/img/rede/rede_2.jpg"
