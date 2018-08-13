@@ -4096,10 +4096,13 @@ h3 {
   white-space: nowrap;
   /* Regra mobile first, onde as exceções são definidas para telas maiores */ }
   .navbar a {
-    color: #000; }
+    color: #000;
+    text-decoration: none; }
   .navbar h1 {
     margin: 0 auto;
     z-index: 1; }
+  .navbar .selected a {
+    border-bottom: 0.125rem solid #fdb913; }
   .navbar-brand {
     margin: 0 auto -3.8125rem;
     padding: 0;
@@ -4107,39 +4110,43 @@ h3 {
   .navbar-collapse {
     background-color: #fff;
     flex-direction: column; }
+    .navbar-collapse * + * {
+      margin-top: 1.125rem; }
   .navbar-toggler {
     font-size: 3.25rem;
     text-transform: uppercase; }
   .navbar-nav {
-    justify-content: flex-end;
-    margin: 0.4em 0 0 auto;
-    /* margin top em `em` pois existem dois tamanhos diferentes de fonte */
     text-align: center; }
   .navbar li {
-    line-height: 1.25;
-    margin-right: 2rem; }
+    line-height: 1.25; }
   .navbar-primary {
-    order: 2;
     text-transform: capitalize; }
   .navbar-secondary {
-    font-size: 1.25rem;
-    order: 1;
     text-transform: lowercase; }
     .navbar-secondary a {
       color: #858585; }
-  .navbar .donate-now-expanded {
-    display: none; }
+  .navbar-language {
+    flex-direction: row;
+    font-size: 1rem;
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    font-weight: normal;
+    justify-content: center; }
+    .navbar-language .menu-item {
+      border-width: .125rem;
+      margin: 0; }
+      .navbar-language .menu-item + .menu-item {
+        margin-left: 2rem; }
   .navbar .donate-now {
-    align-self: flex-start;
+    display: none; }
+  .navbar .donate-now-expanded {
     background-color: #fdb913;
-    font-size: 2rem;
-    line-height: 2.25;
-    margin-bottom: -1rem;
-    min-width: 8rem;
-    padding-top: 2rem;
+    display: block;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    order: 3;
     text-align: center;
-    text-transform: uppercase;
-    width: 10rem; }
+    width: 16rem; }
   .navbar .logo {
     height: 7.625rem; }
   .navbar .alt-logo {
@@ -4148,7 +4155,42 @@ h3 {
     position: absolute !important; }
   @media (min-width: 768px) {
     .navbar + * {
-      margin-top: 5.5rem; } }
+      margin-top: 5.5rem; }
+    .navbar .menu-item {
+      border-top: 0.2rem solid #fff;
+      margin-top: 0;
+      margin-right: 2rem; }
+      .navbar .menu-item a {
+        border-bottom: 0; }
+    .navbar .selected, .navbar .menu-item:hover {
+      border-color: #fdb913; }
+    .navbar-nav {
+      margin: 0 0 .4em auto; }
+    .navbar-language {
+      order: 1; }
+      .navbar-language .menu-item {
+        border-width: .25rem; }
+        .navbar-language .menu-item + .menu-item {
+          margin-left: 0; }
+    .navbar-secondary {
+      font-size: 1.25rem;
+      order: 2; }
+    .navbar-primary {
+      order: 3; }
+    .navbar .donate-now-expanded {
+      display: none; }
+    .navbar .donate-now {
+      align-self: flex-start;
+      background-color: #fdb913;
+      display: block;
+      font-size: 2rem;
+      line-height: 2.25;
+      margin-bottom: -1rem;
+      min-width: 8rem;
+      padding-top: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      width: 10rem; } }
   @media (max-width: 767.98px) {
     .navbar {
       position: initial; }
@@ -4164,30 +4206,10 @@ h3 {
         display: block; }
       .navbar-toggler-close.collapsed, .navbar-toggler-open {
         display: none; }
-      .navbar-nav {
-        margin: auto; }
-      .navbar li {
-        margin-right: 0; }
       .navbar-collapse > ul:first-child {
         margin-top: 3.8125rem; }
       .navbar-collapse * + * {
         margin-top: 1.125rem; }
-      .navbar-primary {
-        order: 1; }
-      .navbar-secondary {
-        font-size: inherit;
-        order: 2; }
-      .navbar .donate-now {
-        display: none; }
-      .navbar .donate-now-expanded {
-        background-color: #fdb913;
-        display: block;
-        line-height: 2;
-        margin-left: auto;
-        margin-right: auto;
-        order: 3;
-        text-align: center;
-        width: 16rem; }
       .navbar .container {
         justify-content: space-between;
         max-width: 100%;
@@ -4615,11 +4637,6 @@ h3 {
   justify-content: space-around;
   list-style: none;
   padding: 0; }
-  .pagina .atividades a, .pagina .auditorias a {
-    color: #be8a1f;
-    text-decoration: none; }
-  .pagina .atividades a:hover, .pagina .auditorias a:hover {
-    text-decoration: underline; }
   .pagina .atividades .relatorio, .pagina .auditorias .relatorio {
     background-color: #fff;
     max-width: 17rem; }
@@ -4648,6 +4665,11 @@ h3 {
         width: 18rem; } }
 .pagina .relatorios {
   text-align: center; }
+  .pagina .relatorios a {
+    color: #be8a1f;
+    text-decoration: none; }
+  .pagina .relatorios a:hover {
+    text-decoration: underline; }
 
 .galeria {
   display: none;
