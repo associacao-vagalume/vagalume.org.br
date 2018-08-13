@@ -1,0 +1,16 @@
+<ul class="navbar-nav navbar-language">
+  {% if page.lang == 'en' %}
+  <li class="menu-item selected">
+  {% else %}
+  <li class="menu-item">
+  {% endif %}
+    <a href="{{ site.data.menu.traducoes.en[page.url] }}">English</a>
+  </li>
+  {% if page.lang == 'pt' %}
+  <li class="menu-item selected">
+  {% else %}
+  <li class="menu-item">
+  {% endif %}
+    <a href="{{ site.data.menu.traducoes.pt[page.url] }}">Português</a>
+  </li>
+</ul>

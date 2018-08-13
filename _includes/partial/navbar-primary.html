@@ -1,0 +1,13 @@
+<ul class="navbar-nav navbar-primary">
+  {% for item in menu.principal %}
+    {% if item.link == page.url %}
+  <li class="menu-item selected">
+    {% else %}
+  <li class="menu-item">
+    {% endif %}
+    <a href="{{ item.link }}">
+      {{ item.nome }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>

@@ -9,11 +9,16 @@
 
   a {
     color: $black;
+    text-decoration: none;
   }
 
   h1 {
     margin: 0 auto;
     z-index: 1;
+  }
+
+  .selected a {
+    border-bottom: .125rem solid $orangey-yellow;
   }
 
   &-brand {
@@ -25,6 +30,10 @@
   &-collapse {
     background-color: $white;
     flex-direction: column;
+
+    * + * {
+      margin-top: 1.125rem;
+    }
   }
 
   &-toggler {
@@ -33,24 +42,18 @@
   }
 
   &-nav {
-    justify-content: flex-end;
-    margin: 0.4em 0 0 auto; /* margin top em `em` pois existem dois tamanhos diferentes de fonte */
     text-align: center;
   }
 
   li {
     line-height: 1.25;
-    margin-right: 2rem;
   }
 
   &-primary {
-    order: 2;
     text-transform: capitalize;
   }
 
   &-secondary{
-    font-size: 1.25rem;
-    order: 1;
     text-transform: lowercase;
 
     a {
@@ -58,21 +61,36 @@
     }
   }
 
-  .donate-now-expanded {
-    display: none;
+  &-language {
+    flex-direction: row;
+    font-size: 1rem;
+    font-family: $font-opensans;
+    font-weight: normal;
+    justify-content: center;
+
+    .menu-item {
+      border-width: .125rem;
+      margin: 0;
+
+      & + .menu-item {
+        margin-left: 2rem;
+      }
+    }
   }
 
   .donate-now {
-    align-self: flex-start;
+    display: none;
+  }
+
+  .donate-now-expanded {
     background-color: $orangey-yellow;
-    font-size: 2rem;
-    line-height: 2.25;
-    margin-bottom: -1rem;
-    min-width: 8rem;
-    padding-top: 2rem;
+    display: block;
+    line-height: 2;
+    margin-left: auto;
+    margin-right: auto;
+    order: 3;
     text-align: center;
-    text-transform: uppercase;
-    width: 10rem;
+    width: 16rem;
   }
 
   .logo {
@@ -89,6 +107,62 @@
   @include media-breakpoint-up(md) {
     & + * {
       margin-top: 5.5rem;
+    }
+
+    .menu-item {
+      border-top: .2rem solid $white;
+      margin-top: 0;
+      margin-right: 2rem;
+
+      a {
+        border-bottom: 0;
+      }
+    }
+
+    .selected, .menu-item:hover {
+      border-color: $orangey-yellow;
+    }
+
+    &-nav {
+      margin: 0 0 .4em auto;
+    }
+
+    &-language {
+      order: 1;
+
+      .menu-item {
+        border-width: .25rem;
+        & + .menu-item {
+          margin-left: 0;
+        }
+      }
+    }
+
+    &-secondary {
+      font-size: 1.25rem;
+      order: 2;
+    }
+
+    &-primary {
+      order: 3;
+    }
+
+    .donate-now-expanded {
+      display: none;
+    }
+
+    .donate-now {
+      align-self: flex-start;
+      background-color: $orangey-yellow;
+      display: block;
+      font-size: 2rem;
+      line-height: 2.25;
+      margin-bottom: -1rem;
+      min-width: 8rem;
+      padding-top: 3rem;
+      text-align: center;
+      text-transform: uppercase;
+      width: 10rem;
     }
   }
 
@@ -115,44 +189,12 @@
       display: none;
     }
 
-    &-nav {
-      margin: auto;
-    }
-
-    li {
-      margin-right: 0;
-    }
-
     &-collapse > ul:first-child {
       margin-top: $logo-size/2;
     }
 
     &-collapse * + * {
       margin-top: 1.125rem;
-    }
-
-    &-primary {
-      order: 1;
-    }
-
-    &-secondary {
-      font-size: inherit;
-      order: 2;
-    }
-
-    .donate-now {
-      display: none;
-    }
-
-    .donate-now-expanded {
-      background-color: $orangey-yellow;
-      display: block;
-      line-height: 2;
-      margin-left: auto;
-      margin-right: auto;
-      order: 3;
-      text-align: center;
-      width: 16rem;
     }
 
     .container {

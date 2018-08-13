@@ -3,7 +3,6 @@
 #
 # O texto $antigo$ é substituido pela url do site antigo, que está
 # configurado no arquivo _config.yml.
-
 pt:
   home_url: /
   ajuda_botao: Abre/fecha o menu
@@ -40,7 +39,6 @@ en:
       link: /en/what-we-do/
     - nome: Partners
       link: /en/partners/
-
   secundario:
     - nome: Who we are
       link: /en/who-we-are/
@@ -48,7 +46,20 @@ en:
       link: /en/our-history/
     - nome: Transparency
       link: /en/transparency/
-#  - nome: Localidades
-#    link: $antigo$/onde_atuamos
-#  - nome: Contato
-#    link: $antigo$/contato
+traducoes:
+  en:
+    /: /en/
+    /proposito/: /en/mission/
+    /o-que-fazemos/: /en/what-we-do/
+    /parceiros/: /en/partners/
+    /quem-somos/: /en/who-we-are/
+    /nossa-historia/: /en/our-history/
+    /transparencia/: /en/transparency/
+  pt:
+    /en/: /
+    /en/mission/: /proposito/
+    /en/what-we-do/: /o-que-fazemos/
+    /en/partners/: /parceiros/
+    /en/who-we-are/: /quem-somos/
+    /en/our-history/: /nossa-historia/
+    /en/transparency/: /transparencia/

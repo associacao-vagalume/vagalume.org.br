@@ -1,20 +1,10 @@
 .pagina {
-
   .atividades, .auditorias {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     list-style: none;
     padding: 0;
-
-    a {
-      color: #be8a1f;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
 
     .relatorio {
       background-color: $white;
@@ -64,5 +54,14 @@
 
   .relatorios {
     text-align: center;
+
+    a {
+      color: #be8a1f;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
   }
 }

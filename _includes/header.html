@@ -21,20 +21,9 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav navbar-primary">
-        {% for item in menu.principal %}
-        <li>
-          <a href="{{ item.link }}">{{ item.nome }}</a>
-        </li>
-        {% endfor %}
-      </ul>
-      <ul class="navbar-nav navbar-secondary">
-        {% for item in menu.secundario %}
-        <li>
-          <a href="{{ item.link }}">{{ item.nome }}</a>
-        </li>
-        {% endfor %}
-      </ul>
+      {% include partial/navbar-primary.html %}
+      {% include partial/navbar-secondary.html %}
+      {% include partial/navbar-language.html %}
       <a class="donate-now-expanded doar" href="{{ menu.url_doe }}">{{ menu.doe }}</a>
     </div>
 
