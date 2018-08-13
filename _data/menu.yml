@@ -55,6 +55,8 @@ traducoes:
     /quem-somos/: /en/who-we-are/
     /nossa-historia/: /en/our-history/
     /transparencia/: /en/transparency/
+    /programa-expedicao/: /en/expedition-program/
+    /programa-rede/: /en/net-program/
   pt:
     /en/: /
     /en/mission/: /proposito/
@@ -63,3 +65,5 @@ traducoes:
     /en/who-we-are/: /quem-somos/
     /en/our-history/: /nossa-historia/
     /en/transparency/: /transparencia/
+    /en/expedition-program/: /programa-expedicao/
+    /en/net-program/: /programa-rede/
