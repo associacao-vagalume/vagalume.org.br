@@ -12,19 +12,36 @@
     text-decoration: none;
   }
 
-  h1 {
-    margin: 0 auto;
-    z-index: 1;
-  }
-
   .selected a {
     border-bottom: .125rem solid $orangey-yellow;
   }
 
+  .navbar-mobile-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -100%;
+    width: 100%;
+    z-index: 2;
+  }
+
+  .buttons-language {
+    font-family: $font-opensans;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 3.25rem;
+  }
+
   &-brand {
-    margin: 0 auto (-1 * $logo-size / 2);
+    height: 4rem;
+    margin: 0;
     padding: 0;
+    text-align: center;
+    width: 100%;
     z-index: 1;
+
+    img {
+      margin: 0 0 -2rem;
+    }
   }
 
   &-collapse {
@@ -45,10 +62,6 @@
     text-align: center;
   }
 
-  li {
-    line-height: 1.25;
-  }
-
   &-primary {
     text-transform: capitalize;
   }
@@ -62,20 +75,21 @@
   }
 
   &-language {
-    flex-direction: row;
-    font-size: 1rem;
+    display: none;
+    font-size: 0.8rem;
     font-family: $font-opensans;
     font-weight: normal;
     justify-content: center;
+    order: 1;
 
     .menu-item {
-      border-width: .125rem;
+      border-width: .25rem;
       margin: 0;
-
-      & + .menu-item {
-        margin-left: 2rem;
-      }
     }
+  }
+
+  .menu-item {
+    line-height: 1.25;
   }
 
   .donate-now {
@@ -109,6 +123,10 @@
       margin-top: 5.5rem;
     }
 
+    &-brand {
+      width: initial;
+    }
+
     .menu-item {
       border-top: .2rem solid $white;
       margin-top: 0;
@@ -123,19 +141,16 @@
       border-color: $orangey-yellow;
     }
 
+    .navbar-mobile-menu {
+      display: none;
+    }
+
     &-nav {
       margin: 0 0 .4em auto;
     }
 
     &-language {
-      order: 1;
-
-      .menu-item {
-        border-width: .25rem;
-        & + .menu-item {
-          margin-left: 0;
-        }
-      }
+      display: flex;
     }
 
     &-secondary {
@@ -170,11 +185,7 @@
     position: initial;
 
     &-toggler {
-      display: block;
-      margin-left: -100%;
       padding: 0;
-      text-align: right;
-      width: 100%;
     }
 
     &-toggler-close {

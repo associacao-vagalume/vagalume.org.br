@@ -2,21 +2,31 @@
 <nav class="navbar navbar-expand-md fixed-top">
   <div class="container">
     {% include partial/logo.html home_url=menu.home_url %}
-    <button
-      class="navbar-toggler navbar-toggler-open collapsed"
-      type="button"
-      data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ menu.ajuda_botao }}">
-      {{ menu.botao_menu }}
-    </button>
-
-    <button
-      class="navbar-toggler navbar-toggler-close collapsed"
-      type="button"
-      data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ menu.ajuda_botao }}">
-      {{ menu.botao_fechar }}
-    </button>
+    <div class="navbar-mobile-menu">
+      <div class="buttons-language">
+        <a href="{{ site.data.menu.traducoes.en[page.url] }}">
+          EN
+        </a>
+        /
+        <a href="{{ site.data.menu.traducoes.pt[page.url] }}">
+          PT
+        </a>
+      </div>
+      <button
+        class="navbar-toggler navbar-toggler-open collapsed"
+        type="button"
+        data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ menu.ajuda_botao }}">
+        {{ menu.botao_menu }}
+      </button>
+      <button
+        class="navbar-toggler navbar-toggler-close collapsed"
+        type="button"
+        data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ menu.ajuda_botao }}">
+        {{ menu.botao_fechar }}
+      </button>
+    </div>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       {% include partial/navbar-primary.html %}
