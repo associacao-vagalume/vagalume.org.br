@@ -4111,6 +4111,10 @@ h3 {
     font-size: 2rem;
     font-weight: normal;
     line-height: 3.25rem; }
+    .navbar .buttons-language a {
+      border-bottom: 2px solid #fff; }
+    .navbar .buttons-language .selected {
+      border-bottom-color: #fdb913; }
   .navbar-brand {
     height: 4rem;
     margin: 0;
