@@ -4,11 +4,19 @@
     {% include partial/logo.html home_url=menu.home_url %}
     <div class="navbar-mobile-menu">
       <div class="buttons-language">
+        {% if page.lang == 'en' %}
+        <a class="selected" href="{{ site.data.menu.traducoes.en[page.url] }}">
+        {% else %}
         <a href="{{ site.data.menu.traducoes.en[page.url] }}">
-          EN
+        {% endif %}
+        EN
         </a>
         /
+        {% if page.lang == 'pt' %}
+        <a class="selected" href="{{ site.data.menu.traducoes.pt[page.url] }}">
+        {% else %}
         <a href="{{ site.data.menu.traducoes.pt[page.url] }}">
+        {% endif %}
           PT
         </a>
       </div>

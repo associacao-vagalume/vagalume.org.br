@@ -29,6 +29,14 @@
     font-size: 2rem;
     font-weight: normal;
     line-height: 3.25rem;
+
+    a {
+      border-bottom: 2px solid $white;
+    }
+
+    .selected {
+      border-bottom-color: $orangey-yellow;
+    }
   }
 
   &-brand {
