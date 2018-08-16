@@ -9,7 +9,7 @@ pt:
   botao_menu: Menu
   botao_fechar: Fechar
   doe: Doe agora
-  url_doe: /doe
+  url_doe: https://vagalume.colabore.org
   principal:
     - nome: Propósito
       link: /proposito/
@@ -31,7 +31,7 @@ en:
   botao_menu: Menu
   botao_fechar: Close
   doe: Donate
-  url_doe: https://www.globalgiving.org/projects/quality-education-to-15000-amazon-children/
+  url_doe: https://www.globalgiving.org/projects/quality-education-to-15000-amazon-children/?show=recurring
   principal:
     - nome: Mission
       link: /en/mission/
@@ -57,6 +57,7 @@ traducoes:
     /transparencia/: /en/transparency/
     /programa-expedicao/: /en/expedition-program/
     /programa-rede/: /en/net-program/
+    /doe/: /donate/
   pt:
     /en/: /
     /en/mission/: /proposito/
@@ -67,3 +68,4 @@ traducoes:
     /en/transparency/: /transparencia/
     /en/expedition-program/: /programa-expedicao/
     /en/net-program/: /programa-rede/
+    /donate/: /doe/

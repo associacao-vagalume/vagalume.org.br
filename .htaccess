@@ -41,6 +41,8 @@ RewriteEngine On
 
 # Redireciona para página de doação
 RewriteRule ^doe$ https://vagalume.colabore.org/ [R=302,L]
+# Redireciona para página de doação em inglês
+RewriteRule ^donate$ https://www.globalgiving.org/projects/quality-education-to-15000-amazon-children/?show=recurring [R=302,L]
 
 # Correções de SEO do Google
 RewriteCond %{QUERY_STRING} ^id=([0-9]*)$

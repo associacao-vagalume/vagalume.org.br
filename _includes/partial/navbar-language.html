@@ -4,13 +4,13 @@
   {% else %}
   <li class="menu-item">
   {% endif %}
-    <a href="{{ site.data.menu.traducoes.en[page.url] }}">English</a>
+    <a href="{{ site.data.menu.traducoes.en[page.url] | default: page.url }}">English</a>
   </li>
   {% if page.lang == 'pt' %}
   <li class="menu-item selected">
   {% else %}
   <li class="menu-item">
   {% endif %}
-    <a href="{{ site.data.menu.traducoes.pt[page.url] }}">Português</a>
+    <a href="{{ site.data.menu.traducoes.pt[page.url] | default: page.url }}">Português</a>
   </li>
 </ul>

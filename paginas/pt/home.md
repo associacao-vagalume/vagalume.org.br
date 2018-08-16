@@ -13,7 +13,6 @@ layout: home
 {% include_relative _includes/home-o-que-fazemos.html %}
 
 {% include_relative _includes/home-como-colaborar.html
-  url_fisica="/doe"
   url_juridica="http://arquivo.vagalume.org.br/interna/42/doe-empresas" %}
 
 {% include_relative _includes/home-parceiros.html
