@@ -4108,11 +4108,12 @@ h3 {
     z-index: 2; }
   .navbar .buttons-language {
     font-family: "Open Sans Condensed", "Arial", sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     line-height: 3.25rem; }
     .navbar .buttons-language a {
-      border-bottom: 2px solid #fff; }
+      border-bottom: 2px solid #fff;
+      margin: .5rem; }
     .navbar .buttons-language .selected {
       border-bottom-color: #fdb913; }
   .navbar-brand {
