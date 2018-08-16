@@ -26,12 +26,13 @@
 
   .buttons-language {
     font-family: $font-opensans;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: normal;
     line-height: 3.25rem;
 
     a {
       border-bottom: 2px solid $white;
+      margin: .5rem;
     }
 
     .selected {
