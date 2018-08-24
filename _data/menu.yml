@@ -9,7 +9,7 @@ pt:
   botao_menu: Menu
   botao_fechar: Fechar
   doe: Doe agora
-  url_doe: https://vagalume.colabore.org
+  url_doe: https://vagalume.colabore.org/inicial/people/new
   principal:
     - nome: Propósito
       link: /proposito/
