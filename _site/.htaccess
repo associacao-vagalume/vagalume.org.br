@@ -40,7 +40,7 @@ Header set Content-Language "pt, en"
 RewriteEngine On
 
 # Redireciona para página de doação
-RewriteRule ^doe$ https://vagalume.colabore.org/ [R=302,L]
+RewriteRule ^doe$ https://vagalume.colabore.org/inicial/people/new/ [R=302,L]
 # Redireciona para página de doação em inglês
 RewriteRule ^donate$ https://www.globalgiving.org/projects/quality-education-to-15000-amazon-children/?show=recurring [R=302,L]
 
