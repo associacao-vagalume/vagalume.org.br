@@ -10,7 +10,7 @@ description: Get to know our financial activities and  annual reports and find o
 atividades:
 - texto: Activity Report 2017
   capa: "/assets/img/relatorios/capa-relatorio-atividades-2017.jpg"
-  link: /en/reports/vaga-lume-annual-report-2017.pdf
+  link: "/en/reports/vaga-lume-annual-report-2017.pdf"
 ---
 
 {::options parse_block_html="true" /}
