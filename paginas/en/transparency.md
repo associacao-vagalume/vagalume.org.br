@@ -24,5 +24,3 @@ atividades:
 {::options parse_block_html="false" /}
 
 {% include_relative _includes/reports-activity.html %}
-{% include_relative _includes/reports-financial.html %}
-
