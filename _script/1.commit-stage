@@ -29,6 +29,7 @@ versiona_site() {
   VERSAO="v${NUMERO_VERSAO}.$(date +%d%m%Y)"
 
   echo "$VERSAO" > _site/VERSAO.txt
+  echo "$VERSAO" >> _site/HISTORICO.txt
 }
 
 armazena_site() {
