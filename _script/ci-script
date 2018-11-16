@@ -7,4 +7,4 @@ source .${TRAVIS_BRANCH:-local}.env
 ./_script/1.commit-stage
 ./_script/2.deploy-acceptance
 ./_script/3.acceptance-test
-./_script/4.tag-release staging
+./_script/4.tag-release release
