@@ -27,16 +27,31 @@ usada no nosso pipeline :).
 
 Recomendamos o uso de um gerenciador de versões de Ruby para facilitar sua
 vida. As opções mais populares são [chruby][chruby], [rbenv][rbenv] e
-[rvm][rvm]. Siga as instruções de instalação para seu sistema operacional. Em
-seguida entre na pasta do projeto e execute o comando do seu gerenciador de
-versões de Ruby que instala a versão indicada no arquivo .ruby-version.
+[rvm][rvm]. Eu pessoalmente prefiro o chruby por ser menos intrusivo.
+
+Siga as instruções de instalação do gerenciador de sua preferência.
+
+Para instalar a versão do projeto do ruby, execute o comando abaixo:
+
+```bash
+ruby-install ruby $(cat .ruby-version)
+```
 
 ## Instale o Bundler
 
-Para gerenciar as dependência do projeto usamos o Bundler (http://bundler.io).
-Para instalá-lo, execute `gem install bundler`.
+Para gerenciar as dependência do projeto usamos o [Bundler][bundler].
+Para instalá-lo, execute
+
+```bash
+gem install bundler
+```
 
 ## Instale as dependências do projeto
 
 Depois do Bundler instalado, entre na pasta do projeto e digite o comando
 `bundle install` em seu terminal. Acabou!
+
+[chruby]: https://github.com/postmodern/chruby/blob/master/README.md
+[rbenv]: https://github.com/rbenv/rbenv/blob/master/README.md
+[rvm]: https://rvm.io
+[bundler]: http://bundler.io
